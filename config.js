@@ -1,12 +1,13 @@
 var respecConfig = {
+
   specStatus: "GN-CV",
-  pubDomain:"md",
   specType: "ST",
+  pubDomain:"md",
   editors: [{
     name: "Geonovum",
     url: "http://www.geonovum.nl/",
   }],
-  publishDate: "2017-09-01",
+  publishDate: "2017-10-09",
   shortName: "mdprofiel-iso19115",
   github: "https://github.com/Geonovum/Metadata-ISO19115/",
   localBiblio: {
@@ -53,11 +54,15 @@ var respecConfig = {
       "publisher": "International Organization for Standardization",
     },
     "INSPIRE-19115-19119": {
-      "href": "http://inspire.ec.europa.eu/documents/Metadata/INSPIRE_MD_IR_and_ISO_v1_2_20100616.pdf",
-      "title": "INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119",
-      "authors": ["Drafting Team Metadata and European Commission Joint Research Centre"],
-      "date": "26 oktober 2007",
-      "publisher": "European Commission Joint Research Centre",
+      href:
+        "http://inspire.ec.europa.eu/documents/Metadata/INSPIRE_MD_IR_and_ISO_v1_2_20100616.pdf",
+      title:
+        "INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119",
+      authors: [
+        "Drafting Team Metadata and European Commission Joint Research Centre",
+      ],
+      date: "26 oktober 2007",
+      publisher: "European Commission Joint Research Centre",
     },
     "INSPIRE1312-2014":{
       "title":"Regulation on interoperability of spatial data services",
@@ -128,3 +133,4 @@ var respecConfig = {
     },
   }
 };
+
