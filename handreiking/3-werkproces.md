@@ -1,8 +1,6 @@
-#Metadata in het werkproces
+# Metadata in het werkproces
 
-##Hoe maak je metadata?
-
-###Metadata voor data
+## Metadata voor data
 
 Je kunt op diverse manieren metadata aanmaken. Voor deze diverse manieren zijn er verschillende applicaties op de markt die voldoen aan het Nederlandse metadata profiel. Hieronder wordt beschreven hoe de metadata kan worden aangemaakt:
 
@@ -13,17 +11,17 @@ Inwinnen meta.jpg
 
 Deze methoden zijn hieronder beschreven om gebruikers de mogelijkheid te bieden een werkwijze te kiezen die past bij de organsatie.
 
-###Metadata editor voor data
+### Metadata editor voor data
 
 De Metadata editor is een applicatie (meestal een desktop client of een editor tool uit een GIS-applicatie) die de gebruiker ondersteund in het opzetten van metadata documenten. Door gebruik te maken van een tool wordt het compleet en valide opvoeren van de metadata afgedwongen. Hoe gebruiksvriendelijker de tool, des te gemakkelijker het is voor de gebruiker. Veel metadata editor tools zijn geïntegreerd in de software waarmee ook de ruimtelijke data wordt gemaakt. Dit heeft als voordeel dat dan de inherente en impliciete metadata al direct wordt overgenomen en niet meer handmatig hoeft te worden ingevoerd. Denk daarbij bijvoorbeeld aan de ruimtelijke extent, datum vervaardiging, etc. Een ander voordeel van een desktop tool is dat er een aantal zaken al standaard kunnen worden ingevuld, zoals naam van de organisatie, gebruikte referentiesysteem etc. Vaak zullen deze metadata elementen hetzelfde zijn. Als er voor bepaalde datasets hiervan wordt afgeweken kan het handmatig worden aangepast.
 
 Er zijn ook stand-alone tools, voor desktop of via internet beschikbaar. Deze tools hebben als voordeel dat ze makkelijk te benaderen/ installeren zijn en voldoen als er weinig datasets zijn die beheerd worden. Wanneer een metadata document voor het eerst word gemaakt, lijkt deze optie het meest eenvoudig. Het kan echter wel de meest kostbare manier zijn om een metadata document te maken. De gebruiker voert alle vereiste metadata elementen met de hand in en publiceert daarna het document als een valide ISO 19115/19139 document. Het is afhankelijk van de software in hoeverre de gebruiker wordt ondersteund gedurende dit proces.
 
-###Metadata editor voor data via de catalog client
+### Metadata editor voor data via de catalog client
 
 Een metadata editor is geen verplicht onderdeel van een register, maar wordt wel vaak toegepast bij een register. Het voordeel is dat de metadata direct gepubliceerd wordt in het register, maar het heeft geen directe relatie met de data. De metadata kan worden opgevoerd, of, met een andere methode verkregen metadata, worden bewerkt .
 
-##Metadata voor services
+## Metadata voor services
 
 De metadata voor services kan op de volgende drie manieren worden gemaakt:
 
@@ -34,7 +32,7 @@ De metadata voor services kan op de volgende drie manieren worden gemaakt:
 Deze drie mogelijkheden zijn achtereenvolgens beschreven om gebruikers de mogelijkheid te bieden een methode te kiezen die past bij de organisatiemogelijkheden.
 
 
-###Capabilities document
+### Capabilities document
 Elke OGC service (WMS, WFS, WCS, etc.) heeft altijd een capabilities document. Hierin wordt bij het aanmaken van de service al automatisch enkele metadata elementen van de service opgenomen. Deze publicatie methode is erop gericht om gebruik te maken van de metadata informatie uit de capabilities document.
 Deze publicatie strategie is vooral voor organisaties en gebruikers van belang die een beperkt aantal services willen publiceren (een OGC catalogue service is dan snel een te zware oplossing gezien het aantal te publiceren services, zie 2.2.3). Dit is een eenvoudige manier voor metadata publicatie.
 
@@ -43,7 +41,7 @@ De capability bevat metadata mogelijkheden om de service zelf en van de beschikb
 Resultaat: Een Capabilities document
 
 
-###Metadata editor
+### Metadata editor
 Dit is een applicatie (meestal een desktop client of een editor tool uit een GIS-applicatie) die de gebruiker ondersteund in het opzetten van metadata documenten. Door gebruik te maken van een dergelijke applicatie wordt het compleet en valide opvoeren van de metadata afgedwongen. Veel metadata editor tools zijn geïntegreerd in het productieproces waardoor veel metadata in het werkproces wordt gegenereerd .
 Beginnend van scratch lijkt een metadata editor heet meest eenvoudig, maar is de meest kostbare manier om een metadata document te maken. De gebruiker voert namelijk alle vereiste metadata elementen handmatig in en publiceert daarna het document als een valide CSW2 AP ISO document (ISO 19115/19139 en ISO 19119 encoding).
 Het is afhankelijk van de applicatie in hoeverre de gebruiker wordt ondersteund gedurende dit proces.
@@ -57,7 +55,7 @@ Opzetten van een CSW2 AP ISO document met een metadata editor
 Resultaat: een valide CSW2 AP ISO document.
 
 
-###Metadata editor via de catalog client
+### Metadata editor via de catalog client
 Een metadata editor is geen verplicht onderdeel van een catalogues service. maar wordt wel vaak toegepast bij een catalogue service. Met de metadata editor kan de service metadata worden opgevoerd of, met een andere methode verkregen metadata, worden bewerkt.
 De capabilities methode kan in combinatie gebruikt worden. Hiervoor kan het volgende werkproces gehanteerd worden.
 
@@ -67,7 +65,7 @@ Het verschil met de editor methode is dat de metadata direct gepubliceerd is in 
 
 Resultaat: Een metadata record in een catalogue die CSW2 AP ISO ondersteund.
 
-##Waar in werkproces
+## Waar in werkproces
 
 Er zijn meerdere doeleinden waarvoor data gegenereerd wordt. Voor projecten, als werkbestand, voor analysedoeleinden, voor vastleggen van beleid of feitelijke gegevens ten behoeve van producten of processen. 
 Datainwinnen.jpg
@@ -86,14 +84,14 @@ Metadata zal idealiter onderdeel uitmaken van het data of service aanmaak- en be
 
 Een deel van de metadata is automatisch te genereren uit de data. Het verdient de voorkeur om bij grotere hoeveelheden data de te gebruiken software hier zoveel mogelijk gebruik van te laten maken. Het gebruik van default instellingen voor bijvoorbeeld de naam van de organisatie verdient de voorkeur.
 
-##Tips voor inwinnen metadata
+## Tips voor inwinnen metadata
 
 Begin in een zo vroeg mogelijk stadium met het vastleggen van metadata. Op het moment dat de dataset aangemaakt wordt is er vaak contact met de inhoudelijk specialist. Deze kan dan de inhoudelijke metadata aanleveren.
 
 
 Het moment waarop de opdracht wordt gegeven om de data te publiceren is een goede mogelijkheid om de metadata te controleren en eventueel te vervolmaken.
 
-##Publiceren van metadata
+## Publiceren van metadata
 
 Nadat de metadata is ingewonnen en vastgelegd kan het gepubliceerd worden. Er zijn drie methoden voor het publiceren van metadata;
 
@@ -106,17 +104,17 @@ Nadat de metadata is ingewonnen en vastgelegd kan het gepubliceerd worden. Er zi
 De eerste twee mogelijkheden gaan uit van invoer van metadata direct in een register. Er is geen sprake van een geautomatiseerde verbinding met broninformatie die wijzigingen signaleert en doorvoert.
 
 
-###Metadata editor
+### Metadata editor
 
 Als een organisatie nog niet beschikt over metadata kan gebruik worden gemaakt van de metadata editor die is opgenomen in een register. Hiermee kan metadata volgens de Nederlandse metadata standaard voor geografie versie 1.2 worden ingevuld. Het is ook mogelijk metadata voor services volgens het Nederlandse metadata profiel op ISO 19119 voor services versie 1.1 vast te leggen.
 
 
-###Importeer metadata XML
+### Importeer metadata XML
 
 Een meer geavanceerde manier om metadata op te nemen in het een register, is door het uploaden van een XML. Deze methode is vooral geschikt voor gebruikers die met behulp van een eigen tool metadata hebben aangemaakt en deze in XML formaat kunnen wegschrijven.
 
 
-###Metadata uit de capabilities van een service
+### Metadata uit de capabilities van een service
 
 Elke OGC service (WMS, WFS, WCS, etc.) heeft een capabilities document. Hierin wordt bij het aanmaken van de service al automatisch enkele metadata elementen van de service opgenomen. Deze methode is erop gericht om gebruik te maken van de metadata informatie uit het capabilities document.
 Dit is vooral voor organisaties van belang die een beperkt aantal services willen publiceren (een OGC catalogue service is dan al gauw een te zware oplossing gezien het aantal te publiceren services,). Dit is een eenvoudige manier voor metadata publicatie.
@@ -127,7 +125,7 @@ Capabilitiestoisoap.jpg
 
 In een register kan de capabilities file worden uitgelezen en omgezet naar ISO19119/CSW 2.0.2 ISO AP. Deze metadata kan verder worden aangevuld met behulp van de editor.
 
-##Harvesting
+## Harvesting
 
 Harvesting methoden
 Harvesten is het mechanisme dat metadata naar de catalogus ‘ trekt ‘ (kopieert). Deze functionaliteit zorgt dat de metadata, waarnaar in de catalogues wordt verwezen, worden opgenomen en bijgewerkt. Het is de taak van de catalogues service om op de locatie de metadata op te halen en te verwerken in de catalogues.
@@ -225,7 +223,7 @@ Het element “DistributedSearchType” bevraagt de catalog service om de “Get
 
 Deze functionaliteit kan worden uitgebreid met een catalog implementatie om metadata records te ”cachen” van een remote catalog. Dit is dan vergelijkbaar met catalogue-catalogue harvesting. Dit kan alleen worden uitgevoerd op implementatie niveau; dit is geen functionaliteit gedefinieerd op specificatie niveau en dus geen standaard benadering.
 
-##Valideren
+## Valideren
 
 De metadata van data(services) kunnen gevalideerd worden op:
 
