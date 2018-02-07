@@ -1,7 +1,7 @@
 
-#Metadata standaarden
+# Metadata standaarden
 
-##Waarom een standaard
+## Waarom een standaard
 
 In het dagelijks leven maken we veelal onbewust gebruik van tal van standaarden. Eigenlijk is voor bijna alles wel een norm of standaard beschikbaar, van gebruiksvoorwerpen, tijd, (meet)eenheden, verkeersborden tot de bescherming van persoonsgegevens. 
 
@@ -11,7 +11,7 @@ Een norm of standaard is een procedure of een maat waarvan een groep mensen met 
 Standaarden worden gebruikt om de uitwisselbaarheid (de interoperabiliteit) te bevorderen. Interoperabiliteit is ‘het vermogen van een bepaald systeem effectief of correct te functioneren als deel van een ander systeem’ (systeem wordt hier in algemene, brede zin gebruikt). Denk bijvoorbeeld aan het gebruik van Frans of Russisch spoorwegmaterieel op het Nederlandse spoor.
 Het bevorderen van interoperabiliteit binnen en tussen overheidsinstellingen en met bedrijven en burgers, kan alleen worden bereikt door gebruik te maken van (open) standaarden
 
-##Standaarden voor geo informatie
+## Standaarden voor geo informatie
 
 Voor het domein geo-informatie zijn diverse standaarden beschikbaar. Om aan te kunnen sluiten op de Europese infrastructuur op dit gebied en te kunnen integreren met de elektronische overheid is er het framework van standaarden ontwikkeld. Meer hierover vind je terug in framework geo-standaarden
 
@@ -19,7 +19,7 @@ Specifiek voor Nederland zijn “Nederlandse metadata profiel op ISO 19115“ en
 
 Er zijn meerdere standaarden die van belang zijn voor metadata van data of services. In onderstaande figuur is de relatie aangegeven van die standaarden tot het nationaal georegister. Metadata voor data worden volgens Het Nederlandse metadata profiel op ISO 19115 beschreven. ISO 19139 is de specificatie van de implementatie, de encoding hiervoor. Met deze encoding worden de metadata op een eenduidige manier in een XML opgeslagen. Metadata voor services worden volgens Het Nederlandse metadata profiel op ISO 19119 beschreven. De encoding voor services is in CSW ISO AP 2.0.2 opgenomen. Naast de standaarden voor metadata en catalogs zijn ook de voor metadata van services en het profiel op WMS van belang.
 
-##Metadata standaarden
+## Metadata standaarden
 
 Er zijn verschillende niveaus waarvoor metadata aangemaakt kunnen worden;
 
@@ -40,7 +40,7 @@ Optionele elementen  zijn een selectie uit ISO 19115, die ook van belang kunnen 
 
 Sectoren in Nederland kunnen een eigen uitbreiding op het Nederlandse profiel ontwikkelen. Voorwaarde is dat de Nederlandse kernset metadata onderdeel is van het sectorale metadata profiel. Deze sectorale uitbreidingen dienen onderdeel te zijn van ISO 19115.
 
-##INSPIRE
+## INSPIRE
 
 INSPIRE is een kaderrichtlijn met wetgeving die voor alle Europese lidstaten geldt. Oorspronkelijk opgezet vanuit milieu toepassingen zal INSPIRE dankzij zijn brede toepassing leiden tot een algemene Europese geoinformatie infrastructuur. INSPIRE gaat voor een belangrijk deel voorschrijven hoe de Nationale Geo-Informatie Infrastructuur (NGII) dient te worden ingevuld. De manier van werken die Geonovum bij standaardisatie heeft gekozen komt 1 op 1 overeen met de indeling van INSPIRE. Dit komt deels door de aard van standaardisatie, maar ook door betrokkenheid bij het werkprogramma van INSPIRE.
 
@@ -52,7 +52,7 @@ De infrastructuur die INSPIRE voorschrijft stelt geïntegreerde geo-informatie e
 Mogelijke diensten zijn visualisatie, combinatie, integratie en analyse van geo-informatie. De invoeringsregels van INSPIRE hebben betrekking op zowel technische als niet-technische aspecten. Denk hierbij aan metadata technische standaarden en protocollen en niet-technische aspecten als organisatieproblemen, gegevensbeleid (toegankelijkheid) en het inwinnen en beheren van geo-informatie voor verschillende thema’s. 
 Voor de INSPIRE thema's wordt het wettelijk verplicht om metadata  beschikbaar te stellen die voldoet aan de invoeringsregels van INSPIRE. “Het Nederlandse metadata profiel op ISO 19115 “en “Het Nederlandse metadata profiel op ISO 19119” bevatten de eisen vanuit INSPIRE.
 
-##Opdracht standaarden
+## Opdracht standaarden
 
 1. Ga naar de [INSPIRE richtlijn voor metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:NL:PDF).
 Welke metadata elementen worden voor een dataset voorgeschreven, welke voor services?
