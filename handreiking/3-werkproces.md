@@ -1,25 +1,31 @@
 # Metadata in het werkproces
 
-## Metadata voor data
+Dit hoofdstuk beschrijft de rol van metadata in werkprocessen.
 
-Je kunt op diverse manieren metadata aanmaken. Voor deze diverse manieren zijn er verschillende applicaties op de markt die voldoen aan het Nederlandse metadata profiel. Hieronder wordt beschreven hoe de metadata kan worden aangemaakt:
+Bekijk ook [een powerpoint over metadata in het werkproces](http://wiki.geonovum.nl/images/Metadata_in_het_werkproces.ppt)
 
-Metadata voor data invoeren via een metadata editor die ISO TS 19139 XML kan leveren
-Metadata voor data toevoegen met behulp van een metadata editor van een catalogue 
+![Metadata in het werkproces](images/Metadataproces.jpg)
+
+## Metadata voor datasets
+
+Je kunt op diverse manieren metadata voor datasets aanmaken. Voor deze diverse manieren zijn er verschillende applicaties op de markt die voldoen aan het Nederlandse metadata profiel. Hieronder wordt beschreven hoe de metadata kan worden aangemaakt:
+
+Metadata invoeren via een metadata editor die ISO TS 19139 XML kan leveren
+Metadata toevoegen met behulp van een metadata editor van een catalogus 
 
 ![Inwinnen metadata](images/Inwinnen meta.jpg)
 
 Deze methoden zijn hieronder beschreven om gebruikers de mogelijkheid te bieden een werkwijze te kiezen die past bij de organsatie.
 
-### Metadata editor voor data
+### Metadata editor
 
-De Metadata editor is een applicatie (meestal een desktop client of een editor tool uit een GIS-applicatie) die de gebruiker ondersteund in het opzetten van metadata documenten. Door gebruik te maken van een tool wordt het compleet en valide opvoeren van de metadata afgedwongen. Hoe gebruiksvriendelijker de tool, des te gemakkelijker het is voor de gebruiker. Veel metadata editor tools zijn geïntegreerd in de software waarmee ook de ruimtelijke data wordt gemaakt. Dit heeft als voordeel dat dan de inherente en impliciete metadata al direct wordt overgenomen en niet meer handmatig hoeft te worden ingevoerd. Denk daarbij bijvoorbeeld aan de ruimtelijke extent, datum vervaardiging, etc. Een ander voordeel van een desktop tool is dat er een aantal zaken al standaard kunnen worden ingevuld, zoals naam van de organisatie, gebruikte referentiesysteem etc. Vaak zullen deze metadata elementen hetzelfde zijn. Als er voor bepaalde datasets hiervan wordt afgeweken kan het handmatig worden aangepast.
+De Metadata editor is een applicatie (bijvoorbeeld een editor tool binnen een GIS desktop applicatie) die de gebruiker ondersteunt in het opzetten van metadata. Door gebruik te maken van een tool wordt het compleet en valide opvoeren van de metadata afgedwongen. Hoe gebruiksvriendelijker de tool, des te gemakkelijker het is voor de gebruiker. Veel metadata editor tools zijn geïntegreerd in de software waarmee ook de ruimtelijke data wordt gemaakt. Dit heeft als voordeel dat dan de inherente en impliciete metadata al direct wordt overgenomen en niet meer handmatig hoeft te worden ingevoerd. Denk daarbij bijvoorbeeld aan de ruimtelijke extent, datum vervaardiging, etc. Een ander voordeel van een desktop tool is dat er een aantal zaken al standaard kunnen worden ingevuld, zoals naam van de organisatie, gebruikte referentiesysteem etc. Vaak zullen deze metadata elementen hetzelfde zijn. Als er voor bepaalde datasets hiervan wordt afgeweken kan het handmatig worden aangepast.
 
-Er zijn ook stand-alone tools, voor desktop of via internet beschikbaar. Deze tools hebben als voordeel dat ze makkelijk te benaderen/ installeren zijn en voldoen als er weinig datasets zijn die beheerd worden. Wanneer een metadata document voor het eerst word gemaakt, lijkt deze optie het meest eenvoudig. Het kan echter wel de meest kostbare manier zijn om een metadata document te maken. De gebruiker voert alle vereiste metadata elementen met de hand in en publiceert daarna het document als een valide ISO 19115/19139 document. Het is afhankelijk van de software in hoeverre de gebruiker wordt ondersteund gedurende dit proces.
+Er zijn ook stand-alone tools, voor desktop of via internet beschikbaar. Deze tools hebben als voordeel dat ze makkelijk te benaderen/installeren zijn en voldoen als er weinig datasets zijn die beheerd worden. Wanneer een metadata document voor het eerst word gemaakt, lijkt deze optie het meest eenvoudig. Het kan echter wel de meest kostbare manier zijn om een metadata document te maken. De gebruiker voert alle vereiste metadata elementen met de hand in en publiceert daarna het document als een valide ISO 19115/19139 document. Het is afhankelijk van de software in hoeverre de gebruiker wordt ondersteund gedurende dit proces.
 
-### Metadata editor voor data via de catalog client
+### Metadata editor via een catalogus
 
-Een metadata editor is geen verplicht onderdeel van een register, maar wordt wel vaak toegepast bij een register. Het voordeel is dat de metadata direct gepubliceerd wordt in het register, maar het heeft geen directe relatie met de data. De metadata kan worden opgevoerd, of, met een andere methode verkregen metadata, worden bewerkt .
+Een metadata editor is geen verplicht onderdeel van een register, maar wordt wel vaak toegepast als onderdeel van een register. Het voordeel is dat de metadata direct gepubliceerd wordt in het register, maar het heeft geen directe relatie met de data. De metadata kan worden opgevoerd, of, met een andere methode verkregen metadata, worden bewerkt.
 
 ## Metadata voor services
 
@@ -27,37 +33,36 @@ De metadata voor services kan op de volgende drie manieren worden gemaakt:
 
 1. Metadata voor de service aan het capabilities document van een service toevoegen
 1. Metadata voor services invoeren via een metadata editor die ISO TS 19139 en CSW ISO metadata AP XML kan leveren
-1. Metadata voor services toevoegen met behulp van een metadata editor van een catalogue
+1. Metadata voor services toevoegen met behulp van een metadata editor van een catalogus
 
 Deze drie mogelijkheden zijn achtereenvolgens beschreven om gebruikers de mogelijkheid te bieden een methode te kiezen die past bij de organisatiemogelijkheden.
 
 ### Capabilities document
-Elke OGC service (WMS, WFS, WCS, etc.) heeft altijd een capabilities document. Hierin wordt bij het aanmaken van de service al automatisch enkele metadata elementen van de service opgenomen. Deze publicatie methode is erop gericht om gebruik te maken van de metadata informatie uit de capabilities document.
-Deze publicatie strategie is vooral voor organisaties en gebruikers van belang die een beperkt aantal services willen publiceren (een OGC catalogue service is dan snel een te zware oplossing gezien het aantal te publiceren services, zie 2.2.3). Dit is een eenvoudige manier voor metadata publicatie.
 
-De capability bevat metadata mogelijkheden om de service zelf en van de beschikbaar te stellen data te beschrijven, echter niet alle verplichte metadata elementen kan worden opgenomen. Dit wordt voor WMS en WFS uitgewerkt in bij de metadata elementen.
-Resultaat: Een Capabilities document
+Elke OGC service (WMS, WFS, WCS, etc.) heeft een capabilities document. Hierin worden bij het aanmaken van de service al automatisch enkele metadata elementen van de service opgenomen. Deze publicatie methode is erop gericht om gebruik te maken van de metadata informatie uit de capabilities document. Dit is een eenvoudige manier voor metadata publicatie.
+
+Een capabilities document bevat metadata elementen om de service zelf en de daarin beschikbaar gestelde datasets te beschrijven, echter niet alle verplichte metadata elementen kunnen worden opgenomen. Dit wordt voor WMS en WFS uitgewerkt bij de metadata elementen.
 
 ### Metadata editor
+
 Dit is een applicatie (meestal een desktop client of een editor tool uit een GIS-applicatie) die de gebruiker ondersteund in het opzetten van metadata documenten. Door gebruik te maken van een dergelijke applicatie wordt het compleet en valide opvoeren van de metadata afgedwongen. Veel metadata editor tools zijn geïntegreerd in het productieproces waardoor veel metadata in het werkproces wordt gegenereerd .
-Beginnend van scratch lijkt een metadata editor heet meest eenvoudig, maar is de meest kostbare manier om een metadata document te maken. De gebruiker voert namelijk alle vereiste metadata elementen handmatig in en publiceert daarna het document als een valide CSW2 AP ISO document (ISO 19115/19139 en ISO 19119 encoding).
+
+Beginnend van scratch lijkt een metadata editor het meest eenvoudig, maar is de meest kostbare manier om een metadata document te maken. De gebruiker voert namelijk alle vereiste metadata elementen handmatig in en publiceert daarna het document als een valide CSW2 AP ISO document (ISO 19115/19139 en ISO 19119 encoding).
+
 Het is afhankelijk van de applicatie in hoeverre de gebruiker wordt ondersteund gedurende dit proces.
 Elke OGC service (WMS, WFS, WCS, etc.) heeft altijd verplicht een capabilities document. Metadata editors kunnen deze informatie uitlezen zodat slechts enkele resterende gegevens handmatig ingevuld dienen te worden. 
 De capabilities methode kan in combinatie met een editor gebruikt worden. Hiervoor kan het werkproces gehanteerd worden dat in de onderstaande figuur is verbeeld (uitgewerkt voor WMS).
 
 Opzetten van een CSW2 AP ISO document met een metadata editor
 
-Resultaat: een valide CSW2 AP ISO document.
-
 ### Metadata editor via de catalog client
-Een metadata editor is geen verplicht onderdeel van een catalogues service. maar wordt wel vaak toegepast bij een catalogue service. Met de metadata editor kan de service metadata worden opgevoerd of, met een andere methode verkregen metadata, worden bewerkt.
+
+Een metadata editor is geen verplicht onderdeel van een catalogus service, maar wordt wel vaak toegepast in een catalogus. Met de metadata editor kan de service metadata worden opgevoerd of, met een andere methode verkregen metadata, worden bewerkt.
 De capabilities methode kan in combinatie gebruikt worden. Hiervoor kan het volgende werkproces gehanteerd worden.
 
-Opzetten van een CSW2 AP ISO document met een metadata editor via de catalog
+Opzetten van een CSW2 AP ISO document met een metadata editor via de catalogus
 
-Het verschil met de editor methode is dat de metadata direct gepubliceerd is in de catalogue.
-
-Resultaat: Een metadata record in een catalogue die CSW2 AP ISO ondersteund.
+Het verschil met de editor methode is dat de metadata direct gepubliceerd is in de catalogus.
 
 ## Waar in werkproces
 
@@ -102,7 +107,7 @@ Een meer geavanceerde manier om metadata op te nemen in het een register, is doo
 ### Metadata uit de capabilities van een service
 
 Elke OGC service (WMS, WFS, WCS, etc.) heeft een capabilities document. Hierin wordt bij het aanmaken van de service al automatisch enkele metadata elementen van de service opgenomen. Deze methode is erop gericht om gebruik te maken van de metadata informatie uit het capabilities document.
-Dit is vooral voor organisaties van belang die een beperkt aantal services willen publiceren (een OGC catalogue service is dan al gauw een te zware oplossing gezien het aantal te publiceren services,). Dit is een eenvoudige manier voor metadata publicatie.
+Dit is vooral voor organisaties van belang die een beperkt aantal services willen publiceren (een OGC catalogus service is dan al gauw een te zware oplossing gezien het aantal te publiceren services,). Dit is een eenvoudige manier voor metadata publicatie.
 De capabilities file bevat de mogelijkheid om metadata van de service zelf en de verwijzing naar de metadata XML van de te serveren data te beschrijven, echter niet alle verplichte metadata elementen van het Nederlandse profiel op ISO 19119 kan men hier in kwijt.
 
 ![Capabilities iso ap](images/Capabilitiestoisoap.jpg)
@@ -112,23 +117,23 @@ In een register kan de capabilities file worden uitgelezen en omgezet naar ISO19
 ## Harvesting
 
 Harvesting methoden
-Harvesten is het mechanisme dat metadata naar de catalogus ‘ trekt ‘ (kopieert). Deze functionaliteit zorgt dat de metadata, waarnaar in de catalogues wordt verwezen, worden opgenomen en bijgewerkt. Het is de taak van de catalogues service om op de locatie de metadata op te halen en te verwerken in de catalogues.
+Harvesten is het mechanisme dat metadata naar de catalogus ‘ trekt ‘ (kopieert). Deze functionaliteit zorgt dat de metadata, waarnaar in de catalogus wordt verwezen, worden opgenomen en bijgewerkt. Het is de taak van de catalogus service om op de locatie de metadata op te halen en te verwerken in de catalogus.
 Er zijn drie manieren om te harvesten;
 
 1. Bestaande metadata als XML laten harvesten
-2. Bestaande metadata vanuit een catalogue harvesten
+2. Bestaande metadata vanuit een catalogus harvesten
 3. Capabilities harvesting
 
-Het harvesten is een proces wat regelmatig uitgevoerd kan worden, bijvoorbeeld eens per dag of per week. Tijdens het harvesten wordt de data gesynchroniseerd. Een catalogue is in staat om metadata die is toegevoegd, verwijderd of geupdated op de bronlocatie te herkennen en de centrale catalogue database hierop aan te passen.
+Het harvesten is een proces wat regelmatig uitgevoerd kan worden, bijvoorbeeld eens per dag of per week. Tijdens het harvesten wordt de data gesynchroniseerd. Een catalogus is in staat om metadata die is toegevoegd, verwijderd of geupdated op de bronlocatie te herkennen en de centrale catalogus database hierop aan te passen.
 
-Tijdens het harvesten is het mogelijk een filter toe te passen, waardoor niet alle metadata, maar een beperkte set van de remote catalogue wordt gekopieerd. Er kan bijvoorbeeld een filter worden toegepast op vrije text, onderwerp, titel en samenvatting.
+Tijdens het harvesten is het mogelijk een filter toe te passen, waardoor niet alle metadata, maar een beperkte set van de remote catalogus wordt gekopieerd. Er kan bijvoorbeeld een filter worden toegepast op vrije text, onderwerp, titel en samenvatting.
 
 Het harvesting mechanisme is gebaseerd op het concept van universally unique identifier (uuid) ende wijzigingsdatum. Door de uuid’s is het mogelijk van verschillende bronnen te harvesten. Ook al komt bepaalde metadata op meerder bronnen voor wordt deze dank zij de uuid maar één maal en dankzij de wijzigingsdatum alleen de meest actuele versie opgenomen in het register.
 
 ### Metadata XML harvesten
 
-Voor organisaties die weinig metadata beheren, is het implementeren en beheren van een catalogue weinig rendabel. Aangezien het plaatsen van XML files in een web accessible folder gemakkelijk is, is dit een laagdrempelige oplossing om meer metadata documenten beschikbaar te maken voor anderen die geharvest kunnen worden. Hiervoor wordt het web DAV (Distributed Authoring and Versioning) protocol om metadata van een DAV server te harvesten gebruikt. WebDAV definieert zogenoemde collecties van files op een webserver. Deze kunnen gebruikt worden om meerdere metadata documenten tegelijk te harvesten.
-WebDAV is een protocol en kan door systeembeheerders op een standaard webserver geconfigureerd worden. Daarbij dient de folder zonder autorisatie benaderd te kunnen worden. Bij de configuratie wordt een URL gedefinieerd waar de catalogue uit kan harvesten, bijvoorbeeld:
+Voor organisaties die weinig metadata beheren, is het implementeren en beheren van een catalogus weinig rendabel. Aangezien het plaatsen van XML files in een web accessible folder gemakkelijk is, is dit een laagdrempelige oplossing om meer metadata documenten beschikbaar te maken voor anderen die geharvest kunnen worden. Hiervoor wordt het web DAV (Distributed Authoring and Versioning) protocol om metadata van een DAV server te harvesten gebruikt. WebDAV definieert zogenoemde collecties van files op een webserver. Deze kunnen gebruikt worden om meerdere metadata documenten tegelijk te harvesten.
+WebDAV is een protocol en kan door systeembeheerders op een standaard webserver geconfigureerd worden. Daarbij dient de folder zonder autorisatie benaderd te kunnen worden. Bij de configuratie wordt een URL gedefinieerd waar de catalogus uit kan harvesten, bijvoorbeeld:
 
 http://www.RIVM.nl/webdav
 Web accessible folder complying with WebDAV (IETF, RFS 2518)
@@ -137,19 +142,19 @@ Hierdoor wordt het mogelijk om Web accessible folders als bron te definiëren en
 Metadata exporteren als een XML file is een gebruikelijke functionaliteit bij metadata tools. Veel metadata documenten zijn op deze manier beschikbaar bij (overheids-)organisaties. Andere partijen willen deze informatie ook gebruiken.
 In verschillende folders kan men metadata voor verschillende doelgroepen plaatsen zodat voor de verschillende toepassingen uit één folder alle data geharvest kan worden.
 
-Metadata vanuit een catalogue harvesten
-Als een organisatie een eigen catalogue heeft kan van deze catalogue informatie overgenomen worden waarbij de metadata records worden gekopieerd naar bijvoorbeeld het nationaal georegister. De harvest operatie van de catalogue service is erop gericht om records in het nationaal georegister te creëren of te updaten. Hiervoor wordt de CSW standaard gebruikt. CSW staat voor Catalogue Services for the Web en is een zoek interface voor catalogues ontwikkeld door het Open Geospatial Consortium. NGR ondersteunt versie 2.0.2 ISO AP van deze standaard.
+Metadata vanuit een catalogus harvesten
+Als een organisatie een eigen catalogus heeft kan van deze catalogus informatie overgenomen worden waarbij de metadata records worden gekopieerd naar bijvoorbeeld het nationaal georegister. De harvest operatie van de catalogus service is erop gericht om records in het nationaal georegister te creëren of te updaten. Hiervoor wordt de CSW standaard gebruikt. CSW staat voor Catalogus Service voor het Web en is een zoek interface voor catalogus ontwikkeld door het Open Geospatial Consortium. NGR ondersteunt versie 2.0.2 ISO AP van deze standaard.
 
 Bij het processen van een harvest request door de CSW worden de volgende stappen doorlopen:
 1. De CSW gaat naar de URI waar de metadata resource is vastgelegd
 2. Parses de resource
-3. Creëert of verandert metadata records in de catalogue om de resource te registeren.
+3. Creëert of verandert metadata records in de catalogus om de resource te registeren.
 
 ![Geharvest vraagpatroon](images/Geharvest vraagpatroon.jpg)
  
 Als recource type, die aangeeft welk type resource geharvest wordt, kan dan http://www.opengis.net/cat/csw/2.0.2 opgenomen worden.
 
-Deze operatie wordt een keer uitgevoerd of periodiek (elke nacht) afhankelijk van de instellingen die de beheerder van de catalogue heeft ingeregeld.
+Deze operatie wordt een keer uitgevoerd of periodiek (elke nacht) afhankelijk van de instellingen die de beheerder van de catalogus heeft ingeregeld.
 
 In het CSW 2.0.2 publicatie schema is de harvesting operatie als volgt gedefinieerd:
 
@@ -158,7 +163,7 @@ In het CSW 2.0.2 publicatie schema is de harvesting operatie als volgt gedefinie
 
 ### Capabilities harvesten
 
-Het is de functionaliteit van de catalogue om de capabilities te kunnen harvesten. De meeste catalogues kunnen bijvoorbeeld de URL opslaan en dan periodiek de metadata harvesten. De metadata uit de capabilities elementen worden getransformeerd naar een CSW2 AP ISO document .
+Het is de functionaliteit van de catalogus om de capabilities te kunnen harvesten. De meeste catalogi kunnen bijvoorbeeld de URL opslaan en dan periodiek de metadata harvesten. De metadata uit de capabilities elementen worden getransformeerd naar een CSW2 AP ISO document .
 
 ![Capabilities to iso ap](images/Capabilitiestoisoap.jpg)
 
@@ -169,15 +174,15 @@ In het CSW 2.0.2 publicatie schema is de harvesting operatie voor dit type resou
 
 ![Harvest csw](images/Harvestcsw.jpg)
 
-Dit bevraagt de catalogue service om de resource “http://www.myhost.com?Service=WMS&amp;Request=GetCapabilities” van het type “http://www.opengis.net/wms” periodiek elke maand (P1M) te harvesten. Het mime type van de resource is “application/xml”.
+Dit bevraagt de catalogus service om de resource “http://www.myhost.com?Service=WMS&amp;Request=GetCapabilities” van het type “http://www.opengis.net/wms” periodiek elke maand (P1M) te harvesten. Het mime type van de resource is “application/xml”.
 
 ### Gedistribueerd vraagpatroon
  
-Hoewel gedistribueerd zoeken niet tot harvesten behoort in de zin van een catalogue service, wordt het wel beschreven in deze paragraaf. De reden daarvoor is dat deze functionaliteit vaak wordt beschreven als catalogue-to-catalogue harvesting, maar niet te vergelijken is met de harvesting operaties beschreven in de voorgaande paragrafen.
+Hoewel gedistribueerd zoeken niet tot harvesten behoort in de zin van een catalogus service, wordt het wel beschreven in deze paragraaf. De reden daarvoor is dat deze functionaliteit vaak wordt beschreven als catalogus-naar-catalogus harvesting, maar niet te vergelijken is met de harvesting operaties beschreven in de voorgaande paragrafen.
 
 ![Gedistribueerd vraagpatroon](images/Gedistribueerd vraagpatroon.jpg)
 
-Gedistribueerd zoeken: de geformuleerde vraag wordt naar de lokale en elke andere bekende catalogus gestuurd met een specifieke bevraagdiepte (met betrekking tot een specifieke netwerktopologie). De resultaten worden geïntegreerd en getoond aan de cliënt. De metadata records van andere catalogues worden niet gekopieerd naar de eigen catalogue. Catalogue records blijven bij de bron.
+Gedistribueerd zoeken: de geformuleerde vraag wordt naar de lokale en elke andere bekende catalogus gestuurd met een specifieke bevraagdiepte (met betrekking tot een specifieke netwerktopologie). De resultaten worden geïntegreerd en getoond aan de cliënt. De metadata records van andere catalogi worden niet gekopieerd naar de eigen catalogus. Catalogus records blijven bij de bron.
 
 De gedistribueerde vraag is, op interface niveau, onderdeel van de GetRecords operatie van de catalog service. Deze operatie is onderdeel van de Discovery klasse (en niet van de Manager klasse zoals de harvest operatie).
 
@@ -187,7 +192,7 @@ In het CSW 2.0.2 publicatie schema is de gedistribueerde vraag operatie als volg
 
 Het element “DistributedSearchType” bevraagt de catalog service om de “GetRecords”-request door te geven aan alle catalog services.
 
-Deze functionaliteit kan worden uitgebreid met een catalog implementatie om metadata records te ”cachen” van een remote catalog. Dit is dan vergelijkbaar met catalogue-catalogue harvesting. Dit kan alleen worden uitgevoerd op implementatie niveau; dit is geen functionaliteit gedefinieerd op specificatie niveau en dus geen standaard benadering.
+Deze functionaliteit kan worden uitgebreid met een catalog implementatie om metadata records te ”cachen” van een remote catalog. Dit is dan vergelijkbaar met catalogus-naar-catalogus harvesting. Dit kan alleen worden uitgevoerd op implementatie niveau; dit is geen functionaliteit gedefinieerd op specificatie niveau en dus geen standaard benadering.
 
 ## Valideren
 

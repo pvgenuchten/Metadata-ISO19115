@@ -8,8 +8,12 @@ In het dagelijks leven maken we veelal onbewust gebruik van tal van standaarden.
 Er bestaan ruim 2000 specifiek Nederlandse normen en er zijn er nog veel meer geldig in Nederland omdat ze bijvoorbeeld vanuit Europa komen of op wereldschaal geldig zijn. 
 Een norm of standaard is een procedure of een maat waarvan een groep mensen met elkaar heeft afgesproken dat ze hem zullen gebruiken. Het gaat hierbij om verwachtingen over het gedrag van de mens. Vaak zijn het regels en kan je ze uitvoeren. Ook hangen ze nauw samen met waarden.
 
+![Standaard en trein](images/Standaardentrein.jpg)
+
 Standaarden worden gebruikt om de uitwisselbaarheid (de interoperabiliteit) te bevorderen. Interoperabiliteit is ‘het vermogen van een bepaald systeem effectief of correct te functioneren als deel van een ander systeem’ (systeem wordt hier in algemene, brede zin gebruikt). Denk bijvoorbeeld aan het gebruik van Frans of Russisch spoorwegmaterieel op het Nederlandse spoor.
 Het bevorderen van interoperabiliteit binnen en tussen overheidsinstellingen en met bedrijven en burgers, kan alleen worden bereikt door gebruik te maken van (open) standaarden
+
+
 
 ## Standaarden voor geo informatie
 
@@ -18,6 +22,8 @@ Voor het domein geo-informatie zijn diverse standaarden beschikbaar. Om aan te k
 Specifiek voor Nederland zijn “Nederlandse metadata profiel op ISO 19115“ en “Nederlandse metadata profiel op ISO 19119” gemaakt. Zij maken deel uit van het framework van standaarden. 
 
 Er zijn meerdere standaarden die van belang zijn voor metadata van data of services. In onderstaande figuur is de relatie aangegeven van die standaarden tot het nationaal georegister. Metadata voor data worden volgens Het Nederlandse metadata profiel op ISO 19115 beschreven. ISO 19139 is de specificatie van de implementatie, de encoding hiervoor. Met deze encoding worden de metadata op een eenduidige manier in een XML opgeslagen. Metadata voor services worden volgens Het Nederlandse metadata profiel op ISO 19119 beschreven. De encoding voor services is in CSW ISO AP 2.0.2 opgenomen. Naast de standaarden voor metadata en catalogs zijn ook de voor metadata van services en het profiel op WMS van belang.
+
+![Samenhang standaarden NGR](images/SamenhangstandaardenNGR.jpg)
 
 ## Metadata standaarden
 
@@ -31,6 +37,8 @@ Specifiek voor metadata zijn in Nederland “Het Nederlandse metadata profiel op
 Internationaal gelden de ISO metadata normen, ISO 19115 voor data en ISO 19119 voor services  en waar relevant de OGC specificaties. Binnen Europa wordt door CEN/TC 287 sinds januari 2005 gewerkt aan een Europees profiel op de ISO standaarden voor discovery. Het INSPIRE DT metadata heeft een Implementing Rule en een technische richtlijn gemaakt die met het van kracht worden van INSPIRE gaat gelden. Deze Implementing Rule voor metadata bevat een Europese set voor discovery, evaluation en use. In de praktijk houdt INSPIRE zich voornamelijk bezig met metadata voor discovery.
 
 De figuur onder toont de Nederlandse metadatastandaarden in zijn internationale, Europese en sectorale context. De ISO-kernset is de kleinste eenheid, een selectie uit ISO 19115:2003, die de verplichte internationale metadata elementen aangeeft. Binnen Nederland is de Europese kernset uitgebreid met de specifieke behoeften van de gebruikers in Nederland en is de aansluiting op www.overheid.nl verzorgd.
+
+![Context ISO19115](images/Context_ISO115.jpg)
 
 De Nederlandse kernset bevat de Europese kernset (INSPIRE) plus een selectie van metadata-elementen uit ISO 19115 die van belang zijn voor het Nederlandse werkveld.
 
@@ -47,7 +55,7 @@ INSPIRE is een kaderrichtlijn met wetgeving die voor alle Europese lidstaten gel
 
 De infrastructuur die INSPIRE voorschrijft stelt geïntegreerde geo-informatie en diensten aan gebruikers beschikbaar. De diensten die beschikbaar worden gesteld stellen gebruikers in staat om geo-informatie uit verschillende bronnen te vinden en op een interoperabele wijze te combineren (zowel technisch als semantisch), van lokaal tot globaal niveau en voor een breed scala aan toepassingen. De gebruikers van INSPIRE zijn beleidsmakers, planontwikkelaars en managers op Europees, nationaal, regionaal en lokaal niveau en de burgers en hun organisaties.
 
-<img>
+![INSPIRE en standaarden](images/INSPIREen_standaarden.jpg)
 
 Mogelijke diensten zijn visualisatie, combinatie, integratie en analyse van geo-informatie. De invoeringsregels van INSPIRE hebben betrekking op zowel technische als niet-technische aspecten. Denk hierbij aan metadata technische standaarden en protocollen en niet-technische aspecten als organisatieproblemen, gegevensbeleid (toegankelijkheid) en het inwinnen en beheren van geo-informatie voor verschillende thema’s. 
 Voor de INSPIRE thema's wordt het wettelijk verplicht om metadata  beschikbaar te stellen die voldoet aan de invoeringsregels van INSPIRE. “Het Nederlandse metadata profiel op ISO 19115 “en “Het Nederlandse metadata profiel op ISO 19119” bevatten de eisen vanuit INSPIRE.

@@ -43,16 +43,20 @@ Bij vertrek van een medewerker is de kennis over datasets en services niet verlo
 
 ### Waardoor
 
-Efficiencywinst door hergebruik en verrijken van informatie
-Verbetering kwaliteit dienstverlening door het gebruik van juiste informatie
-Mogelijkheden tot beheer van de dataset
-Continuiteit van kennis over datasets en services
+- Efficiencywinst door hergebruik en verrijken van informatie
+- Verbetering kwaliteit dienstverlening door het gebruik van juiste informatie
+- Mogelijkheden tot beheer van de dataset
+- Continuiteit van kennis over datasets en services
 
 Metadata hoeft niet altijd direct toegang te geven tot de dataset of service, maar geeft wel aan waar deze dan te verkrijgen is.
 
+![Quote Michiel Schram Grontmij/Sweco 2008](images/Textdubbelzondermeta.jpg)
+
 ## Waar vind je metadata?
 
-Metadata kan je ontsluiten via een register of catalogus. Dit kan binnen een organisatie, maar ook nationaal of internationaal. Zo maak je het mogelijk om de metadata doorzoekbaar te maken en de data eventueel te tonen in een portaal. Een voorbeeld van een register is het georegister. Hierin is metadata van verschillende organisaties in Nederland opgenomen. Via het nationaal georegister kan iemand data zoeken, raadplegen en in een aantal gevallen ook direct verkrijgen;
+Metadata kan je ontsluiten via een register of catalogus. Dit kan binnen een organisatie, maar ook nationaal of internationaal. Zo maak je het mogelijk om de metadata doorzoekbaar te maken en de data eventueel te tonen in een portaal. Een voorbeeld van een register is het [https://nationaalgeoregister.nl](Nationaal Georegister). Hierin is metadata van verschillende organisaties in Nederland opgenomen. Via het nationaal georegister kan iemand data zoeken, raadplegen en in een aantal gevallen ook direct verkrijgen;
+
+![Nationaal Georegister](images/ngr.jpg)
 
 ### Zoeken (discovery) 
 
@@ -70,12 +74,19 @@ In een geo-informatie infrastructuur is een discovery mechanisme een online serv
 
 ## Toepassingen
 
-Naast een eigen zoekingang op een register kan een register gebruikt worden via de ‘achterkant’. Op basis van standaard zoekprotocollen is het mogelijk om de centrale catalogus van een register, zoals het het nationaal georegister (NGR), aan te roepen via de zoekclient van een andere (web)toepassing. Het is zelfs de bedoeling, dat het gebruik van deze registers kan verlopen via (web)toepassingen van anderen. Dit kunnen toepassingen of websites zijn van specifieke communities, generieke zoekmachines zoals Google, maar ook zware GIS-clients.
+Naast de zoekingang op de website van het register kan een register door andere applicaties ontsloten worden via de ‘achterkant’ (via een [API](https://nl.wikipedia.org/wiki/Application_programming_interface)). Op basis van standaard zoekprotocollen ([CSW](http://www.opengeospatial.org/standards/cat)) is het mogelijk om het register, aan te roepen via de zoekclient van een (web)toepassing. Dit kunnen toepassingen of websites zijn van specifieke communities, zoekmachines zoals Google/Bing, maar ook GIS desktop clients zoals ArcGIS/QGIS.
 
-Bijvoorbeeld: het EduGIS-portaal heeft een zoekclient ontwikkeld, dat dataservices zoekt in het nationaal georegister op basis van hun metadata. Dit mechanisme werkt als volgt. De leerling zoekt via de zoekclient op de zoekpagina van het EduGIS-portaal naar web mapping services, aangeboden conform de OGC WMS standaard. De vraag wordt gesteld aan het nationaal georegister via een afgesproken (standaard) zoekprotocol. Het nationaal georegister geeft de resultaten van de zoekvraag terug aan de EduGIS-zoekclient, die de resultaten in eigen vorm en uiterlijk aan de leerling toont. Indien de leerling een geschikte web mapping service (WMS) heeft gevonden, kan deze door de EduGIS-kaartviewer worden getoond. Dit alles wordt op basis van afgesproken metadata- en catalogus-standaarden afgehandeld. De zoekclient wordt door het nationaal georegister als API beschikbaar gesteld, zodat deze ook snel en eenvoudig ingezet kan worden door anderen.
+### Een Voorbeeld
 
+De module [metasearch](https://docs.qgis.org/3.0/nl/docs/user_manual/plugins/plugins_metasearch.html) in QGIS is in staat het Nationaal Georegister te bevragen vanuit QGIS. Vanuit het zoekresultaat kan (indien beschikbaar) de gelinkte WMS kaartlaag aan het kaartvenster van QGIS toegevoegd worden.
 
-![Portaal toepassingen](images/Portaaltoepassingen.jpg)
+![Portaal toepassingen](images/metasearch-splash.jpg)
+
+### Nog een voorbeeld 
+
+De [Nationale kaartviewer van Zwitserland](https://map.geo.admin.ch)). In deze viewer bevindt zich een centrale zoek ingang van waaruit je zowel naar locaties als datasets kunt zoeken. Voor het zoeken naar datasets wordt de Nationale catalogus bevraagd.
+
+![Zwitsers nationaal kaart viewer](images/swisstopo.jpg)
 
 ## Opdracht discovery
 
@@ -85,6 +96,5 @@ Open http://nationaalgeoregister.nl
 - Welke dataset kun je direct als service benaderen en welke kun je downloaden?
 - In de metadata van het Planbureau voor de Leefomgeving (PBL) is de link opgenomen naar de mapserver van het PBL. Zoek deze link op.
 - Welk trefwoord wordt het meest toegepast?
-
 
 ![Metadata gebruik](images/Metagebruik.jpg)
