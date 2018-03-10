@@ -74,6 +74,9 @@ Naast een eigen zoekingang op een register kan een register gebruikt worden via 
 
 Bijvoorbeeld: het EduGIS-portaal heeft een zoekclient ontwikkeld, dat dataservices zoekt in het nationaal georegister op basis van hun metadata. Dit mechanisme werkt als volgt. De leerling zoekt via de zoekclient op de zoekpagina van het EduGIS-portaal naar web mapping services, aangeboden conform de OGC WMS standaard. De vraag wordt gesteld aan het nationaal georegister via een afgesproken (standaard) zoekprotocol. Het nationaal georegister geeft de resultaten van de zoekvraag terug aan de EduGIS-zoekclient, die de resultaten in eigen vorm en uiterlijk aan de leerling toont. Indien de leerling een geschikte web mapping service (WMS) heeft gevonden, kan deze door de EduGIS-kaartviewer worden getoond. Dit alles wordt op basis van afgesproken metadata- en catalogus-standaarden afgehandeld. De zoekclient wordt door het nationaal georegister als API beschikbaar gesteld, zodat deze ook snel en eenvoudig ingezet kan worden door anderen.
 
+
+![Portaal toepassingen](images/Portaaltoepassingen.jpg)
+
 ## Opdracht discovery
 
 Open http://nationaalgeoregister.nl
@@ -84,4 +87,4 @@ Open http://nationaalgeoregister.nl
 - Welk trefwoord wordt het meest toegepast?
 
 
-
+![Metadata gebruik](images/Metagebruik.jpg)
