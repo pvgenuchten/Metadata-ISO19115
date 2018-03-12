@@ -13,7 +13,7 @@ Je kunt op diverse manieren metadata voor datasets aanmaken. Voor deze diverse m
 Metadata invoeren via een metadata editor die ISO TS 19139 XML kan leveren
 Metadata toevoegen met behulp van een metadata editor van een catalogus 
 
-![Inwinnen metadata](images/Inwinnen meta.jpg)
+![Inwinnen metadata](images/Inwinnen_meta.jpg)
 
 Deze methoden zijn hieronder beschreven om gebruikers de mogelijkheid te bieden een werkwijze te kiezen die past bij de organsatie.
 
@@ -133,10 +133,7 @@ Het harvesting mechanisme is gebaseerd op het concept van universally unique ide
 ### Metadata XML harvesten
 
 Voor organisaties die weinig metadata beheren, is het implementeren en beheren van een catalogus weinig rendabel. Aangezien het plaatsen van XML files in een web accessible folder gemakkelijk is, is dit een laagdrempelige oplossing om meer metadata documenten beschikbaar te maken voor anderen die geharvest kunnen worden. Hiervoor wordt het web DAV (Distributed Authoring and Versioning) protocol om metadata van een DAV server te harvesten gebruikt. WebDAV definieert zogenoemde collecties van files op een webserver. Deze kunnen gebruikt worden om meerdere metadata documenten tegelijk te harvesten.
-WebDAV is een protocol en kan door systeembeheerders op een standaard webserver geconfigureerd worden. Daarbij dient de folder zonder autorisatie benaderd te kunnen worden. Bij de configuratie wordt een URL gedefinieerd waar de catalogus uit kan harvesten, bijvoorbeeld:
-
-http://www.RIVM.nl/webdav
-Web accessible folder complying with WebDAV (IETF, RFS 2518)
+WebDAV is een protocol en kan door systeembeheerders op een standaard webserver geconfigureerd worden. Bij de configuratie wordt een URL gedefinieerd waar de catalogus uit kan harvesten.
 
 Hierdoor wordt het mogelijk om Web accessible folders als bron te definiëren en te harvesten. 
 Metadata exporteren als een XML file is een gebruikelijke functionaliteit bij metadata tools. Veel metadata documenten zijn op deze manier beschikbaar bij (overheids-)organisaties. Andere partijen willen deze informatie ook gebruiken.
@@ -150,9 +147,10 @@ Bij het processen van een harvest request door de CSW worden de volgende stappen
 2. Parses de resource
 3. Creëert of verandert metadata records in de catalogus om de resource te registeren.
 
-![Geharvest vraagpatroon](images/Geharvest vraagpatroon.jpg)
+![Geharvest vraagpatroon](images/Geharvest_vraagpatroon.jpg)
  
-Als recource type, die aangeeft welk type resource geharvest wordt, kan dan http://www.opengis.net/cat/csw/2.0.2 opgenomen worden.
+Als recource type, die aangeeft welk type resource geharvest wordt, kan dan 
+[http://www.opengis.net/cat/csw/2.0.2](http://www.opengis.net/cat/csw/2.0.2) opgenomen worden.
 
 Deze operatie wordt een keer uitgevoerd of periodiek (elke nacht) afhankelijk van de instellingen die de beheerder van de catalogus heeft ingeregeld.
 
@@ -180,7 +178,7 @@ Dit bevraagt de catalogus service om de resource “http://www.myhost.com?Servic
  
 Hoewel gedistribueerd zoeken niet tot harvesten behoort in de zin van een catalogus service, wordt het wel beschreven in deze paragraaf. De reden daarvoor is dat deze functionaliteit vaak wordt beschreven als catalogus-naar-catalogus harvesting, maar niet te vergelijken is met de harvesting operaties beschreven in de voorgaande paragrafen.
 
-![Gedistribueerd vraagpatroon](images/Gedistribueerd vraagpatroon.jpg)
+![Gedistribueerd vraagpatroon](images/Gedistribueerd_vraagpatroon.jpg)
 
 Gedistribueerd zoeken: de geformuleerde vraag wordt naar de lokale en elke andere bekende catalogus gestuurd met een specifieke bevraagdiepte (met betrekking tot een specifieke netwerktopologie). De resultaten worden geïntegreerd en getoond aan de cliënt. De metadata records van andere catalogi worden niet gekopieerd naar de eigen catalogus. Catalogus records blijven bij de bron.
 
@@ -188,7 +186,7 @@ De gedistribueerde vraag is, op interface niveau, onderdeel van de GetRecords op
 
 In het CSW 2.0.2 publicatie schema is de gedistribueerde vraag operatie als volgt gedefinieerd:
 
-![Gedistribueerd vraag voorb](images/Gedistribueerd vraag voorb.jpg)
+![Gedistribueerd vraag voorb](images/Gedistribueerd_vraag_voorb.jpg)
 
 Het element “DistributedSearchType” bevraagt de catalog service om de “GetRecords”-request door te geven aan alle catalog services.
 
@@ -206,7 +204,11 @@ Hiermee kan men achterhalen of men aan de Nederlandse profielen voldoet.
 
 ## Opdracht werkproces
 
-Een dienst heeft duizend medewerkers, van wie er honderd met GIS werken, veertien servers en zevenhonderd gigabyte aan geodata. De dienst heeft een achterstand van 135 mensjaar om metadata in te voeren (807.000 bestanden x 0,25 uur/1500 uur = 135 mensjaar). Een scan leerde dat geodata explosief groeit vergeleken met algemene data, maar ook dat er 15% dubbelingen zijn en daarnaast 75% van de geodata bij externe partijen vandaan komt. 
+Een dienst heeft duizend medewerkers, van wie er honderd met GIS werken, veertien servers en zevenhonderd 
+gigabyte aan geodata. De dienst heeft een achterstand van 135 mensjaar om metadata in te voeren (807.000 
+bestanden x 0,25 uur/1500 uur = 135 mensjaar). Een scan leerde dat geodata explosief groeit vergeleken 
+met algemene data, maar ook dat er 15% dubbelingen zijn en daarnaast 75% van de geodata bij externe partijen vandaan komt. 
 Bij deze dienst heeft 80% van de geodata geen metadata. Ongeveer 18% van de data heeft metadata conform CEN standaard. 
-Stel voor bovenstaande case een plan op om de achterstand weg te werken.
-Stel voor bovenstaande case een plan op om nieuwe geodata van metadata te voorzien
+
+- Stel voor bovenstaande case een plan op om de achterstand weg te werken.
+- Stel voor bovenstaande case een plan op om nieuwe geodata van metadata te voorzien
