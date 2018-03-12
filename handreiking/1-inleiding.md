@@ -1,3 +1,7 @@
+# Leeswijzer
+
+Dit document bevat een inleiding over metadata, [betrokken standaarden](#metadata-standaarden) en [metadata in het werkproces](#metadata-in-het-werkproces). De daadwerkelijke profiel elementen worden in aparte documenten uitgewerkt; de beschrijving van een [dataset](index-dataset.html) (ISO 19115) en een [service](index-service.html) (ISO 19119). 
+
 # Inleiding
 
 ## Wat is metadata?

@@ -1,7 +1,5 @@
 # Metadata elementen
 
-Dit hoofdstuk beschrijft enkele verplichte elementen van het Nederlands profiel iets uitgebreider dan in de specificatie.
-
 ## Titel van de bron
 
 Titel van de bron is de naam van de dataset, ook wel titel van de dataset genoemd. Dit is niet de technische naam van de dataset.
@@ -33,7 +31,7 @@ Voorbeelden:
 De status van het bestand. Dit element is opgenomen in de Nederlandse kernset, omdat de status van de dataset als zoekcriterium kan dienen en indirect een kwaliteitseigenschap weergeeft. Status kan de volgende waarden bevatten;
 
 | Naam	| Engelse naam	| Beschrijving |
-| --- | --- | --- |
+| --- |: --- :| --- |
 | compleet	| completed	| Productie van de data is compleet / afgerond. |
 | historisch archief	| historicalArchive	| De data is opgeslagen in een offline opslagmedium. |
 | niet relevant	| obsolete	| Data is niet langer relevant. |
@@ -92,45 +90,43 @@ AHN Nederland
 
 ## Karakterset van de bron
 
-Dit metadata element geeft de gebruikte karakterset aan. Dit zal bijna altijd ‘utf8’ zijn. De karakterset die gecodeerd is volgens de ISO/IEC 10646 standaard, zie tabel hieronder bij beschrijving, voldoet voor niet INSPIRE datasets. Utf8 en utf16 voldoen aan deze standaard.
+Dit metadata element geeft de gebruikte karakterset in de bron aan. 
 
-Voor INSPIRE verplicht als voor de uitwisseling van de bron geen GML wordt gebruikt en de gebruikte karakterset geen utf8 is. Voor niet INSPIRE datasets is het verplicht als de waarde niet voldoet aan de ISO/IEC 10646 standaard.
+Verplicht als de in de bron gebruikte karakterset geen utf8 is.
 
-in deze gevallen een van onderstaande waardes kiezen.
+Mogelijke waarden;
 
-
- 
-
-Naam	Engelse naam	Beschrijving
-ucs2	ucs2	16-bit fixed size Universal Character Set, based on ISO/IEC 10646.
-Ucs4	ucs4	32-bit fixed size Universal Character Set, based on ISO/IEC 10646.
-Utf7	utf7	7-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
-Utf8	utf8	8-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
-Utf16	utf16	16-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
-8859part1	8859part1	ISO/IEC 8859-1, Information technology – 8-bit single-byte coded graphic character sets – Part 1: Latin alphabet No. 1.
-8859part2	8859part2	ISO/IEC 8859-2, Information technology – 8-bit single-byte coded graphic character sets – Part 2: Latin alphabet No. 2.
-8859part3	8859part3	ISO/IEC 8859-3, Information technology – 8-bit single-byte coded graphic character sets – Part 3: Latin alphabet No. 3.
-8859part4	8859part4	ISO/IEC 8859-4, Information technology – 8-bit single-byte coded graphic character sets – Part 4: Latin alphabet No. 4.
-8859part5	8859part5	ISO/IEC 8859-5, Information technology – 8-bit single-byte coded graphic character sets – Part 5: Latin/Cyrillic alphabet.
-8859part6	8859part6	ISO/IEC 8859-6, Information technology – 8-bit single-byte coded graphic character sets – Part 6: Latin/Arabic alphabet.
-8859part7	8859part7	ISO/IEC 8859-7, Information technology – 8-bit single-byte coded graphic character sets – Part 7: Latin/Greek alphabet.
-8859part8	8859part8	ISO/IEC 8859-8, Information technology – 8-bit single-byte coded graphic character sets – Part 8: Latin/Hebrew alphabet.
-8859part9	8859part9	ISO/IEC 8859-9, Information technology – 8-bit single-byte coded graphic character sets – Part 9: Latin alphabet No. 5.
-8859part10	8859part10	ISO/IEC 8859-10, Information technology – 8-bit single-byte coded graphic character sets –Part 10: Latin alphabet No. 6.
-8859part11	8859part11	ISO/IEC 8859-11, Information technology – 8-bit single-byte coded graphic character sets –Part 11: Latin/Thai alphabet.
-(gereserveerd voor toekomstig gebruik)	(reserved for future use)	a future ISO/IEC 8-bit single-byte coded graphic character set (e.g. possibly 8859-12).
-8859part13	8859part13	ISO/IEC 8859-13, Information technology – 8-bit single-byte coded graphic character sets –Part 13: Latin alphabet No. 7.
-8859part14	8859part14	-ISO/IEC 8859-14, Information technology – 8-bit single-byte coded graphic character sets – Part 14: Latin alphabet No. 8 (Celtic).
-8859part15	8859part15	ISO/IEC 8859-15, Information technology – 8-bit single-byte coded graphic character sets –Part 15: Latin alphabet No. 9.
-8859part16	8859part16	ISO/IEC 8859-16, Information technology – 8-bit single-byte coded graphic character sets –Part 16: Latin alphabet No. 10.
-Jis	jis	Japanese code set used for electronic transmission.
-shiftJIS	shiftJIS	Japanese code set used on MS-DOS based machines.
-eucJP	eucJP	Japanese code set used on UNIX based machines.
-usAscii	usAscii	United states ASCII code set (ISO 646 US).
-Ebcdic	ebcdic	Ibm mainframe code set.
-eucKR	eucKR	Korean code set.
-Big5	big5	Traditional Chinese code set used in Taiwan, Hong Kong of China and other areas.
-GB2312	GB2312	Simplified Chinese code set.
+| Naam | Engelse naam |	Beschrijving |
+| --- | --- | --- |
+|ucs2	|ucs2	|16-bit fixed size Universal Character Set, based on ISO/IEC 10646.
+|Ucs4	|ucs4	|32-bit fixed size Universal Character Set, based on ISO/IEC 10646.
+|Utf7	|utf7	|7-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
+|Utf8	|utf8	|8-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
+|Utf16	|utf16	|16-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
+|8859part1	|8859part1	|ISO/IEC 8859-1, Information technology – 8-bit single-byte coded graphic character sets – Part 1: Latin alphabet No. 1.
+|8859part2	|8859part2	|ISO/IEC 8859-2, Information technology – 8-bit single-byte coded graphic character sets – Part 2: Latin alphabet No. 2.
+|8859part3	|8859part3	|ISO/IEC 8859-3, Information technology – 8-bit single-byte coded graphic character sets – Part 3: Latin alphabet No. 3.
+|8859part4	|8859part4	|ISO/IEC 8859-4, Information technology – 8-bit single-byte coded graphic character sets – Part 4: Latin alphabet No. 4.
+|8859part5	|8859part5	|ISO/IEC 8859-5, Information technology – 8-bit single-byte coded graphic character sets – Part 5: Latin/Cyrillic alphabet.
+|8859part6	|8859part6	|ISO/IEC 8859-6, Information technology – 8-bit single-byte coded graphic character sets – Part 6: Latin/Arabic alphabet.
+|8859part7	|8859part7	|ISO/IEC 8859-7, Information technology – 8-bit single-byte coded graphic character sets – Part 7: Latin/Greek alphabet.
+|8859part8	|8859part8	|ISO/IEC 8859-8, Information technology – 8-bit single-byte coded graphic character sets – Part 8: Latin/Hebrew alphabet.
+|8859part9	|8859part9	|ISO/IEC 8859-9, Information technology – 8-bit single-byte coded graphic character sets – Part 9: Latin alphabet No. 5.
+|8859part10	|8859part10	|ISO/IEC 8859-10, Information technology – 8-bit single-byte coded graphic character sets –Part 10: Latin alphabet No. 6.
+|8859part11	|8859part11	|ISO/IEC 8859-11, Information technology – 8-bit single-byte coded graphic character sets –Part 11: Latin/Thai alphabet.
+|(gereserveerd voor toekomstig gebruik)	| (reserved for future use)	|a future ISO/IEC 8-bit single-byte coded graphic character set (e.g. possibly 8859-12).
+|8859part13|	8859part13	|ISO/IEC 8859-13, Information technology – 8-bit single-byte coded graphic character sets –Part 13: Latin alphabet No. 7.
+|8859part14|	8859part14	|-ISO/IEC 8859-14, Information technology – 8-bit single-byte coded graphic character sets – Part 14: Latin alphabet No. 8 (Celtic).
+|8859part15|	8859part15	|ISO/IEC 8859-15, Information technology – 8-bit single-byte coded graphic character sets –Part 15: Latin alphabet No. 9.
+|8859part16|	8859part16	|ISO/IEC 8859-16, Information technology – 8-bit single-byte coded graphic character sets –Part 16: Latin alphabet No. 10.
+|Jis	|jis	|Japanese code set used for electronic transmission.
+|shiftJIS|	shiftJIS|	Japanese code set used on MS-DOS based machines.
+|eucJP	|eucJP	|Japanese code set used on UNIX based machines.
+|usAscii|	usAscii|	United states ASCII code set (ISO 646 US).
+|Ebcdic	|ebcdic	|Ibm mainframe code set.
+|eucKR	|eucKR	|Korean code set.
+|Big5	|big5	|Traditional Chinese code set used in Taiwan, Hong Kong of China and other areas.
+|GB2312	|GB2312	|Simplified Chinese code set.
 
 ## Distributie
 
@@ -164,38 +160,42 @@ Dit element is conditioneel in dit profiel. Het is alleen verplicht als de datas
 Voorbeeld:
 
 D2.8.I.8 Data Specification on Hydrography – Guidelines
-## URL
 
-Het metadata element URL bevat een valide URL voor online toegang tot de bron, bijvoorbeeld naar een WMS of een zip bestand, of als er niet een directe link naar de bron aanwezig is naar een locatie waar informatie over de bron beschikbaar is, zoals een loket of catalog.
+### URL
+
+Het metadata element URL bevat een valide URL voor online toegang tot de bron, bijvoorbeeld naar een WMS of een zip bestand, 
+of als er niet een directe link naar de bron aanwezig is naar een locatie waar informatie over de bron beschikbaar is, zoals 
+een loket of catalog.
 
 ![Resource locator](Resourcelocator.bmp)
 
-Door een relatie te leggen naar een dataservice is het mogelijk om op de metadata van de data te zoeken en de data via de service ervan te tonen. De service heeft ook metadata, maar daarin is geen informatie over de inhoud van de data opgenomen.
+Door een relatie te leggen naar een dataservice is het mogelijk om op de metadata van de data te zoeken 
+en de data via de service ervan te tonen. De service heeft ook metadata, maar daarin is geen informatie 
+over de inhoud van de data opgenomen.
 
 Door het element protocol weet men om wat voor soort info het gaat, een bestand voor download, een service etc.
 
+In dit elementen wordt maar één maal per servicetype (WMS,WFS) de relatie gelegd, waarmee de dataset als 
+service gerepresenteerd wordt, zodat het mogelijk wordt de dataset via een service te benaderen. Het is niet 
+de bedoeling om een relatie te leggen naar elke service waarin de dataset is opgenomen.
 
-In dit elementen wordt maar één maal per servicetype (WMS,WFS) de relatie gelegd, waarmee de dataset als service gerepresenteerd wordt, zodat het mogelijk wordt de dataset via een service te benaderen. Het is niet de bedoeling om een relatie te leggen naar elke service waarin de dataset is opgenomen.
+Het is wel mogelijk om zowel een URL naar een bestand voor downloaden op te nemen als een URL naar een WMS. 
+De elementen protocol en naam moeten dan ook meerdere keren worden ingevuld
 
+Voor een service dient de URL gelijk te zijn aan het metadata element resource locator uit het Nederlands 
+metadata profiel op ISO19119 voor services.
 
-Het is wel mogelijk om zowel een URL naar een bestand voor downloaden op te nemen als een URL naar een WMS. De elementen protocol en naam moeten dan ook meerdere keren worden ingevuld
-
-
-Voor een service dient de URL gelijk te zijn aan het metadata element resource locator uit het Nederlands metadata profiel op ISO19119 voor services.
-
-
-In versie 1.2 van dit profiel is de conditie: Het element URL is conditioneel. Het is verplicht als er een link is naar (meer informatie over) de bron. Bijvoorbeeld naar een zip bestand, een catalog, een data loket, WMS of WFS.
-
-
-In versie 1.3 van het profiel is de conditie verandert in: Dit element is conditioneel. Het is voor INSPIRE verplicht als er een link is naar meer informatie over de bron en / of er een link is die toegang geeft tot gerelateerde services, ook al is die service voorzien van metadata. Voor datasets die buiten INSPIRE vallen en waarvoor gerelateerde services aanwezig zijn, is het verplicht als er nog geen service metadata is. Het element kan meerdere keren voorkomen, bijvoorbeeld als link naar een zip bestand, een catalogus, een data loket, WMS en WFS.
+Dit element is conditioneel. Het is verplicht indien de ontsluiting publiek toegankelijk 
+is en onder de verantwoordelijkheid van de beherende organisatie valt. Het element kan meerdere keren voorkomen, 
+bijvoorbeeld als link naar een direct downloadbaar bestand, een data loket, WM(T)S, WCS, WFS en/of SOS.
 
 Voorbeelden:
 
 1. http://www.dinoservices.nl/wms/dinomap/M09M0817 
-2. \\COM5494\G$\nwb_wegen\geogegevens\shapefile\nederland_totaal\hectopunten\hectopunten.shp 
+2. \\COM5494\G$\nwb_wegen\geogegevens\shapefile\nederland_totaal\hectopunten\hectopunten.gpkg 
 3. http://geoservice.pbl.nl/website/gcn/Stikstofdioxide/2020
 
-## Protocol
+### Protocol
 
 Het metadata element bevat het protocol voor het afhandelen van de URL. De URL kan zowel een link zijn naar een bestand om te downloaden als naar een service of een catalog. Het element protocol geeft aan wat voor URL het betreft. Onder download vallen bijvoorbeeld ZIP, PDF en Word documenten.
 
@@ -206,6 +206,7 @@ Dit element is conditioneel. Het is verplicht als er een URL is opgegeven. Bijvo
 Voor protocol kunnen de volgende waarden worden gebruikt; 
 
 | Naam	| Beschrijving | 	MD IR Name | 
+| --- | --- | --- |
 | OGC:CSW	| Web Catalog service	| Discovery Service | 
 | OGC:WMS	| Web Map service	| View Service | 
 | OGC:WFS	| Web Feature Service	| Download Service | 
@@ -236,16 +237,42 @@ Voorbeelden:
 2. Download
 3. website
 
-## Naam
+### Naam
 
-Het metadata element Naam legt de relatie naar de layer in de service die de dataset representeert, door middel van de naam van de layer of de naam van het featuretype. In dit element wordt maar één maal per servicetype een relatie gelegd, waarmee de dataset als service gerepresenteerd wordt. Op deze manier is het mogelijk een dataset via een service te benaderen. Het is niet de bedoeling dat een link wordt gemaakt naar elke service die de dataset representeerd.
+Het metadata element Naam legt de relatie naar de layer in de service die de dataset representeert, 
+door middel van de naam van de layer of de naam van het featuretype. 
+In dit element wordt maar één maal per servicetype een relatie gelegd, 
+waarmee de dataset als service gerepresenteerd wordt. 
+Op deze manier is het mogelijk een dataset via een service te benaderen. 
+Het is niet de bedoeling dat een link wordt gemaakt naar iedere service 
+waarin de dataset ontsloten wordt (gebruik daarvoor service metadata).
 
-Het element naam is conditioneel. De naam is verplicht gemaakt in Nederland voor OGC:WMS, OGC:WFS en OGC:WCS. Het element bevat de layer name van de WMS of WCS of de featurType naam van een WFS.
+Het element naam is conditioneel. Het is verplicht als het protocol één van 
+de volgende waardes heeft: OGC:WMS, OGC:WFS, OGC:WMTS, OGC:WCS of INSPIRE Atom. 
+Dit element bevat de layername uit WMS of WCS, identifier uit WMTS, de featureType 
+name uit WFS of Dataset Feed Title in Atom die de dataset in de service identificeert.
 
 Voorbeeld:
 
 1. krzudrillings
 2. brug
+
+### Omschrijving
+
+Dit element beschrijft het type van de URL. Indien verwezen wordt naar een URL die rechtstreeks een dataset in een specifiek 
+mediatype oplevert dient de waarde endPoint gebruikt te worden. In andere gevallen de waarde accessPoint. De accessPoint URL 
+levert informatie over de service inclusief zijn endPoints. Dat kan bijvoorbeeld een capabilities of WSDL document zijn of 
+een webpagina waar data te downloden is. 
+
+Omschrijving is verplicht indien de URL niet van het type accessPoint is.
+
+Mogelijk waarden zijn;
+
+| Waarde |	Beschrijving |
+| --- | --- |
+| [accessPoint](http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint) |	Een internetadres dat een gedetailleerde beschrijving van een dienst met betrekking tot ruimtelijke gegevens bevat, met inbegrip van een lijst van eindpunten waarmee hij kan worden uitgevoerd
+| [endPoint](http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/endPoint) |	Een internetadres dat wordt gebruikt om een door een dienst met betrekking tot ruimtelijke gegevens aangeboden operatie rechtstreeks aan te roepen
+
 
 ## Unieke Identifier van de bron
 
@@ -272,6 +299,8 @@ Dit element is conditioneel. Het is verplicht als de bron tekstuele informatie b
 
 De codes voor de 23 officiële EU talen zijn:
 
+| Taal | Code | Taal | Code |
+| --- | --- | --- | --- |
 | Bulgarian	| bul	| Italian	| ita | 
 | Czech	| cze	| Latvian	| lav | 
 | Danish	| dan	| Lithuanian	| lit | 
@@ -283,8 +312,8 @@ De codes voor de 23 officiële EU talen zijn:
 | German	| ger	| Slovenian	| slv | 
 | Greek	| gre	| Spanish	| spa | 
 | Hungarian	| hun	| Swedish	| swe | 
-| Irish	| gle		
- 
+| Irish	| gle | | |		
+
 
 ## Onderwerp
 
@@ -292,46 +321,28 @@ Het onderwerp bevat de belangrijkste omschrijving van de dataset. Dit kunnen mee
 
 
 De mogelijke waardes voor onderwerp zijn;
-Naam	Engelse naam	Beschrijving
-landbouw 
-en veeteelt	farming	Houden van dieren en/of verbouwen van planten.
-Vb: landbouw, irrigatie, ziekten die gewassen aantasten.
-biota	biota	Flora en fauna in natuurlijke omgeving.
-Vb: habitats, ecologie.
-grenzen	boundaries	Wettelijke gebiedsbeschrijvingen.
-Vb: politieke en administratieve grenzen.
-klimatologie, meteorologie atmosfeer	climatologyMeteorologyAtmosphere	Processen en fenomenen in de atmosfeer.
-Vb: wolkbedekking, weer, klimaat verandering.
-economie	economy	Economische activiteiten, condities en werkgelegenheid.
-Vb: werkgelegenheid, industrie, toerisme, olie- en gasvelden, bosbouw, visserij.
-hoogte	elevation	Hoogte boven of onder zeeniveau.
-Vb: hoogtekaart, DEM, hellingen.
-natuur en milieu	environment	Natuurlijke bronnen, bescherming en beheer.
-Vb: milieuverontreiniging, landschap, natuurlijke reserves, vuilopslag.
-Geo wetenschap-pelijke data	geoscientificInformation	Data die behoort tot een aardwetenschap.
-Vb: geologie, mineralen, structuur van de aarde, zwaartekrachtskaart, grondstoffen, erosie.
-gezondheid	health	Gezondheid(szorg), menselijke ecologie en veiligheid.
-Vb: ziekten, hygiëne, gezondheidszorg.
-referentie materiaal aardbedekking	imageryBaseMapsEarthCover	Basiskaarten.
-Vb: landbedekking, topografische kaarten, foto’s, ongeclassificeerde kaarten.
-militair	intelligenceMilitary	Militaire basissen, structuren en activiteiten.
-Vb: barakken, oefenterreinen, militaire transporten.
-binnenwater	inlandWaters	Binnenwater, drainagesystemen en hun karakteristieken.
-Vb: rivieren en gletsjers, dijken, stromen, waterzuiveringsinstallaties, overloopgebieden.
-locatie	location	Positionele informatie en services.
-Vb: adressen, geodetisch netwerk, postcode gebieden, plaatsnamen, controlepunten.
-oceanen	oceans	Gebieden met zoutwaterlichamen (niet binnenlands). 
-Vb: getijden, tsunami’s, kustinformatie, riffen.
-planning kadaster	planningCadastre	Informatie die gebruikt wordt voor nodige planmatige activiteiten.
-Vb: landgebruik, kadastrale informatie.
-maatschappij	society	Kenmerken van maatschappij en culturen.
-Vb: antropologie, archeologie, criminaliteit, gewoonten, nederzettingen, onderwijs.
-(civiele) structuren	structure	Civiele werken (door mensen gemaakte structuren).
-Vb: gebouwen, musea, kerken, winkels, torens.
-transport	transportation	Middelen voor vervoer van goederen en/of personen.
-Vb: wegen, vliegvelden, tunnels, spoorwegen.
-nutsbedrijven communicatie	Communication	 Energie, waterleidingen en riolering en communicatie infrastructuren en services.
-Vb: elektriciteit- en gasdistributie, waterzuivering en verstrekking, telecommunicatie, radio.
+
+| Naam	| Engelse naam	| Beschrijving| 
+| --- | --- | --- |
+|landbouw en veeteelt	| farming	| Houden van dieren en/of verbouwen van planten. Vb: landbouw, irrigatie, ziekten die gewassen aantasten.| 
+| biota	| biota	| Flora en fauna in natuurlijke omgeving. Vb: habitats, ecologie. |
+| grenzen	| boundaries	| Wettelijke gebiedsbeschrijvingen.Vb: politieke en administratieve grenzen.| 
+| klimatologie, meteorologie atmosfeer	| climatology Meteorology Atmosphere	| Processen en fenomenen in de atmosfeer. Vb: wolkbedekking, weer, klimaat verandering.|
+| economie	| economy	| Economische activiteiten, condities en werkgelegenheid. Vb: werkgelegenheid, industrie, toerisme, olie- en gasvelden, bosbouw, visserij.|
+| hoogte	| elevation	| Hoogte boven of onder zeeniveau. Vb: hoogtekaart, DEM, hellingen.|
+| natuur en milieu	| environment	| Natuurlijke bronnen, bescherming en beheer. Vb: milieuverontreiniging, landschap, natuurlijke reserves, vuilopslag.
+| Geo wetenschap-pelijke data	| geoscientific Information	| Data die behoort tot een aardwetenschap. Vb: geologie, mineralen, structuur van de aarde, zwaartekrachtskaart, grondstoffen, erosie.
+| gezondheid	| health	| Gezondheid(szorg), menselijke ecologie en veiligheid. Vb: ziekten, hygiëne, gezondheidszorg.
+| referentie materiaal aardbedekking	| imagery BaseMaps EarthCover	| Basiskaarten. Vb: landbedekking, topografische kaarten, foto’s, ongeclassificeerde kaarten.
+| militair	| intelligence Military	| Militaire basissen, structuren en activiteiten. Vb: barakken, oefenterreinen, militaire transporten.|
+| binnenwater	| inland Waters	| Binnenwater, drainagesystemen en hun karakteristieken. Vb: rivieren en gletsjers, dijken, stromen, waterzuiveringsinstallaties, overloopgebieden.
+| locatie	| location	| Positionele informatie en services. Vb: adressen, geodetisch netwerk, postcode gebieden, plaatsnamen, controlepunten.
+| oceanen	| oceans	| Gebieden met zoutwaterlichamen (niet binnenlands).  Vb: getijden, tsunami’s, kustinformatie, riffen.|
+| planning kadaster	| planning Cadastre	| Informatie die gebruikt wordt voor nodige planmatige activiteiten. Vb: landgebruik, kadastrale informatie.|
+| maatschappij	| society	| Kenmerken van maatschappij en culturen. Vb: antropologie, archeologie, criminaliteit, gewoonten, nederzettingen, onderwijs.|
+| (civiele) structuren	| structure	| Civiele werken (door mensen gemaakte structuren). Vb: gebouwen, musea, kerken, winkels, torens.|
+| transport	| transportation	| Middelen voor vervoer van goederen en/of personen. Vb: wegen, vliegvelden, tunnels, spoorwegen.|
+| nutsbedrijven communicatie	| Communication	 | Energie, waterleidingen en riolering en communicatie infrastructuren en services. Vb: elektriciteit- en gasdistributie, waterzuivering en verstrekking, telecommunicatie, radio.
 
 
 Voorbeelden:
@@ -423,8 +434,11 @@ Voorbeelden:
 
 ## Datum van de bron
 
-Het metadata element datum van de bron geeft de creatie-, publicatie-, of wijzigingdatum van de dataset. Het formaat van de datum is JJJJ-MM-DD (met streepjes).
+Het metadata element datum van de bron geeft de creatie-, publicatie-, of wijzigingdatum van de dataset. 
+Het formaat van de datum is JJJJ-MM-DD (met streepjes).
 
+Op z’n minst één van de elementen Datum creatie, Datum publicatie of Datum revisie is verplicht. 
+Er kan maximaal één creatie datum worden opgenomen. Voor INSPIRE geldt ook een maximum van één revisie datum geldt.
 
 Voorbeelden:
 
@@ -476,6 +490,23 @@ Voorbeelden:
 2. Modelberekening op basis van boringen, sonderingen e.a. uit de DINO database
 3. Opgenomen zijn alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen, echter alleen voor zover deze zijn voorzien van een straatnaam of nummer. Dus ook losliggende voet- en fietspaden en onverharde wegen zijn, indien voorzien van een straatnaam, in het NWB-Wegen opgenomen. Indien een weg gescheiden rijbanen heeft, wat vooral het geval is bij rijkswegen, worden deze als aparte wegvakken in het bestand verwerkt.
 4. De concentratiekaarten met resolutie 1 x 1 km zijn gebaseerd op een combinatie van modelberekeningen en metingen
+
+## Ruimtelijk schema van de bron
+
+Dit element beschrijft het type dataset, vector, grid, test of tin. Dit element is verplicht voor INSPIRE. 
+
+Mogelijke waarden zijn;
+
+| Waarde |	Beschrijving |
+| --- | --- |
+| vector |	Vector data wordt gebruikt om geografische data te representeren. |
+| grid	| Grid data wordt gebruikt om geografische data te representeren. |
+| textTable |	Tekstuele of tabel data wordt gebruikt om geografische data te representeren. |
+| tin |	Triangulated irregular network. |
+
+Voorbeelden:
+vector
+grid
 
 ## Toepassingsschaal 
 
@@ -542,25 +573,12 @@ Voorbeeld:
 
 Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset temporele informatie bevat die niet gebaseerd is op de Gregoriaanse kalender of de Coordinated Universal Time. Dit element bevat de Alfanumerieke waarde die het gebruikte referentiesysteem van de dataset aangeeft.
 
-
 Voorbeeld:
-
 Juliaanse kalender
-
-## Verantwoordelijke organisatie voor namespace referentiesysteem
-
-Het metadata element 'Verantwoordelijke organisatie voor namespace referentiesysteem' bevat de naam of identificatie van de persoon of organisatie die verantwoordelijk is voor de de uitgave van de codes (van het referentie systeem). Gebruik hiervoor standaard EPSG.
-
-
-Voorbeeld:
-EPSG
-
-![Schaal](images/epsg.jpg)
 
 ## Conformiteitindicatie met de specificatie
 
 Met de 'conformiteitindicatie met de specificatie' kan worden weergegeven of de dataset wel of niet conform de INSPIRE specificatie of een ander specifiek informatie model is opgebouwd. Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
-
 
 Voor business services is het essentieel dat een informatiemodel (conform de systematiek van NEN361018) aanwezig is dat de semantiek beschrijft. Vanuit dit informatiemodel kunnen afgeleide services betekenisvol gedefinieerd worden.
 
@@ -638,58 +656,77 @@ cm
 
 ## Juridische toegangsrestricties
 
-Juridische toegansrestricties is het metadata element dat de toegangseisen bevat die er zorg voor dragen dat privacy of intellectueel eigendom gewaarborgd zijn en elke andere speciale beperkingen voor het verkrijgen van de metadata of data.
+Juridische toegansrestricties is het metadata element dat de toegangseisen bevat die er zorg voor dragen dat privacy of 
+intellectueel eigendom gewaarborgd zijn en elke andere speciale beperkingen voor het verkrijgen of gebruiken van de data.
 
+Het is verplicht zowel juridische toegangsrestricties als voorwaarden voor toegang en gebruik op te nemen.
 
-Het is verplicht op zijn minst één van de drie elementen juridische toegangsrestricties, overige beperkingen, veiligheidsrestricties op te nemen. De Nederlandse overheid wil overheidsinformatie zoveel mogelijk gratis en zonder gebruiksvoorwaarden beschikbaar stellen. Dat kan met behulp van de Publiek Domein Mark of met de Creative Commons Zero (CC0) Verklaring. Met beide gebruiksvoorwaarden zijn de gegevens door iedereen voor ieder doeleind te gebruiken. Om dit toe te passen kiest men hier voor de waarde "anders".  De licentie wordt in het element 2.4.34_Overige_beperkingen opgenomen. In 2.6.3 Gebruiksvoorwaarden  is uitgewerkt hoe gebruiksvoorwaarden en public domein mark toe te passen
 Mogelijke waarden zijn;
 
-| Naam  	Engelse naam	Beschrijving
-| copyright 	copyright	Exclusief recht voor publicatie, productie, of verkoop van rechten op een literair, theater, muzikaal of artistiek werk, of op het gebruik van een commerciële druk of label, toegekend bij wet voor een specifieke periode of tijd aan een auteur, componist, artiest of distributeur.
-| patent	patent	Overheid heeft een exclusief recht toegekend om een uitvinding te maken, verkopen, gebruiken of in licentie uit te geven.
-| patent in wording 	patentPending	Geproduceerde of verkochte informatie wachtend op een patent.
-| merknaam 	trademark	Een naam, symbool of ander object om een product te identificeren, wat officieel geregistreerd is en gebruik wettelijk is voorbehouden aan de eigenaar of fabrikant.
-| licentie	license	Formele toestemming of iets te doen.
-| intellectueel eigendom 	intellectualPropertyRights	Recht op een financieel voordeel van en controle hebben op de distributie van een niet tastbaar eigendom wat het resultaat is van creativiteit.
-| niet toegankelijk 	restricted	Verbod op distributie en gebruik.
-| anders 	otherRestrictions	Restrictie niet opgenomen in lijst
+| Naam  |	Engelse naam |	Beschrijving |
+| --- | --- | --- |
+| copyright | copyright	| Exclusief recht voor publicatie, productie, of verkoop van rechten op een literair, theater, muzikaal of artistiek werk, of op het gebruik van een commerciële druk of label, toegekend bij wet voor een specifieke periode of tijd aan een auteur, componist, artiest of distributeur.
+| patent	| patent	| Overheid heeft een exclusief recht toegekend om een uitvinding te maken, verkopen, gebruiken of in licentie uit te geven.
+| patent in wording |	patentPending |	Geproduceerde of verkochte informatie wachtend op een patent.
+| merknaam |	trademark	| Een naam, symbool of ander object om een product te identificeren, wat officieel geregistreerd is en gebruik wettelijk is voorbehouden aan de eigenaar of fabrikant.
+| licentie |	license	| Formele toestemming of iets te doen.
+| intellectueel eigendom |	intellectualPropertyRights	| Recht op een financieel voordeel van en controle hebben op de distributie van een niet tastbaar eigendom wat het resultaat is van creativiteit.
+| niet toegankelijk |	restricted	| Verbod op distributie en gebruik.
+| anders |	otherRestrictions |	Restrictie niet opgenomen in lijst
+
+Voor INSPIRE datasets, bevat dit element de waarde "otherRestrictions". 
+Voor organisaties die zich conformeren aan afspraken in het GI-beraad, bevat dit element ook de waarde "otherRestrictions".
 
 ### Overige beperkingen 
 
-Dit element bevat andere restricties (dan toegangsrestricties en veiligheidsresricties) en vereisten voor toegang en gebruik van de dataset.
+Dit element bevat de andere restricties, indien bij toegangs- en/of gebruiks restricties of veiligheidsresricties 
+voor de waarde 'anders' gekozen is.
 
-Het is verplicht op zijn minst één van de drie elementen juridische toegangsrestricties, overige beperkingen, veiligheidsrestricties op te nemen.
+Dit element is dan ook verplicht bij restricties waar de waarde 'anders' is gekozen.
+
+Mogelijke waarden;
+
+| Waarde |	Beschrijving |
+| --- | --- |
+|[Open data (publiek)](http://creativecommons.org/publicdomain/mark/*/deed.nl)|		Geen beperkingen
+|[Open data (CCO)](http://creativecommons.org/publicdomain/zero/*/deed.nl)|		Geen beperkingen
+|[Open data (CC-BY)](http://creativecommons.org/licenses/by/*/deed.nl)|		Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-sa)](http://creativecommons.org/licenses/by-sa/*/deed.nl)|		Gelijk Delen, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nc)](http://creativecommons.org/licenses/by-nc/*/deed.nl)|		Niet Commercieel, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nc-sa)](http://creativecommons.org/licenses/by-nc-sa/*/deed.nl)|		Niet Commercieel, Gelijk Delen, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nd)](http://creativecommons.org/licenses/by-nd/*/deed.nl)|		Geen Afgeleide Werken, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nc-nd)](http://creativecommons.org/licenses/by-nc-nd/*/deed.nl)|		Niet Commercieel, Geen Afgeleide Werken, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden Geogedeeld](Verwijzing naar een geldige URL van de licentie)|	 	Geo Gedeeld licentie
 
 
-De volgende invulinstructies worden gehanteerd om de gebruiksvoorwaarden van public domain, CC0, CC-BY en Geo Gedeeld op te nemen in de metadata:
+Voor INSPIRE dient tevens beschreven te worden of er restricties gelden op toegang en gebruik.
+
+Mogelijke waarden;
+
+| Waarde |	Beschrijving |
+| --- | --- |
+|[conditionsUnknown](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/conditionsUnknown)	|	Condities zijn onbekend
+|[noConditionsApply](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply) |		Er zijn geen condities voor toegang en gebruik
+
+Voor INSPIRE dient tevens beschreven te worden of er restricties gelden op publieke toegang
+
+Mogelijke waarden;
+
+| Waarde |	Beschrijving |
+| --- | --- |
+| [Geen beperkingen voor publieke toegang](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations)|	Geen Limitaties |	
+| [INSPIRE_Directive_Article13_1a](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a)|		Publieke toegang beperkt ivm afbreuk van het vertrouwelijke karakter van handelingen van overheidsinstanties, indien deze vertrouwelijkheid bij wet is voorzien |
+| [INSPIRE_Directive_Article13_1b](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1b)|	INSPIRE_Directive_Article13_1b	Publieke toegang beperkt ivm afbreuk van internationale betrekkingen, openbare veiligheid of nationale defensie |
+| [INSPIRE_Directive_Article13_1c](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1c)|	INSPIRE_Directive_Article13_1c	Publieke toegang beperkt ivm afbreuk van de rechtsgang, de mogelijkheid voor een persoon een eerlijk proces te krijgen of de mogelijkheid voor een overheid om een onderzoek van strafrechtelijke of disciplinaire aard in te stellen |
+| [INSPIRE_Directive_Article13_1b](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1d)|	INSPIRE_Directive_Article13_1d	Publieke toegang beperkt ivm afbreuk van de vertrouwelijkheid van commerciële of industriële informatie, wanneer deze vertrouwelijkheid in de nationale of de communautaire wetgeving geboden wordt om een gewettigd economisch belang te beschermen, met inbegrip van het algemeen belang dat met statistische en fiscale geheimhouding is gediend
+| [INSPIRE_Directive_Article13_1e](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e)|	INSPIRE_Directive_Article13_1e	Publieke toegang beperkt ivm afbreuk van intellectuele-eigendomsrechten |
+| [INSPIRE_Directive_Article13_1f](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1f)|	INSPIRE_Directive_Article13_1f	Publieke toegang beperkt ivm afbreuk van de vertrouwelijkheid van persoonsgegevens en/of -dossiers met betrekking tot een natuurlijk persoon wanneer die persoon niet heeft ingestemd met bekendmaking van de informatie aan het publiek, wanneer in deze vertrouwelijkheid is voorzien in het nationaal of het Gemeenschapsrecht
+| [INSPIRE_Directive_Article13_1g](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1g)|	INSPIRE_Directive_Article13_1g	Publieke toegang beperkt ivm afbreuk van de belangen of de bescherming van diegene die de verzochte informatie op vrijwillige basis heeft verstrekt zonder daartoe wettelijk verplicht te zijn of te kunnen worden, tenzij die persoon ermee heeft ingestemd dat de betrokken informatie wordt vrijgegeven
+| [INSPIRE_Directive_Article13_1h](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1h)|	INSPIRE_Directive_Article13_1h	Publieke toegang beperkt ivm afbreuk van de bescherming van het milieu waarop die informatie betrekking heeft, zoals de habitat van zeldzame soorten |
 
 
-• (Juridische) Toegangsrestricties: 
-De waarde “Anders” invullen waardoor overige beperkingen verplicht wordt. Ook bij geen toegangrestricties!
 
-• Overige beperkingen: Dit veld is te gebruiken om de licentie van Public domain, Creative Commons Publieke Domein Verklaring (CC0), Creative Commons naamsvermelding (CC-BY) of Geo Gedeeld in te vullen. Dit element kan men meerdere keren in de metadata opnemen. Voor het opnemen van onderstaande beperkingen is het element “overige beperkingen” twee maal nodig.
-
-o Bij geen gebruiksbeperkingen het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Geen beperkingen 
-Overige beperkingen: http://creativecommons.org/publicdomain/mark/1.0/deed.nl
-
-o Bij Publieke Domein Verklaring (CC0) het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Geen beperkingen 
-Overige beperkingen: http://creativecommons.org/publicdomain/zero/1.0/deed.nl
-
-o Bij Creative commons naamsvermelding(CC-BY) het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Naamsvermelding verplicht, organisatienaam 
-Overige beperkingen: http://creativecommons.org/licenses/by/3.0/nl/
-
-o Bij gebruiksbeperkingen vastgelegd met geogedeeld het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Geo Gedeeld licentie 
-Overige beperkingen: Verwijzing naar de URL van de licentie http://
-
-```xml
+```
 <gmd:resourceConstraints>
   <gmd:MD_LegalConstraints>
     <gmd:useLimitation>
