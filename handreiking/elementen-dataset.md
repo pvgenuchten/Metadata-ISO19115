@@ -167,7 +167,7 @@ Het metadata element URL bevat een valide URL voor online toegang tot de bron, b
 of als er niet een directe link naar de bron aanwezig is naar een locatie waar informatie over de bron beschikbaar is, zoals 
 een loket of catalog.
 
-![Resource locator](Resourcelocator.bmp)
+![Resource locator](Resourcelocator.png)
 
 Door een relatie te leggen naar een dataservice is het mogelijk om op de metadata van de data te zoeken 
 en de data via de service ervan te tonen. De service heeft ook metadata, maar daarin is geen informatie 
@@ -920,7 +920,7 @@ Metadata standaard versie is nodig om uitbreidingen op standaarden aan te geven.
 Voorbeeld:
 Nederlandse metadata profiel op ISO 19115 voor geografie 2.0
 
-## Opdracht metadata voor dataset
+# Opdracht metadata voor dataset
 
 Het NWB-Wegen uit voorbeeld drie wordt 4 keer per jaar geactualiseerd, wat zou een goede beschrijving voor status zijn?
 

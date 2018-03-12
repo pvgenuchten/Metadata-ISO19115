@@ -1,8 +1,8 @@
-# Leeswijzer
+# Inleiding
+
+## Leeswijzer
 
 Dit document bevat een inleiding over metadata, [betrokken standaarden](#metadata-standaarden) en [metadata in het werkproces](#metadata-in-het-werkproces). De daadwerkelijke profiel elementen worden in aparte documenten uitgewerkt; de beschrijving van een [dataset](index-dataset.html) (ISO 19115) en een [service](index-service.html) (ISO 19119). 
-
-# Inleiding
 
 ## Wat is metadata?
 
@@ -60,7 +60,7 @@ Metadata hoeft niet altijd direct toegang te geven tot de dataset of service, ma
 
 Metadata kan je ontsluiten via een register of catalogus. Dit kan binnen een organisatie, maar ook nationaal of internationaal. Zo maak je het mogelijk om de metadata doorzoekbaar te maken en de data eventueel te tonen in een portaal. Een voorbeeld van een register is het [https://nationaalgeoregister.nl](Nationaal Georegister). Hierin is metadata van verschillende organisaties in Nederland opgenomen. Via het nationaal georegister kan iemand data zoeken, raadplegen en in een aantal gevallen ook direct verkrijgen;
 
-![Nationaal Georegister](images/ngr.jpg)
+![Nationaal Georegister](images/ngr.png)
 
 ### Zoeken (discovery) 
 
@@ -84,13 +84,13 @@ Naast de zoekingang op de website van het register kan een register door andere 
 
 De module [metasearch](https://docs.qgis.org/3.0/nl/docs/user_manual/plugins/plugins_metasearch.html) in QGIS is in staat het Nationaal Georegister te bevragen vanuit QGIS. Vanuit het zoekresultaat kan (indien beschikbaar) de gelinkte WMS kaartlaag aan het kaartvenster van QGIS toegevoegd worden.
 
-![Portaal toepassingen](images/metasearch-splash.jpg)
+![Portaal toepassingen](images/metasearch-splash.png)
 
 ### Nog een voorbeeld 
 
 De [Nationale kaartviewer van Zwitserland](https://map.geo.admin.ch)). In deze viewer bevindt zich een centrale zoek ingang van waaruit je zowel naar locaties als datasets kunt zoeken. Voor het zoeken naar datasets wordt de Nationale catalogus bevraagd.
 
-![Zwitsers nationaal kaart viewer](images/swisstopo.jpg)
+![Zwitsers nationaal kaart viewer](images/swisstopo.png)
 
 ## Opdracht discovery
 
