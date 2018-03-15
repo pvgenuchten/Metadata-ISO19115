@@ -8,11 +8,14 @@ Het doel van dit element is de dataset voldoende te identificeren voor de gebrui
 (projectkenmerk) onderwerp (locatiekenmerk) (jaar) (versie) 
 Hierbij zijn de onderdelen tussen haakjes niet verplicht, de andere wel.
 
-Voorbeelden:
 
-1. Digitaal Geologisch Model - Formatie van Kreftenheye onder de Eem 
-2. Nationaal Wegen Bestand Wegen 
-3. GCN concentratie Stikstofdioxide (NO2) 2020 
+<aside class="example" title="Titel van de bron">
+<ol>
+<li>Digitaal Geologisch Model - Formatie van Kreftenheye onder de Eem </li>
+<li>Nationaal Wegen Bestand Wegen </li>
+<li>GCN concentratie Stikstofdioxide (NO2) 2020 </li>
+</ol>
+</aside>
 
 ## Samenvatting
 
@@ -21,17 +24,20 @@ In dit element kan een meer uitgebreide beschrijving van de dataset gegeven word
 
 Voorbeelden:
 
-1. De Nieuwe Kaart van Nederland is een totaaloverzicht van nieuwe ruimtelijke ontwikkelingen. 
-2. Het Digitaal Geologisch Model van Nederland (DGM) is een landsdekkend lagenmodel van de ondergrond en brengt het ruimtelijke verloop van de Kwartaire en laat-Tertiaire lithostratigrafische eenheden in kaart. Deze eenheden beslaan grofweg de bovenste duizend meter van de ondergrond. Het model vormt een raamwerk voor verdere toepassingen binnen bijvoorbeeld de hydrologie, geomechanica, geochemie en delfstofwinning. 
-3. Het NWB-Wegen is een digitaal geografisch bestand van nagenoeg alle wegen in Nederland. Opgenomen zijn \ alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen, echter alleen voor zover deze zijn voorzien van een straatnaam of nummer. Dus ook losliggende voet- en fietspaden en onverharde wegen zijn, indien voorzien van een straatnaam, in het NWB-Wegen opgenomen. Indien een weg gescheiden rijbanen heeft, wat vooral het geval is bij rijkswegen, worden deze als aparte wegvakken in het bestand verwerkt. In totaal beslaat het NWB-Wegen ongeveer 145.000 kilometer gedigitaliseerde wegvakken (in aantal +/-825000). Het NWB-Wegen wordt 4 keer per jaar geactualiseerd. 
-4. Het Planbureau voor de Leefomgeving (PBL) levert jaarlijks kaarten met grootschalige concentratie en depositieniveau's voor Nederland van diverse luchtverontreinigende stoffen waarvoor Europese regelgeving bestaat. De concentratiekaarten met resolutie 1 x 1 km zijn gebaseerd op een combinatie van modelberekeningen en metingen en zijn bedoeld voor het geven van een grootschalig beeld van de luchtkwaliteit in Nederland zowel voor jaren in het verleden als in de toekomst.
+<aside class="example" title="Samenvatting">
+	<ol>
+<li>Het Digitaal Geologisch Model van Nederland (DGM) is een landsdekkend lagenmodel van de ondergrond en brengt het ruimtelijke verloop van de Kwartaire en laat-Tertiaire lithostratigrafische eenheden in kaart. Deze eenheden beslaan grofweg de bovenste duizend meter van de ondergrond. Het model vormt een raamwerk voor verdere toepassingen binnen bijvoorbeeld de hydrologie, geomechanica, geochemie en delfstofwinning. </li>
+<li>Het NWB-Wegen is een digitaal geografisch bestand van nagenoeg alle wegen in Nederland. Opgenomen zijn \ alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen, echter alleen voor zover deze zijn voorzien van een straatnaam of nummer. Dus ook losliggende voet- en fietspaden en onverharde wegen zijn, indien voorzien van een straatnaam, in het NWB-Wegen opgenomen. Indien een weg gescheiden rijbanen heeft, wat vooral het geval is bij rijkswegen, worden deze als aparte wegvakken in het bestand verwerkt. In totaal beslaat het NWB-Wegen ongeveer 145.000 kilometer gedigitaliseerde wegvakken (in aantal +/-825000). Het NWB-Wegen wordt 4 keer per jaar geactualiseerd. </li>
+<li>Het Planbureau voor de Leefomgeving (PBL) levert jaarlijks kaarten met grootschalige concentratie en depositieniveau's voor Nederland van diverse luchtverontreinigende stoffen waarvoor Europese regelgeving bestaat. De concentratiekaarten met resolutie 1 x 1 km zijn gebaseerd op een combinatie van modelberekeningen en metingen en zijn bedoeld voor het geven van een grootschalig beeld van de luchtkwaliteit in Nederland zowel voor jaren in het verleden als in de toekomst.</li>
+</ol>
+</aside>
 
 ## Status
 
 De status van het bestand. Dit element is opgenomen in de Nederlandse kernset, omdat de status van de dataset als zoekcriterium kan dienen en indirect een kwaliteitseigenschap weergeeft. Status kan de volgende waarden bevatten;
 
-| Naam	| Engelse naam	| Beschrijving |
-| --- |: --- :| --- |
+| Naam	| Waarde	| Beschrijving |
+| --- | --- | --- |
 | compleet	| completed	| Productie van de data is compleet / afgerond. |
 | historisch archief	| historicalArchive	| De data is opgeslagen in een offline opslagmedium. |
 | niet relevant	| obsolete	| Data is niet langer relevant. |
@@ -40,10 +46,12 @@ De status van het bestand. Dit element is opgenomen in de Nederlandse kernset, o
 | actualisatie vereist	| required	| Data moet nog gegenereerd of geactualiseerd worden. |
 | in ontwikkeling	| underDevelopment	| Data wordt momenteel gecreëerd. |
 
-Voorbeelden:
-
-1. onGoing
-2. completed
+<aside class="example" title="Status">
+<ol>
+<li>onGoing</li>
+<li>completed</li>
+</ol>
+</aside>
 
 
 ## Hiërarchieniveau
@@ -60,17 +68,20 @@ De kernset van het Nederlands metadata profiel voor geografie geldt niet alleen 
 
 Hierarchieniveau kan de volgende waarden bevatten;
 
-| Naam	| Engelse naam	| Beschrijving |
+| Naam	| Waarde	| Beschrijving |
 | --- | --- | --- |
 | dataset	| dataset	| Informatie heeft betrekking op de dataset |
 | series	| series	| Informatie heeft betrekking op de serie |
 
-Voorbeelden van dataset series zijn:
 
-1. Verzameling luchtfoto’s die in dezelfde vlucht met dezelfde camera en filmtype zijn gemaakt
-2. Continue satellietopname van één omwenteling om de aarde
-3. Verzameling rasterdata, verkregen uit een algemene serie van papieren kaarten
-4. TOP10NL
+<aside class="example" title="Voorbeelden van dataset series">
+<ol>
+<li>Verzameling luchtfoto’s die in dezelfde vlucht met dezelfde camera en filmtype zijn gemaakt</li>
+<li>Continue satellietopname van één omwenteling om de aarde</li>
+<li>Verzameling rasterdata, verkregen uit een algemene serie van papieren kaarten</li>
+<li>TOP10NL</li>
+</ol>
+</aside>
 
 ## Hiërarchieniveau naam
 
@@ -79,14 +90,13 @@ Het element hiërarchieniveau naam bevat de naam van het hiërarchieniveau waarv
 Dit element is conditioneel. Het is verplicht als Hiërarchieniveau niet gelijk is aan dataset. Indien het hierarchyniveau dataset is dient dit veld niet ingevuld te worden.
 Toepassing van metadata op dataset series maak het gebruikers van de metadata mogelijk om op een hoger niveau dan individuele datasets data te zoeken. Metadata van dataset series is geschikt voor het zoeken op globale karakteristieken van beschikbare data, maar niet voor diepgaand onderzoek naar de kwaliteit van specifieke datasets. Hiervoor is metadata van datasets noodzakelijk. De figuur hieronder geeft een schematische weergave van de relatie tussen de metadata van dataset series en datasets zelf weer. De hiërarchische relatie tussen een dataset en dataset serie is altijd van verticale aard.
 
-![Hiërarchie](images/Hierarchie.jpg)
-
-
 De kernset van het Nederlands metadata profiel voor geografie geldt niet alleen voor geografische datasets, maar ook voor dataset series. Volgens ISO 19115 is een dataset serie een verzameling geografische data die gelijke karakteristieken hebben ten aanzien van het thema, de resolutie en/of methodologie. Veelal geven dataproducenten aan of er sprake is van een dataset serie.
 
-Een voorbeeld van een dataset serie is:
-
-AHN Nederland
+<aside class="example" title="Dataset serie naam">
+<ol>
+<li>AHN Nederland</li>
+</ol>
+</aside>
 
 ## Karakterset van de bron
 
@@ -96,7 +106,7 @@ Verplicht als de in de bron gebruikte karakterset geen utf8 is.
 
 Mogelijke waarden;
 
-| Naam | Engelse naam |	Beschrijving |
+| Naam | Waarde |	Beschrijving |
 | --- | --- | --- |
 |ucs2	|ucs2	|16-bit fixed size Universal Character Set, based on ISO/IEC 10646.
 |Ucs4	|ucs4	|32-bit fixed size Universal Character Set, based on ISO/IEC 10646.
@@ -132,34 +142,43 @@ Mogelijke waarden;
 
 ### Naam distributie formaat
 
-Dit element bevat de naam van het distributie formaat van de dataset. Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is.  De presiese informatie over hoe de naamgeving van het applicatie schema is, is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
+Dit element bevat de naam van het distributie formaat van de dataset. Dit element is conditioneel in dit profiel. 
+Het is alleen verplicht als de dataset een INSPIRE bron is. INSPIRE vraagt om hier de naam van het gebruikte 
+applicatie schema in te vullen.  De presiese informatie over hoe de naamgeving van het applicatie schema is, 
+is te vinden in de [INSPIRE dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892) in de paragraaf genaamd Encoding.
 
 
-Voorbeeld:
-
-Hydrography GML application schema
+<aside class="example" title="Distributie formaat">
+<ol>
+<li>Geopackage</li>
+<li>Hydrography GML application schema</li>
+</ol></aside>
 
 ### Versie distributie formaat
 
 Dit element bevat de versie van het distributie formaat van de dataset.
 
-Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is.  Deze informatie is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
+Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is. INSPIRE vraagt om hier de versie van het gebruikte applicatie schema in te vullen. Deze informatie is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
 
 
-Voorbeeld:
-
-version 3.0; GML, version 3.2.1
+<aside class="example" title="Versie distributie formaat">
+<ol>
+3.1rc1
+</ol>
+</aside>
 
 ### Specificatie distributie formaat
 
 Dit element bevat de specificatie van het distributie formaat van de dataset.
 
-Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is.  De presiese informatie is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
+Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is. INSPIRE vraagt om hier de versie van de specificatie van het gebruikte applicatie schema in te vullen  De presiese informatie is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
 
-
-Voorbeeld:
-
-D2.8.I.8 Data Specification on Hydrography – Guidelines
+<aside class="example" title="Specificatie distributie formaat">
+<code><pre>
+&lt;gmx:Anchor xlink:href="http://inspire.ec.europa.eu/applicationschema/ad">
+D2.8.I.5 Data Specification on Addresses – Technical Guidelines
+&lt;/gmx:Anchor>
+</code></pre></aside>
 
 ### URL
 
@@ -189,11 +208,11 @@ Dit element is conditioneel. Het is verplicht indien de ontsluiting publiek toeg
 is en onder de verantwoordelijkheid van de beherende organisatie valt. Het element kan meerdere keren voorkomen, 
 bijvoorbeeld als link naar een direct downloadbaar bestand, een data loket, WM(T)S, WCS, WFS en/of SOS.
 
-Voorbeelden:
-
-1. http://www.dinoservices.nl/wms/dinomap/M09M0817 
-2. \\COM5494\G$\nwb_wegen\geogegevens\shapefile\nederland_totaal\hectopunten\hectopunten.gpkg 
-3. http://geoservice.pbl.nl/website/gcn/Stikstofdioxide/2020
+<aside class="example" title="URL">
+<ol>
+<li>http://www.dinoservices.nl/wms/dinomap/M09M0817</li> 
+<li>\\\\COM5494\G$\nwb_wegen\geogegevens\shapefile\nederland_totaal\hectopunten\hectopunten.gpkg</li> 
+<li>http://geoservice.pbl.nl/website/gcn/Stikstofdioxide/2020</li></ol></aside>
 
 ### Protocol
 
@@ -231,11 +250,11 @@ Voor protocol kunnen de volgende waarden worden gebruikt;
 | download	| download	| | 
 
 
-Voorbeelden:
-
-1. OGC:WMS
-2. Download
-3. website
+<aside class="example" title="Protocol">
+<ol>
+<li>OGC:WMS</li>
+<li>Download</li>
+<li>website</li></ol></aside>
 
 ### Naam
 
@@ -252,12 +271,12 @@ de volgende waardes heeft: OGC:WMS, OGC:WFS, OGC:WMTS, OGC:WCS of INSPIRE Atom.
 Dit element bevat de layername uit WMS of WCS, identifier uit WMTS, de featureType 
 name uit WFS of Dataset Feed Title in Atom die de dataset in de service identificeert.
 
-Voorbeeld:
+<aside class="example" title="Naam kaartlaag/featuretype">
+<ol>
+<li>krzudrillings</li>
+<li>brug</li></ol></aside>
 
-1. krzudrillings
-2. brug
-
-### Omschrijving
+### Omschrijving van het type bron ontsluiting
 
 Dit element beschrijft het type van de URL. Indien verwezen wordt naar een URL die rechtstreeks een dataset in een specifiek 
 mediatype oplevert dient de waarde endPoint gebruikt te worden. In andere gevallen de waarde accessPoint. De accessPoint URL 
@@ -273,21 +292,28 @@ Mogelijk waarden zijn;
 | [accessPoint](http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint) |	Een internetadres dat een gedetailleerde beschrijving van een dienst met betrekking tot ruimtelijke gegevens bevat, met inbegrip van een lijst van eindpunten waarmee hij kan worden uitgevoerd
 | [endPoint](http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/endPoint) |	Een internetadres dat wordt gebruikt om een door een dienst met betrekking tot ruimtelijke gegevens aangeboden operatie rechtstreeks aan te roepen
 
+<aside class="example" title="Omschrijving van het type bron ontsluiting"><pre><code>
+&lt;gmx:Anchor
+  xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">
+  accessPoint&lt;/gmx:Anchor>
+</code></pre></aside>
 
 ## Unieke Identifier van de bron
 
 De unieke Identifier van de bron bevat de waarde die de dataset uniek identificeert.
+Het gebuik van een URI is conditioneel, het is verplicht voor INSPIRE datasets. Indien een URI gebruikt wordt dient deze te verwijzen naar een bestaande bron op het web. De aanbieders van URI's dienen te zorgen dat de uitgegeven identificatie geldig blijft en beschikbaar is voor de gehele beschikbaarheidstermijn van de  bron en bij voorkeur ook daarna. 
 
 ![Tailmark4](images/Tailmark4.jpg)
 
-Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de Universal Unique Identifier. Meer informatie hierover is te vinden op Universally Unique Identifier (wikipedia)
+Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de Universal Unique Identifier. Meer informatie hierover is te vinden op [Universally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
-Voorbeelden:
-
-1. d9e6e866-5371-447e-a8dd-3647c104c3fa
-2. 0a11ef03-5db9-69a1-b3b9-135b19609b30 
-3. 78fa0292-aa3f-43fb-a182-3b52534b87a4 
-4. d3c28e47-8b7e-4f24-84b4-f0cfda3ee02e 
+<aside class="example" title="Unieke Identifier van de bron">
+<ol>
+d9e6e866-5371-447e-a8dd-3647c104c3fa
+</ol><pre><code>
+&lt;gmd:Anchor
+  xlink:href="http://domein/id/record/ee543323-0fe4-4353"> ee543323-0fe4-4353-9161-eda61ff26c07 &lt;/gmd:Anchor>
+</code></pre></aside>
 
 ## Taal van de bron
 
@@ -314,6 +340,8 @@ De codes voor de 23 officiële EU talen zijn:
 | Hungarian	| hun	| Swedish	| swe | 
 | Irish	| gle | | |		
 
+<aside class="example" title="Taal">
+<ol>dut</ol></aside>
 
 ## Onderwerp
 
@@ -322,7 +350,7 @@ Het onderwerp bevat de belangrijkste omschrijving van de dataset. Dit kunnen mee
 
 De mogelijke waardes voor onderwerp zijn;
 
-| Naam	| Engelse naam	| Beschrijving| 
+| Naam	| Waarde	| Beschrijving| 
 | --- | --- | --- |
 |landbouw en veeteelt	| farming	| Houden van dieren en/of verbouwen van planten. Vb: landbouw, irrigatie, ziekten die gewassen aantasten.| 
 | biota	| biota	| Flora en fauna in natuurlijke omgeving. Vb: habitats, ecologie. |
@@ -345,26 +373,26 @@ De mogelijke waardes voor onderwerp zijn;
 | nutsbedrijven communicatie	| Communication	 | Energie, waterleidingen en riolering en communicatie infrastructuren en services. Vb: elektriciteit- en gasdistributie, waterzuivering en verstrekking, telecommunicatie, radio.
 
 
-Voorbeelden:
-
-1. location 
-2. geoscientificInformation 
-3. transportation 
-4. climatologyMeteorologyAtmosphere
+<aside class="example" title="Onderwerp">
+<ol>
+<li>location</li> 
+<li>geoscientificInformation</li>
+<li>transportation </li>
+<li>climatologyMeteorologyAtmosphere</li></ol></aside>
 
 ## Trefwoord
 
 Trefwoord bevat in het algemeen gebruikte woorden of geformaliseerde zinnen om een dataset of dataset serie te beschrijven. Dit kunnen trefwoorden uit een thesaurus zijn maar ook zelf gedefinieerde trefwoorden. Er kunnen meerdere trefwoorden worden gebruikt, maar het is geen uitputtende lijst.
 
 
-Datasets en dataset series die zijn aangemerkt als INSPIRE bron, beschrijven in ieder geval het INSPIRE thema waar de dataset onder valt. Voor INSPIRE wordt gebruik gemaakt van de GEMET thesaurus. Daarin worden de INSPIRE thema’s opgenomen, zie  http://www.eionet.europa.eu/gemet/inspire_themes
+Datasets en dataset series die zijn aangemerkt als INSPIRE bron, beschrijven in ieder geval het INSPIRE thema waar de dataset onder valt. Voor INSPIRE wordt gebruik gemaakt van de [GEMET thesaurus](http://www.eionet.europa.eu/gemet/inspire_themes). Daarin zijn de INSPIRE thema’s opgenomen.
 
-
-Voorbeelden:
-1. Ruimtegebruik, Planologie
-2. Geologie 
-3. Transport, infrastructuur, verkeersgegevens, wegen
-4. Live Data and Maps
+<aside class="example" title="Trefwoord">
+<ol>
+<li>Ruimtegebruik</li>
+<li>Planologie</li>
+<li>Geologie</li>
+<li>Transport</li></ol></aside>
 
 ## Thesaurus
 
@@ -373,9 +401,8 @@ Een thesaurus is een lijst met trefwoorden die ontleend zijn aan het dagelijks t
 
 Thesaurus een conditioneel element. Het thesaurus element is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s. Het bevat de naam van de thesaurus waar het trefwoord uit afkomstig is.
 
-
-Voorbeeld:
-“GEMET Thesaurus version 1.0”
+<aside class="example" title="Thesuarus">
+<ol>GEMET - INSPIRE themes, version 1.0</ol></aside>
 
 ![Thesaurus termen](images/Thesaurustermen.jpg)
 
@@ -385,36 +412,34 @@ Het bevat de creatie-, publicatie-, of wijzigingsdatum, van de thesaurus waar he
 
 Dit is een conditioneel element. Het is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s.
 
-
-Voorbeeld:
-2009-05-15
+<aside class="example" title="Thesuarus">
+<ol>2008-06-01</ol></aside>
 
 ## Thesaurus datum type
 
 Het thesaurus datum type element bevat het type gebeurtenis waar de datum betrekking op heeft.
-
 
 Dit is een conditioneel element. Het is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s.
 
 Mogelijke waarden zijn;
 
 
-| Naam |	Engelse naam |	Beschrijving |
+| Naam |	Waarde |	Beschrijving |
 | --- | --- | --- |
 | creatie | 	creation |	Datum waarop de dataset of dataset serie is gecreëerd. |
 | publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
 | revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. |
 
 
-Voorbeeld;
-publication
+<aside class="example" title="Thesuarus datum type">
+<ol>publication</ol></aside>
 
 ## Minimum x/y, maximum x/y-coördinaten
 
 Deze elementen bevatten de meest westelijke, zuidelijk, oostelijk en noordelijke coördinaten uit de dekking van de dataset weergegeven in longitude en lattitude in decimale graden (noord en oost als positieve waarden). De coördinaten dienen te worden weergegeven volgens referentiesysteem WGS84. Als de coordinaten niet (in WGS 84) bekend zijn kan de volgende tool ze opzoeken en/of omrekenen naar WGS 84
 
-Voorbeeld;
-2.50 
+<aside class="example" title="Minimum x/y, maximum x/y-coördinaten">
+<ol>2.50 , 52.0, 4.5, 54.0</ol></aside>
 
 ## Temporele dekking
 
@@ -426,11 +451,9 @@ Het formaat van de datum is JJJJ-MM- DD (met streepjes) of JJJJ-MM-DDTUU:MM:SS (
 In versie 1.3 van dit profiel is dit element optioneel geworden.
 
 
-Voorbeelden:
-1. 2000-01-01 of 2030-12-31
-2. 0000
-3. 2008-10-01 of 2009-01-01
-4. 2020
+<aside class="example" title="Temporele dekking">
+<ol><li>2000-01-01 - 2030-12-31</li>
+<li>2012-08-02T:22:08:12</li></ol></aside>
 
 ## Datum van de bron
 
@@ -442,27 +465,26 @@ Er kan maximaal één creatie datum worden opgenomen. Voor INSPIRE geldt ook een
 
 Voorbeelden:
 
-1. 2008-11-20 
-2. 2008-11-04 
-3. 2008 
-4. 2008-03-01
+<aside class="example" title="Datum van de bron">
+<ol><li>2008-11-20 </li>
+<li>2008-11-04 </li></ol></aside>
 
-## Datum type van de bron
+
+### Datum type van de bron
 
 Het element datum type van de bron bevat het type gebeurtenis waar de datum betrekking op heeft. 
 
 Mogelijke waarden zijn;
 
-| Naam |	Engelse naam |	Beschrijving |
+| Naam |	Waarde |	Beschrijving |
 | --- | --- | --- |
 | creatie | 	creation |	Datum waarop de dataset of dataset serie is gecreëerd. |
 | publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
 | revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. | 
 
-Voorbeelden:
-
-1. publication
-2. creation
+<aside class="example" title="Datum type van de bron">
+<ol><li>publication</li>
+<li>creation</li></ol></aside>
 
 ## Niveau kwaliteitsbeschrijving
 
@@ -474,39 +496,43 @@ Het element hierarchieniveau bevat in wezen dezelfde informatie, maar met het do
 
 
 Niveau kwaliteitsbeschrijving kan de volgende waarden bevatten; 
-Naam	Engelse naam	Beschrijving
-dataset	dataset	Informatie heeft betrekking op de dataset.
-series	series	Informatie heeft betrekking op de serie
-featureType	featureType	Informatie heeft betrekking op het featuretype
+|Naam|	Waarde|	Beschrijving|
+|---|---|---|
+|dataset|	dataset|	Informatie heeft betrekking op de dataset.|
+|series	|series|	Informatie heeft betrekking op de serie.|
+|featureType|	featureType|	Informatie heeft betrekking op het featuretype.|
 
+<aside class="example" title="Niveau kwaliteitsbeschrijving">
+<ol>dataset</ol></aside>
 
 ## Algemene beschrijving herkomst
 
 Dit element beschrijft de proceshistorie; waar de gegevens vandaan komen en/of hoe de dataset vervaardigd is. Ook kwaliteitsinformatie kan hierin worden opgenomen. Kwaliteitsinformatie kan meerdere keren worden opgenomen. Er dient slechts één set kwaliteitsinformatie opgenomen worden die betrekking heeft op de gehele dataset. Hierin wordt ook het element algemene beschrijving herkomst opgenomen.
 
-
-Voorbeelden:
-1. Plannen en projecten zijn aangeleverd door verschillende overheden (Rijk, Provincies, Gemeenten en Waterschappen). 
-2. Modelberekening op basis van boringen, sonderingen e.a. uit de DINO database
-3. Opgenomen zijn alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen, echter alleen voor zover deze zijn voorzien van een straatnaam of nummer. Dus ook losliggende voet- en fietspaden en onverharde wegen zijn, indien voorzien van een straatnaam, in het NWB-Wegen opgenomen. Indien een weg gescheiden rijbanen heeft, wat vooral het geval is bij rijkswegen, worden deze als aparte wegvakken in het bestand verwerkt.
-4. De concentratiekaarten met resolutie 1 x 1 km zijn gebaseerd op een combinatie van modelberekeningen en metingen
+<aside class="example" title="Algemene beschrijving herkomst">
+<ol><li>Plannen en projecten zijn aangeleverd door verschillende overheden (Rijk, Provincies, Gemeenten en Waterschappen). </li>
+<li>Modelberekening op basis van boringen, sonderingen e.a. uit de DINO database</li>
+<li>Opgenomen zijn alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen, echter alleen voor zover deze zijn voorzien van een straatnaam of nummer. Dus ook losliggende voet- en fietspaden en onverharde wegen zijn, indien voorzien van een straatnaam, in het NWB-Wegen opgenomen. Indien een weg gescheiden rijbanen heeft, wat vooral het geval is bij rijkswegen, worden deze als aparte wegvakken in het bestand verwerkt.</li>
+<li>De concentratiekaarten met resolutie 1 x 1 km zijn gebaseerd op een combinatie van modelberekeningen en metingen</li></ol></aside>
 
 ## Ruimtelijk schema van de bron
 
-Dit element beschrijft het type dataset, vector, grid, test of tin. Dit element is verplicht voor INSPIRE. 
+Dit element beschrijft het type dataset; vector, grid, textueel of tin. Dit element is verplicht voor INSPIRE. 
 
 Mogelijke waarden zijn;
 
 | Waarde |	Beschrijving |
 | --- | --- |
-| vector |	Vector data wordt gebruikt om geografische data te representeren. |
-| grid	| Grid data wordt gebruikt om geografische data te representeren. |
-| textTable |	Tekstuele of tabel data wordt gebruikt om geografische data te representeren. |
-| tin |	Triangulated irregular network. |
+| vector |	Vector data wordt gebruikt om geografische data te representeren, bijvoorbeeld kadastrale percelen (polygon) of lichtmasten (punt) |
+| grid	| Grid data wordt gebruikt om geografische data te representeren, bijvoorbeeld een luchtfoto |
+| textTable |	Tekstuele of tabel data wordt gebruikt om geografische data te representeren, bijvoorbeeld een tabel waarbij een adres de locatie aangeeft. |
+| tin |	Triangulated irregular network, bijvoorbeeld een digitaal hoogte model |
 
-Voorbeelden:
-vector
-grid
+<aside class="example" title="Ruimtelijk schema van de bron">
+<ol>
+	<li>vector</li>
+	<li>grid</li>
+</ol></aside>
 
 ## Toepassingsschaal 
 
@@ -519,11 +545,12 @@ Een dataset kan ook een bepaalde mate van algemeenheid of juist gedetailleerdhei
 Dit element is conditioneel. Het is verplicht als er een toepassingsschaal gespecificeerd kan worden. Het element kan twee keer voorkomen, hiermee wordt een interval aangegeven. Alleen het schaalgetal wordt opgegeven, niet de “1:”
 
 
-Voorbeelden:
-1. 50000 
-2. 250000 
-3. 10000 100000 
-4. 25000 
+<aside class="example" title="Toepassingsschaal">
+<ol>
+<li>50000 </li>
+<li>250000 </li>
+<li>10000 - 100000 </li>
+<li>25000 </li></ol></aside>
 
 ![Schaal](images/Schaal.jpg)
 
@@ -538,45 +565,46 @@ Resolutie kan op verschillende manieren verklaard worden:
 
 In dit geval gaat het om de laatste definitie. Dit element is conditioneel. Het is verplicht als er een resolutie gespecificeerd kan worden. De afstand  wordt in meters opgenomen. Het element kan twee keer voorkomen, hiermee wordt een interval aangegeven.
 
-
-Voorbeeld;
-3 
+<aside class="example" title="Resolutie">
+<ol>3 </ol></aside>
 
 ![Schaal](images/Resolutie.jpg)
 
-## Code Referentiesysteem
+## Referentiesysteem
 
-Het code Referentiesysteem geeft de identificatie van het coördinatenstelsel waarop de dataset is gebaseerd.
+Het Referentiesysteem geeft de identificatie van het coördinatenstelsel waarop de dataset is gebaseerd.
 
+Dit element bevat  die het gebruikte referentiesysteem van de dataset aangeeft. De European Petroleum 
+Survey Group (EPSG) geeft de meeste code’s uit. De EPSG heeft in 1985 voor intern gebruik een database opgezet met 
+geodetische parameters. In 1993 is deze database beschikbaar gesteld als referentie voor het Petrotechnical 
+Open Software Corporation data model. De database wordt nu beheerd door International Association of Oil & 
+Gas producers (OGP). De EPSG geodetische parameter database is een repository die:
 
-Dit element bevat de code die het gebruikte referentiesysteem van de dataset aangeeft. De European Petroleum Survey Group (EPSG) geeft deze code’s uit. De EPSG heeft in 1985 voor intern gebruik een database opgezet met geodetische parameters. In 1993 is deze database beschikbaar gesteld als referentie voor het Petrotechnical Open Software Corporation data model. De database wordt nu beheerd door International Association of Oil & Gas producers (OGP). De EPSG geodetische parameter database is een repository die:
-• Coördinaten identificeert zodat de positie van deze coördinaten op een ondubbelzinnige manier wordt beschreven. Dit wordt bereikt door de definitie van een coordinate reference system (CRS)
-• Transformaties en conversies definieert en coördinaten van het ene naar het andere CRS omzet.
+- Coördinaten identificeert zodat de positie van deze coördinaten op een ondubbelzinnige manier wordt beschreven. Dit wordt bereikt door de definitie van een coordinate reference system (CRS)
+- Transformaties en conversies definieert en coördinaten van het ene naar het andere CRS omzet.
 
-
-De EPSG codes kunnen gevonden worden op de website van OGP. Aanbevolen wordt om de MSAccess database van de site te downloaden
-
+De EPSG codes kunnen gevonden worden op de website van OGP of OGC. Aanbevolen wordt om de code's van http://www.opengis.net/def/crs te gebruiken.
 
 Voor het Rijksdriehoeksstelsel (RD) wordt de code 28992 gehanteerd, 4937 voor ETRS89 en 4326 voor WGS84.
 
-
 Naast het horizontale ruimtelijk referentiesysteem kan ook het verticaal ruimtelijk referentiesysteem in de metadata worden opgeslagen, bijvoorbeeld NAP. Deze gegevens kan men in het optionele element Code verticaal referentiesysteem plaatsen. EPSG 5621 is toegewezen aan EVRF2007 Height en code 5709 voor NAP.
-
 
 Voor de ruimtelijke extent wordt ETRS89 gebruikt. Hiermee wordt het mogelijk gemaakt om op europees niveau data te doorzoeken.
 
-
-Voorbeeld:
-28992
+<aside class="example" title="Referentiesysteem"><ol>
+28992</ol><pre><code>
+&lt;gmx:Anchor
+  xlink:href="http://www.opengis.net/def/crs/EPSG/0/28992">RD
+&lt;/gmx:Anchor></code></pre></aside>
 
 ## Temporeel referentiesysteem
 
 Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset temporele informatie bevat die niet gebaseerd is op de Gregoriaanse kalender of de Coordinated Universal Time. Dit element bevat de Alfanumerieke waarde die het gebruikte referentiesysteem van de dataset aangeeft.
 
-Voorbeeld:
-Juliaanse kalender
+<aside class="example" title="Temporeel referentiesysteem">
+<ol>Juliaanse kalender</ol></aside>
 
-## Conformiteitindicatie met de specificatie
+## Conformiteitindicatie met een specificatie
 
 Met de 'conformiteitindicatie met de specificatie' kan worden weergegeven of de dataset wel of niet conform de INSPIRE specificatie of een ander specifiek informatie model is opgebouwd. Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
 
@@ -587,8 +615,9 @@ Voor business services is het essentieel dat een informatiemodel (conform de sys
 Een ander essentieel voordeel is dat met de Model Driven Approach (MDA) vanuit UML tools zoals Enterprise Architect Services direct gedefinieerd kunnen worden waarna vervolgens XML, GML of WSDL automatisch gegenereerd wordt. Door deze aanpak is de samenhang geborgd in het model en met de afgeleide services op basis van het informatiemodel.
 
 
-Voorbeeld:
-TRUE
+<aside class="example" title="Conformiteitindicatie met een specificatie">
+<ol>
+TRUE</ol></aside>
 
 ### Verklaring
 
@@ -597,47 +626,45 @@ De verklaring bevat de betekenis van de conformiteit. Aangegeven kan worden op w
 
 Dit element is conditioneel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatiemodel. 
 
-Voorbeeld:
-De hier gehanteerde domeinen wijken af van de domeinen uit de dataspecificaties van INSPIRE
+<aside class="example" title="Verklaring">
+<ol>De hier gehanteerde domeinen wijken af van de domeinen uit de dataspecificaties van INSPIRE
+</ol></aside>
 
 ### Specificatie
 
 Het element specificatie bevat de titel van de specificatie of richtlijnen of informatiemodel waar de dataset conform aan dient te zijn.
 
-
 Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
 
-
-Voorbeeld:
-IMRO2008
-INSPIRE D2.8.I.5 Data Specification on Addresses
+<aside class="example" title="Conformiteitindicatie met een specificatie">
+<ol><li>IMRO2008</li>
+<li>INSPIRE D2.8.I.5 Data Specification on Addresses</li></ol></aside>
 
 ### Specificatie datum
 
-Het metadata element specficatie datum bevat de datum van de specificatie of richtlijnen of informatiemodel waar de dataset conform aan dient te zijn. Het formaat van de datum is JJJJ-MM-DD (met streepjes). In specificatie datum type wordt aangegeven of het om de creatie-, publicatie- of herzieningsdatum gaat.
+Het metadata element specficatie datum bevat de datum van de specificatie of richtlijnen of 
+informatiemodel waar de dataset conform aan dient te zijn. Het formaat van de datum is 
+JJJJ-MM-DD (met streepjes). In specificatie datum type wordt aangegeven of het om de creatie-, 
+publicatie- of herzieningsdatum gaat.
 
+Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron 
+is of als de informatie is gemodelleerd volgens een specifiek informatie model.
 
-Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
-
-
-Voorbeeld:
-2009-05-15
+<aside class="example" title="Specificatie datum">
+<ol>2009-05-15</ol></aside>
 
 ### Specificatie datum type
 
 De specificatie datum type bevat het type gebeurtenis waar de datum betrekking op heeft.
 
-
 Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
 
-## Topologische samenhang
+## Waarde Topologische samenhang
 
 Dit element is conditioneel in dit profiel. Het is verplicht voor INSPIRE datasets als voor netwerken de aansluiting van hartlijnen niet is verzekerd. Het bevat de tolerantie waarmee de topologische samenhang is vastgelegd
 
-
-Voorbeeld:
-
-3
+<aside class="example" title="Topologische samenhang">
+<ol>3</ol></aside>
 
 ![Network](images/Network2.jpg)
 
@@ -645,14 +672,10 @@ Voorbeeld:
 
 Het bevat de meeteenheid waarmee de topologische samenhang is vastgelegd.
 
-
-
 Dit element is conditioneel in dit profiel. Het is verplicht voor INSPIRE datasets als voor netwerken de aansluiting van hartlijnen niet is verzekerd.
 
-
-Voorbeeld:
-
-cm
+<aside class="example" title="Type waarde topologische samenhang">
+<ol>cm</ol></aside>
 
 ## Juridische toegangsrestricties
 
@@ -663,19 +686,31 @@ Het is verplicht zowel juridische toegangsrestricties als voorwaarden voor toega
 
 Mogelijke waarden zijn;
 
-| Naam  |	Engelse naam |	Beschrijving |
+| Naam  |	waarde |	Beschrijving |
 | --- | --- | --- |
 | copyright | copyright	| Exclusief recht voor publicatie, productie, of verkoop van rechten op een literair, theater, muzikaal of artistiek werk, of op het gebruik van een commerciële druk of label, toegekend bij wet voor een specifieke periode of tijd aan een auteur, componist, artiest of distributeur.
 | patent	| patent	| Overheid heeft een exclusief recht toegekend om een uitvinding te maken, verkopen, gebruiken of in licentie uit te geven.
-| patent in wording |	patentPending |	Geproduceerde of verkochte informatie wachtend op een patent.
+| patent in wording |	patent Pending |	Geproduceerde of verkochte informatie wachtend op een patent.
 | merknaam |	trademark	| Een naam, symbool of ander object om een product te identificeren, wat officieel geregistreerd is en gebruik wettelijk is voorbehouden aan de eigenaar of fabrikant.
 | licentie |	license	| Formele toestemming of iets te doen.
-| intellectueel eigendom |	intellectualPropertyRights	| Recht op een financieel voordeel van en controle hebben op de distributie van een niet tastbaar eigendom wat het resultaat is van creativiteit.
+| intellectueel eigendom |	intellectual Property Rights	| Recht op een financieel voordeel van en controle hebben op de distributie van een niet tastbaar eigendom wat het resultaat is van creativiteit.
 | niet toegankelijk |	restricted	| Verbod op distributie en gebruik.
-| anders |	otherRestrictions |	Restrictie niet opgenomen in lijst
+| anders |	other Restrictions |	Restrictie niet opgenomen in lijst
 
 Voor INSPIRE datasets, bevat dit element de waarde "otherRestrictions". 
 Voor organisaties die zich conformeren aan afspraken in het GI-beraad, bevat dit element ook de waarde "otherRestrictions".
+
+Toelichting
+De Nederlandse overheid wil overheidsinformatie zoveel mogelijk gratis en zonder gebruiksvoorwaarden beschikbaar stellen. Dat geldt ook voor geo-informatie. Het ministerie van Infrastructuur en Milieu hanteert Creative Commons ZERO als de voorkeurslicentie (om aan te geven dat een werk zonder restricties gebruikt kan worden) voor data van haar ministerie.
+
+In Nederland is afgesproken om voor geo-informatie gebruik te maken van de gebruiksvoorwaarden van Creative Commons , tenzij dat niet mogelijk is. Dit “Creative Commons, tenzij” beleid is in 2014 vastgesteld door het GI-beraad.
+
+In sommige gevallen is het toch noodzakelijk om gebruiksvoorwaarden te handhaven die niet in Creative Commons zijn opgenomen, bijvoorbeeld door wetgeving. In die gevallen biedt Geo Gedeeld uitkomst. Geo Gedeeld is een hulpmiddel om gebruiksvoorwaarden voor geo-informatie op een eenvoudige, heldere en gestandaardiseerde manier kenbaar te maken. Het is ontstaan uit de behoefte van de overheid om de bestaande gebruiksvoorwaarden voor geo-informatie te stroomlijnen. Zie ook algemeen gebruiksvoorwaarden
+
+In het geval van een INSPIRE dataset dient twee maal het element MD_LegalConstraints gebruikt te worden.
+
+<aside class="example" title="Juridische toegangsrestricties">
+<ol>otherRestrictions</ol></aside>
 
 ### Overige beperkingen 
 
@@ -724,68 +759,46 @@ Mogelijke waarden;
 | [INSPIRE_Directive_Article13_1g](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1g)|	INSPIRE_Directive_Article13_1g	Publieke toegang beperkt ivm afbreuk van de belangen of de bescherming van diegene die de verzochte informatie op vrijwillige basis heeft verstrekt zonder daartoe wettelijk verplicht te zijn of te kunnen worden, tenzij die persoon ermee heeft ingestemd dat de betrokken informatie wordt vrijgegeven
 | [INSPIRE_Directive_Article13_1h](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1h)|	INSPIRE_Directive_Article13_1h	Publieke toegang beperkt ivm afbreuk van de bescherming van het milieu waarop die informatie betrekking heeft, zoals de habitat van zeldzame soorten |
 
-
-
-```
-<gmd:resourceConstraints>
-  <gmd:MD_LegalConstraints>
-    <gmd:useLimitation>
-      <gco:CharacterString>Geen gebruiksbeperking</gco:CharacterString>
-    </gmd:useLimitation>
-    <gmd:accessConstraints>
-      <gmd:MD_RestrictionCode 
+<aside class="example" title="XML notatie open data licentie"><pre><code>
+&lt;gmd:resourceConstraints>
+  &lt;gmd:MD_LegalConstraints>
+    &lt;gmd:useLimitation>
+      &lt;gco:CharacterString>Geen gebruiksbeperking&lt;/gco:CharacterString>
+    &lt;/gmd:useLimitation>
+    &lt;gmd:accessConstraints>
+      &lt;gmd:MD_RestrictionCode 
         codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode"
         codeListValue="otherRestrictions"/>
-    </gmd:accessConstraints>
-    <gmd:otherConstraints>
-       <gco:CharacterString> Geen beperkingen </gco:CharacterString>
-    </gmd:otherConstraints>
-    <gmd:otherConstraints>
-       <gco:CharacterString>
+    &lt;/gmd:accessConstraints>
+    &lt;gmd:otherConstraints>
+       &lt;gco:CharacterString> Geen beperkingen &lt;/gco:CharacterString>
+    &lt;/gmd:otherConstraints>
+    &lt;gmd:otherConstraints>
+       &lt;gco:CharacterString>
          http://creativecommons.org/publicdomain/mark/1.0/deed.nl
-       </gco:CharacterString>
-    </gmd:otherConstraints>
-  </gmd:MD_LegalConstraints>
-</gmd:resourceConstraints>
-```
-
-## Veiligheidsrestricties
-
-Dit element bevat de soort restrictie op de dataset.
-
-
-Het is verplicht op zijn minst één van de drie elementen juridische toegangsrestricties, overige beperkingen, veiligheidsrestricties op te nemen. Als er geen beperkingen zijn dient men dat bij overige beperkingen aan te geven. In 2.6.3 Gebruiksvoorwaarden is uitgewerkt hoe gebruiksvoorwaarden en public domein mark toe te passen. De licentie wordt in het element overige beperkingen opgenomen. 
-
-Mogelijke waarden zijn;
-Naam	Engelse naam	Beschrijving
-vrij toegankelijk 	unclassified	Beschikbaar voor algemene ontsluiting.
-niet toegankelijk 
-
-restricted	Niet geschikt voor algemene ontsluiting.
-vertrouwelijk 	confidential	Beschikbaar voor personen die vertrouwd kan omgaan met de
-informatie.
-geheim 	secret	Dient geheim en verborgen te worden gehouden voor iedereen
-behalve een geselecteerde groep personen.
-zeer geheim	topSecret	Hoogste geheimhouding vereist.
- 
+       &lt;/gco:CharacterString>
+    &lt;/gmd:otherConstraints>
+  &lt;/gmd:MD_LegalConstraints>
+&lt;/gmd:resourceConstraints>
+</code></pre></aside>
 
 ## Gebruiksbeperkingen
 
 Gebruiksbeperkingen bevat toepassingen waarvoor de dataset niet geschikt is, maar kan ook prijsinformatie voor het gebruik van de dataset bevatten.
 
-
 De volgende voorbeelden zijn praktijkvoorbeelden, deze disclaimers kunnen beter opgenomen worden bij overige beperkingen.
 
+<aside class="warning" title="Onjuiste voorbeelden gebruiksbeperkingen">
+<ol>
+<li>Zie http://www.rijkswaterstaat.nl/apps/geoservices/legal/NWB_disclaimer.html</li>
+<li>geen - none</li>
+</ol>
 
-Verkeerde voorbeelden: 
-1. Ten behoeve van naamsvermelding van de Nieuwe Kaart van Nederland onder de Creative Common Licentie zijn twee opties mogelijk.1. Opname in ongewijzigde vorm indien (een gedeelte van) de Nieuwe Kaart van Nederland in ongewijzigde vorm wordt overgenomen, dan wordt de kaart in feite gekopieerd. De volgende naamsvermelding en bijbehorende licentie (voor toekomstige her-gebruikers) is dan van toepassing:Bron: De Nieuwe Kaart van Nederland, Nirov, Den Haag / Creative Commons - Naamsvermelding 2.5 Nederland2. Opname in bewerkte / afgeleide vormVoor de Nieuwe Kaart is dan alleennaamsvermelding van toepassing. In feite is nu een eigen kaart gemaakt (op basis van de Nieuwe Kaart van Nederland) waarvan zelf bepaald wordt onder welke licentie deze wordt uitgegeven. Met onderstaande naamsvermelding wordt het gebruik van de Nieuwe Kaart afgedekt:Bron: De Nieuwe Kaart van Nederland, Nirov, Den HaagMeer informatie: www.creativecommons.org
-2. http://dinolks01.nitg.tno.nl/dinoLks/about/legal/terms.jsp
-3. Zie http://www.rijkswaterstaat.nl/apps/geoservices/legal/NWB_disclaimer.html
-4. geen - none
-
-Correcte voorbeelden: 
-- Niet te gebruiken voor navigatie 
-- Voor gebruik van deze dataset wordt een vergoeding van 100 euro gevraagd
+<aside class="example" title="Correcte voorbeelden gebruiksbeperkingen"> 
+<ol>
+<li>Niet te gebruiken voor navigatie </li>
+<li>Voor gebruik van deze dataset wordt een vergoeding van 100 euro gevraagd</li>
+</ol>
 
 ## Verantwoordelijke organisatie bron
 
@@ -795,21 +808,21 @@ Verantwoordelijke organisatie bron is het metadata element waarin de de identifi
 De naam van de organisatie wordt altijd voluit geschreven en in volgorde van hiërarchie. De afkorting kan toegevoegd worden aan de organisatienaam. Voor de correcte overheidsnamen zie: http://www.overheid.nl/overheidsorganisaties.
 
 
-Voorbeelden:
-1. Nederlands Instituut voor Ruimtelijke Ordening en Volkshuisvesting (Nirov)
-2. Nederlandse organisatie voor toegepast-natuurwetenschappelijk onderzoek (TNO)
-3. Rijkswaterstaat Data en ICT Dienst (RWS DID) 
-4. Planbureau voor de Leefomgeving (PBL)
+<aside class="warning" title="organisatie bron">
+<ol>
+<li>Nederlandse organisatie voor toegepast-natuurwetenschappelijk onderzoek (TNO)</li>
+<li>Rijkswaterstaat Data en ICT Dienst (RWS DID) </li>
+<li>Planbureau voor de Leefomgeving (PBL)</li></ol></aside>
 
 ### Verantwoordelijke organisatie bron: e-mail
 
 Dit element bevat het e-mail adres van de verantwoordelijke organisatie van de bron. Dit kan een persoonlijk e-mailadres zijn , maar ook een algemeen e-mailadres of een e-mailadres van een loket.
 
 
-Voorbeelden:
-1. info@nieuwekaart.nl
-2. dinoloket@tno.nl
-3. geoloket@pbl.nl
+<aside class="warning" title="E-mail">
+<ol>
+<li>dinoloket@tno.nl</li>
+<li>geoloket@pbl.nl</li></ol></aside>
 
 ### Verantwoordelijke organisatie bron: rol
 
@@ -818,21 +831,19 @@ De rol van de verantwoordelijke organisatie bron beschrijft op welke manier een 
 
 De volgende waardes zijn mogelijk;
 
-Naam	Engelse naam	Beschrijving
-verstrekker 	resourceProvider	Organisatie die de data verstrekt.
-beheerder 	custodian	Partij die verantwoordelijkheid heeft geaccepteerd en zorg draagt
-voor het beheer van de data.
-eigenaar 	owner	Partij die eigenaar is van de data.
-gebruiker	user	Partij die de data gebruikt.
-distributeur 	distributor	Partij die de data verstrekt.
-maker 	originator	Partij die de data heeft gecreëerd.
-contactpunt 	pointOfContact	Partij waarmee contact kan worden opgenomen voor het vergaren
-van kennis of verstrekking van de data.
-inwinner	principalInvestigator	Sleutelpartij verantwoordelijk voor verzamelen van data en de
-uitvoering van onderzoek.
-bewerker	processor	Partij die de data heeft bewerkt, zodanig dat de data is gewijzigd.
-uitgever	publisher	Partij die de data publiceert.
-auteur 	author	Partij die auteur is van de data.
+|Naam|	Waarde|	Beschrijving
+|---|---|---|
+|verstrekker |	resourceProvider|	Organisatie die de data verstrekt.
+|beheerder 	|custodian	|Partij die verantwoordelijkheid heeft geaccepteerd en zorg draagt voor het beheer van de data.
+|eigenaar 	|owner	|Partij die eigenaar is van de data.
+|gebruiker	|user	|Partij die de data gebruikt.
+|distributeur| 	distributor	|Partij die de data verstrekt.
+|maker 	|originator	|Partij die de data heeft gecreëerd.
+|contactpunt| 	pointOfContact	|Partij waarmee contact kan worden opgenomen voor het vergaren van kennis of verstrekking van de data.
+|inwinner|	principalInvestigator|	Sleutelpartij verantwoordelijk voor verzamelen van data en de uitvoering van onderzoek.
+|bewerker|	processor	|Partij die de data heeft bewerkt, zodanig dat de data is gewijzigd.
+|uitgever|	publisher	|Partij die de data publiceert.
+|auteur |	author	|Partij die auteur is van de data.
 
 
 ## Metadata unieke identifier
@@ -843,8 +854,9 @@ Metadata unieke identifier bevat de unieke identificatie voor de metadata file.
 Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de Universal Unique Identifier. http://en.wikipedia.org/wiki/UUID
 
 
-Voorbeeld:
-550e8400-e29b-41d4-a716-446655440000
+<aside class="warning" title="Metadata unieke identifier">
+<ol>
+550e8400-e29b-41d4-a716-446655440000</ol></aside>
 
 ## Parent unieke identifier
 
@@ -854,71 +866,53 @@ Wanneer er een dataset met hogere hiërarchie is, wordt gebruikt gemaakt van par
 Het metatdata element parent unieke identifier is conditioneel in de kernset. Het is verplicht als er een dataset met hogere hiërarchie is.
 
 
-Voorbeeld:
-550e8400-e29b-41d4-a716-446655440000
+<aside class="warning" title="Parent unieke identifier">
+<ol>550e8400-e29b-41d4-a716-446655440000</ol></aside>
 
 
 ## Verantwoordelijke organisatie metadata
 
 Dit element bevat de naam van de organisatie die verantwoordelijk is voor de metadata.
 
-
 Gebruik de volledig uitgeschreven naam van de verantwoordelijke organisatie. De afkorting kan toegevoegd worden aan de organisatienaam. Voor de correcte overheidsnamen zie: http://www.overheid.nl/overheidsorganisaties.
-
-
-Voorbeeld:
-Nederlandse organisatie voor toegepast-natuurwetenschappelijk onderzoek (TNO)
 
 ### Verantwoordelijke organisatie metadata: e-mail
 
 Dit element bevat het e-mail adres van de organisatie verantwoordelijk voor de metadata. Dit kan een persoonlijk e-mailadres zijn, maar ook een algemeen e-mailadres of een e-mailadres van een loket.
 
-Voorbeelden:
-
-1. heusden@nieuwekaart.nl
-2. dinoloket@tno.nl
-3. geoloket@pbl.nl
-
 ### Verantwoordelijke organisatie metadata: rol
 
 Dit element bevat de rol van de organisatie verantwoordelijk voor de metadata. Er kunnen meerdere organisaties met verschillende rollen bij een dataset betrokken zijn. Een organisatie kan ook meerdere rollen hebben. Voor de rol van de organisatie wordt een codelijst gehanteerd, maar pointOfContact kan als default worden gehanteerd. 
-
-
 
 ## Metadata datum
 
 De datum waarop de metadata is gemaakt. 
 INSPIRE verplicht de creatie datum, in het profiel versie 1.1 was het ook mogelijk om de publicatie of wijzigingsdatum te kiezen. Het formaat van de datum is JJJJ-MM-DD (met streepjes).
 
-
-Voorbeeld:
-2008-02-25
+<aside class="warning" title="Parent unieke identifier">
+<ol>2008-02-25</ol></aside>
 
 ## Taal van de metadata
 
 In dit element wordt vastgelegd in welke taal de metadata is beschreven. Gebruik hiervoor alleen de drie-letter codes van 639-2/B (bibliographic codes), zoals gedefinieerd op http://www.loc.gov/standards/iso639-2/.
 
-
 Voor Nederland is over het algemeen is de default waarde: dut.
-
-
-De codes voor de 23 officiële EU talen zijn:
 
 ## Metadata standaard naam
 
 Dit metadata element is nodig om uitbreidingen met profielen te duiden. Dit element bevat de naam van de standaard.
 
 
-Voorbeeld:
-ISO 19115
+<aside class="warning" title="Metadata standaard naam">
+<ol>ISO 19115</ol></aside>
 
 ## Metadata standaard versie
 
 Metadata standaard versie is nodig om uitbreidingen op standaarden aan te geven. Dit element bevat de versie (profiel) van de metadatastandaard die wordt gebruikt.
 
 
-Voorbeeld:
-Nederlandse metadata profiel op ISO 19115 voor geografie 2.0
+<aside class="warning" title="Metadata standaard versie">
+<ol>Nederlandse metadata profiel op ISO 19115 voor geografie 2.0</ol></aside>
 
 # Opdracht metadata voor dataset
 
