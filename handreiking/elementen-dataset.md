@@ -222,38 +222,64 @@ Het element protocol, is van belang voor het automatisch kunnen downloaden van d
 
 Dit element is conditioneel. Het is verplicht als er een URL is opgegeven. Bijvoorbeeld naar een zip bestand, WMS of WFS.
 
-Voor protocol kunnen de volgende waarden worden gebruikt; 
+Voor protocol gelden aparte lijsten voor al naar gelang de omschrijving van het type url de waarde 'AccessPoint' of 'endPoint' heeft. Voor een accessPoint kunnen de volgende waarden worden gebruikt; 
 
-| Naam	| Beschrijving | 	MD IR Name | 
+
+
+| Waarde	| Beschrijving | 
 | --- | --- | --- |
-| OGC:CSW	| Web Catalog service	| Discovery Service | 
-| OGC:WMS	| Web Map service	| View Service | 
-| OGC:WFS	| Web Feature Service	| Download Service | 
-| OGC:WCS	| Web Coverage Service	| Download Service | 
-| OGC:WCTS	| Web Coordinate Transformation Service | 	Transformation Service | 
-| OGC:WPS	| Web Processing Service	| Invoke Spatial Data Service | 
-| UKST	| Unknown Service Type	| Other Services | 
-| OGC:WMC	| Web Map Context | | 	
-| OGC:KML	| Keyhole Mark-up Language	| | 
-| OGC:GML	| Geography Markup Language	| | 
-| OGC:WFS-G	| Gazzetteer service	| | 
-| OGC:SOS	| Sensor Observation Service | | 	
-| OGC:SPS	| Sensor Planning Service | | 	
-| OGC:SAS	| Sensor Alert Service	| | 
-| OGC:WNS	| Web Notification Service	| | 
-| OGC:ODS	| OpenLS Directory Service	| | 
-| OGC:OGS	| OpenLS Gateway Service	| | 
-| OGC:OUS	| OpenLS Utility Service	| | 
-| OGC:OPS	| OpenLS Presentation Service	| | 
-| OGC:ORS	| OpenLS Route Service	| | 
-| website	| website	| | 
-| download	| download	| | 
+|[OGC:CSW](http://www.opengeospatial.org/standards/cat) | Web Catalog service |
+|[OGC:WMS](http://www.opengeospatial.org/standards/wms) | Web Map service |
+|[OGC:WMTS](http://www.opengeospatial.org/standards/wmts) | Web Map Tile Service |
+|[OGC:WFS](http://www.opengeospatial.org/standards/wfs) | Web Feature Service |
+|[OGC:WCS](http://www.opengeospatial.org/standards/wcs) | Web Coverage Service |
+|[OGC:SOS](http://www.opengeospatial.org/standards/sos) | Sensor Observation Service |
+|INSPIRE Atom | Atom Service Feed |
+|[OGC:WCTS](http://www.opengeospatial.org/standards/) | Web Coordinate Transformation Service |
+|[OGC:WPS](http://www.opengeospatial.org/standards/wps) | Web Processing Service |
+|OGC:WFS-G | Gazetteer service |
+|[OGC:SPS](http://www.opengeospatial.org/standards/sps) | Sensor Planning Service |
+|[OGC:SAS](http://www.ogcnetwork.net/SAS) | Sensor Alert Service |
+|OGC:WNS | Web Notification Service |
+|[OGC:ODS](http://www.opengeospatial.org/standards/ols#ODS) | OpenLS Directory Service |
+|[OGC:OGS](http://www.opengeospatial.org/standards/ols#OGS) | OpenLS Gateway Service |
+|[OGC:OUS](http://www.opengeospatial.org/standards/ols#OUS) | OpenLS Utility Service |
+|[OGC:OPS](http://www.opengeospatial.org/standards/ols#OPS) | OpenLS Presentation Service |
+|[OGC:ORS](http://www.opengeospatial.org/standards/ols#ORS) | OpenLS Route Service |
+|[OGC:SensorThings](http://www.opengeospatial.org/standards/sensorthings) | SensorThings API |
+|[W3C:SPARQL](https://www.w3.org/TR/rdf-sparql-query/) | SPARQL Query Language for RDF |
+|[OASIS:OData](https://www.oasis-open.org/committees/odata) | Open data protocol |
+|[OAS](https://github.com/OAI/OpenAPI-Specification) | Open API Specification |
+|landingpage | Een webpagina die toegang geeft tot de dataset of overige informatie bevat |
+|application | Een (web) applicatie die rechtstreeks toegang geeft tot de dataset |
+|dataset | Referentie naar een locale dataset locatie |
+|UKST | Unknown Service Type |
+
+Voor een endPoint kunnen de volgende waardes gebruikt worden.
+
+| Waarde |  Beschrijving | 
+| --- | --- |
+| [gml](https://www.iana.org/assignments/media-types/application/gml+xml) | Geography Markup Language
+| [kml](http://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml) |  Keyhole Markup Language
+| [geojson](https://www.iana.org/assignments/media-types/application/geo+json) |  Vector data geencodeerd in JSON
+| [gpkg](https://www.iana.org/assignments/media-types/application/vnd.sqlite3) |   GeoPackage
+| [json](https://www.iana.org/assignments/media-types/application/json) |  Javascript object notation
+| [jsonld](https://www.iana.org/assignments/media-types/application/ld+json) |    RDF geencodeerd in JSON
+| [rdf-xml](https://www.iana.org/assignments/media-types/application/rdf+xml) |   RDF geencodeerd in XML
+| [xml](https://www.iana.org/assignments/media-types/application/xml) |   Extensible Markup Language
+| [zip](https://www.iana.org/assignments/media-types/application/zip) |   Bestands archief
+| [png](https://www.iana.org/assignments/media-types/image/png) |   Portable Network Graphics
+| [gif](https://www.iana.org/assignments/media-types/image/gif) |   Graphics Interchange Format
+| [jp2](https://www.iana.org/assignments/media-types/image/jp2) |   JPEG 2000
+| [tiff](https://www.iana.org/assignments/media-types/image/tiff) |   TIFF
+| [csv](https://www.iana.org/assignments/media-types/text/csv) | Komma gescheiden waarden
+| [mapbox-vector-tile](https://www.iana.org/assignments/media-types/application/vnd.mapbox-vector-tile) | Encoding voor mapbox vector tiles| 
 
 
 <aside class="example" title="Protocol">
 <ol>
-<li>OGC:WMS</li>
-<li>Download</li>
+<li>[OGC:WMS](http://www.opengeospatial.org/standards/wms)</li>
+<li>[png](https://www.iana.org/assignments/media-types/image/png)</li>
 <li>website</li></ol></aside>
 
 ### Naam
@@ -488,19 +514,14 @@ Mogelijke waarden zijn;
 
 ## Niveau kwaliteitsbeschrijving
 
-Het niveau kwaliteitsbeschrijving beschrijft het niveau waarop de kwaliteitsinformatie betrekking heeft. ISO bevat ook de mogelijkheden om bijvoorbeeld op feature niveau kwaliteitsinformatie op te nemen, waardoor hier expliciet moet worden vermeld om welk niveau het gaat. Voor Nederland hebben we deze codelijst beperkt. Vanf versie 1.3 van dit profiel is ook de waarde featureType mogelijk.
-
-Als voor INSPIRE het niveau featureType wordt gekozen dient het element features te worden gebruikt om de featuretype namen in op te nemen.
-
-Het element hierarchieniveau bevat in wezen dezelfde informatie, maar met het doel aan te geven waar de beschrijving van de metadata over gaat.
-
+Het niveau kwaliteitsbeschrijving beschrijft het niveau waarop de kwaliteitsinformatie betrekking heeft. 
 
 Niveau kwaliteitsbeschrijving kan de volgende waarden bevatten; 
-|Naam|	Waarde|	Beschrijving|
-|---|---|---|
-|dataset|	dataset|	Informatie heeft betrekking op de dataset.|
-|series	|series|	Informatie heeft betrekking op de serie.|
-|featureType|	featureType|	Informatie heeft betrekking op het featuretype.|
+
+|	Waarde | Beschrijving |
+|---|---|
+|	dataset|	Informatie heeft betrekking op de dataset.|
+| series |	Informatie heeft betrekking op de serie.|
 
 <aside class="example" title="Niveau kwaliteitsbeschrijving">
 <ol>dataset</ol></aside>
@@ -792,13 +813,13 @@ De volgende voorbeelden zijn praktijkvoorbeelden, deze disclaimers kunnen beter 
 <ol>
 <li>Zie http://www.rijkswaterstaat.nl/apps/geoservices/legal/NWB_disclaimer.html</li>
 <li>geen - none</li>
-</ol>
+</ol></aside>
 
 <aside class="example" title="Correcte voorbeelden gebruiksbeperkingen"> 
 <ol>
 <li>Niet te gebruiken voor navigatie </li>
 <li>Voor gebruik van deze dataset wordt een vergoeding van 100 euro gevraagd</li>
-</ol>
+</ol></aside>
 
 ## Verantwoordelijke organisatie bron
 
@@ -808,7 +829,7 @@ Verantwoordelijke organisatie bron is het metadata element waarin de de identifi
 De naam van de organisatie wordt altijd voluit geschreven en in volgorde van hiërarchie. De afkorting kan toegevoegd worden aan de organisatienaam. Voor de correcte overheidsnamen zie: http://www.overheid.nl/overheidsorganisaties.
 
 
-<aside class="warning" title="organisatie bron">
+<aside class="example" title="organisatie bron">
 <ol>
 <li>Nederlandse organisatie voor toegepast-natuurwetenschappelijk onderzoek (TNO)</li>
 <li>Rijkswaterstaat Data en ICT Dienst (RWS DID) </li>
@@ -819,7 +840,7 @@ De naam van de organisatie wordt altijd voluit geschreven en in volgorde van hi�
 Dit element bevat het e-mail adres van de verantwoordelijke organisatie van de bron. Dit kan een persoonlijk e-mailadres zijn , maar ook een algemeen e-mailadres of een e-mailadres van een loket.
 
 
-<aside class="warning" title="E-mail">
+<aside class="example" title="E-mail">
 <ol>
 <li>dinoloket@tno.nl</li>
 <li>geoloket@pbl.nl</li></ol></aside>
@@ -848,13 +869,10 @@ De volgende waardes zijn mogelijk;
 
 ## Metadata unieke identifier
 
-Metadata unieke identifier bevat de unieke identificatie voor de metadata file.
+Metadata unieke identifier bevat de unieke identificatie voor de metadata file. Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de [Universal Unique Identifier](http://en.wikipedia.org/wiki/UUID). 
 
 
-Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de Universal Unique Identifier. http://en.wikipedia.org/wiki/UUID
-
-
-<aside class="warning" title="Metadata unieke identifier">
+<aside class="example" title="Metadata unieke identifier">
 <ol>
 550e8400-e29b-41d4-a716-446655440000</ol></aside>
 
@@ -866,7 +884,7 @@ Wanneer er een dataset met hogere hiërarchie is, wordt gebruikt gemaakt van par
 Het metatdata element parent unieke identifier is conditioneel in de kernset. Het is verplicht als er een dataset met hogere hiërarchie is.
 
 
-<aside class="warning" title="Parent unieke identifier">
+<aside class="example" title="Parent unieke identifier">
 <ol>550e8400-e29b-41d4-a716-446655440000</ol></aside>
 
 
@@ -889,7 +907,7 @@ Dit element bevat de rol van de organisatie verantwoordelijk voor de metadata. E
 De datum waarop de metadata is gemaakt. 
 INSPIRE verplicht de creatie datum, in het profiel versie 1.1 was het ook mogelijk om de publicatie of wijzigingsdatum te kiezen. Het formaat van de datum is JJJJ-MM-DD (met streepjes).
 
-<aside class="warning" title="Parent unieke identifier">
+<aside class="example" title="Metadata datum">
 <ol>2008-02-25</ol></aside>
 
 ## Taal van de metadata
@@ -903,15 +921,14 @@ Voor Nederland is over het algemeen is de default waarde: dut.
 Dit metadata element is nodig om uitbreidingen met profielen te duiden. Dit element bevat de naam van de standaard.
 
 
-<aside class="warning" title="Metadata standaard naam">
+<aside class="example" title="Metadata standaard naam">
 <ol>ISO 19115</ol></aside>
 
 ## Metadata standaard versie
 
 Metadata standaard versie is nodig om uitbreidingen op standaarden aan te geven. Dit element bevat de versie (profiel) van de metadatastandaard die wordt gebruikt.
 
-
-<aside class="warning" title="Metadata standaard versie">
+<aside class="example" title="Metadata standaard versie">
 <ol>Nederlandse metadata profiel op ISO 19115 voor geografie 2.0</ol></aside>
 
 # Opdracht metadata voor dataset
@@ -922,7 +939,7 @@ Het NWB-Wegen uit voorbeeld drie wordt 4 keer per jaar geactualiseerd, wat zou e
 - Met welk onderwerp kan de risicokaart het best worden beschreven?
 - In het NGR komt onderstaande trefwoordenlijst voor. Doe een voorstel tot aanpassing.
 
-”TOPkaarten, Topografische kaart, Stafkaart, Gebiedsinformatie, Plaatsbeschrijving, Geografisch, Gebouw, Huis, Bebouwd Gebied, Huizenblok, Hoogbouw, Muur, Warenhuizen, Kassen, Tank, Politiebureau, Postkantoor, Gemeentehuis, Hospitaal, Ziekenhuis, Markant Object, Jaknikker, Zuiveringsinstallatie, Paal, Vlampijp, Schietbaan, Seinmast, Windturbine, Windmolen, Watermolen, Windmolentje, Gemaal, Religieus gebouw, Kapel, Kruis, Hunebed, Gedenkteken, Monument, Toren, Watertoren, Vuurtoren, Autosnelweg, Hoofdverbindingsroute, Lokale weg, Onverharde weg, Overkluizing, Passage, Voetgangersgebied, Voetpad, Straat, Rijwielpad, Pontveer, Voetveer, Veerdienst, Brug, Pijler van brug, Vonder, Beweegbaar Brugdeel, Carpoolplaats, Tankstation, Parkeerterrein, Wegafsluiting, Kilometerpaal, Wegwijzer, Parkeerterrein, Spoor, Tramroute, Smalspoor, Metro, Station, Metrostation, Laadperron, Kilometerpaal, Kabelbaanmast, Kabelbaan, Zendmast, Ontvangstmast, Hoogspanningsmast, Hoogspanningsleiding, Boom, Loofbos, Naaldbos, Gemengd bos, Griend, Populierenopstand, Heg, Bomenrij, Bouwland, Weiland, Boomgaard, Boomkwekerij, Heide, Zand, Overig bodemgebruik, Begraafplaats kruisje, Begraafplaats, Fruitkwekerij, Erf, Tunnel, Dam, Greppel, Zee, Oeverlijn, Waterloop, Hoogwaterlijn, Laagwaterlijn, Droogvallende gronden, Dieptelijn, Dieptepunt, Steenglooiing, Krib, Dras, Riet, Paalwerk, Landaanwinning, Aanlegsteiger, Dukdalf, Kilometerpaal, Kilometerraaipaal, Kilometerraaibord, Peilschaal, Baak, Lichtopstand, Peilmeetstation, Sluisdeur, Stuw, Duiker, Grondduiker, Dam, Stroompijl, Eb/vloed, Hoofdafwateringspatroon, Dijk, Boezemkade, Wal, Kade, Geluidswering, Hoogteverschil, Aardrand, Hek, Camping, Sportcomplex, bebouwd gebied, huizenblok, hoogbouw, kas, autosnelweg, hoofdweg, regionale weg, lokale weg, onverharde weg, straat, wandelgebied, fietspad, pad, voetpad, in aanleg, in ontwerp, viaduct, tunnel, brug, beweegbare brug, spoorweg, station, laadperron, tram, metro, metrostation, waterloop, schutssluis, vonder, koedam, grondduiker, duiker, stuw, sluis, pontveer, voetveer, peilschaal “
+```TOPkaarten, Topografische kaart, Stafkaart, Gebiedsinformatie, Plaatsbeschrijving, Geografisch, Gebouw, Huis, Bebouwd Gebied, Huizenblok, Hoogbouw, Muur, Warenhuizen, Kassen, Tank, Politiebureau, Postkantoor, Gemeentehuis, Hospitaal, Ziekenhuis, Markant Object, Jaknikker, Zuiveringsinstallatie, Paal, Vlampijp, Schietbaan, Seinmast, Windturbine, Windmolen, Watermolen, Windmolentje, Gemaal, Religieus gebouw, Kapel, Kruis, Hunebed, Gedenkteken, Monument, Toren, Watertoren, Vuurtoren, Autosnelweg, Hoofdverbindingsroute, Lokale weg, Onverharde weg, Overkluizing, Passage, Voetgangersgebied, Voetpad, Straat, Rijwielpad, Pontveer, Voetveer, Veerdienst, Brug, Pijler van brug, Vonder, Beweegbaar Brugdeel, Carpoolplaats, Tankstation, Parkeerterrein, Wegafsluiting, Kilometerpaal, Wegwijzer, Parkeerterrein, Spoor, Tramroute, Smalspoor, Metro, Station, Metrostation, Laadperron, Kilometerpaal, Kabelbaanmast, Kabelbaan, Zendmast, Ontvangstmast, Hoogspanningsmast, Hoogspanningsleiding, Boom, Loofbos, Naaldbos, Gemengd bos, Griend, Populierenopstand, Heg, Bomenrij, Bouwland, Weiland, Boomgaard, Boomkwekerij, Heide, Zand, Overig bodemgebruik, Begraafplaats kruisje, Begraafplaats, Fruitkwekerij, Erf, Tunnel, Dam, Greppel, Zee, Oeverlijn, Waterloop, Hoogwaterlijn, Laagwaterlijn, Droogvallende gronden, Dieptelijn, Dieptepunt, Steenglooiing, Krib, Dras, Riet, Paalwerk, Landaanwinning, Aanlegsteiger, Dukdalf, Kilometerpaal, Kilometerraaipaal, Kilometerraaibord, Peilschaal, Baak, Lichtopstand, Peilmeetstation, Sluisdeur, Stuw, Duiker, Grondduiker, Dam, Stroompijl, Eb/vloed, Hoofdafwateringspatroon, Dijk, Boezemkade, Wal, Kade, Geluidswering, Hoogteverschil, Aardrand, Hek, Camping, Sportcomplex, bebouwd gebied, huizenblok, hoogbouw, kas, autosnelweg, hoofdweg, regionale weg, lokale weg, onverharde weg, straat, wandelgebied, fietspad, pad, voetpad, in aanleg, in ontwerp, viaduct, tunnel, brug, beweegbare brug, spoorweg, station, laadperron, tram, metro, metrostation, waterloop, schutssluis, vonder, koedam, grondduiker, duiker, stuw, sluis, pontveer, voetveer, peilschaal```
 
 
 - Is de temporele dekking van het bestand GCN concentratie Stikstofdioxide (NO2) 2020 uit voorbeeld 4 het jaar waarin deze berekening is uitgevoerd of het jaar waarvoor men deze voorspelling doet?
@@ -930,6 +947,6 @@ Het NWB-Wegen uit voorbeeld drie wordt 4 keer per jaar geactualiseerd, wat zou e
 “Ten behoeve van naamsvermelding van de Nieuwe Kaart van Nederland onder de Creative Common Licentie zijn twee opties mogelijk.1. Opname in ongewijzigde vormIndien (een gedeelte van) de Nieuwe Kaart van Nederland in ongewijzigde vorm wordt overgenomen, dan wordt de kaart in feite gekopieerd. De volgende naamsvermelding en bijbehorende licentie (voor toekomstige her-gebruikers) is dan van toepassing:Bron: De Nieuwe Kaart van Nederland, Nirov, Den Haag / Creative Commons - Naamsvermelding 2.5 Nederland2. Opname in bewerkte / afgeleide vormVoor de Nieuwe Kaart is dan alleennaamsvermelding van toepassing. In feite is nu een eigen kaart gemaakt (op basis van de Nieuwe Kaart van Nederland) waarvan zelf bepaald wordt onder welke licentie deze wordt uitgegeven. Met onderstaande naamsvermelding wordt het gebruik van de Nieuwe Kaart afgedekt:Bron: De Nieuwe Kaart van Nederland, Nirov, Den HaagMeer informatie: www.creativecommons.org”
 - Hoe zou de rol van de verantwoordelijke organisatie voor voorbeeld 3 het NWB het best vastgelegd kunnen worden? De samenvatting geeft aan
 
-” Het NWB-Wegen is een digitaal geografisch bestand van nagenoeg alle wegen in Nederland. Opgenomen zijn alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen,”
+```Het NWB-Wegen is een digitaal geografisch bestand van nagenoeg alle wegen in Nederland. Opgenomen zijn alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen```
 
 - Welke rollen kennen we bij voorbeeld 1 de nieuwe kaart?
