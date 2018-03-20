@@ -1,0 +1,14 @@
+th,td {
+border:1px solid #eee;
+padding:8px;
+vertical-align: top;
+}
+
+th {
+  background-color: #eee;
+}
+
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}

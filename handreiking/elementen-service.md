@@ -16,7 +16,7 @@ Hierbij zijn de onderdelen tussen haakjes niet verplicht, de andere wel.
 <li>Pilod SPARQL endpoint Almere</li>
 <li>DANK - Biomassa-Bos-tak- en tophout WFS</li></ol></aside>
 
-!{WMS}(images/WMS.jpg)
+![WMS](images/WMS.jpg)
 
 ## Datum van de bron
 
@@ -29,8 +29,8 @@ Er kan maximaal één creatie datum worden opgenomen. Voor INSPIRE geldt ook een
 Voorbeelden:
 
 <aside class="example" title="Datum van de bron">
-<ol><li>2008-11-20 </li>
-<li>2008-11-04 </li></ol></aside>
+<ol><li>2018-01-20</li>
+<li>2016-11-04</li></ol></aside>
 
 
 ### Datum type van de bron
@@ -124,10 +124,14 @@ Een thesaurus is een lijst met trefwoorden die ontleend zijn aan het dagelijks t
 Thesaurus een conditioneel element. Het thesaurus element is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s. Het bevat de naam van de thesaurus waar het trefwoord uit afkomstig is.
 
 
-<aside class="example" title="DCP">
-<ol>GEMET Thesaurus version 1.0</ol></aside>
-
-![Thesaurus termen](images/Thesaurustermen.jpg)
+<aside class="example" title="Thesuarus">
+<ol>
+  <li>[Eurovoc](http://eurovoc.europa.eu)</li>
+  <li>
+[overheid:UniformeProductnaam (UPL)](http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.uniformeproductnaam)</li>
+  <li>[GEMET - INSPIRE themes, version 1.0](http://www.eionet.europa.eu/gemet/en/themes/)</li>
+  <li>[INSPIRE feature concept dictionary](http://inspire.ec.europa.eu/featureconcept)</li>
+</ol></aside>
 
 ### Thesaurus datum
 
@@ -137,7 +141,7 @@ Dit is een conditioneel element. Het is verplicht als een trefwoord uit een thes
 
 
 <aside class="example" title="DCP">
-<ol>2009-05-15</ol></aside>
+<ol>2017-05-15</ol></aside>
 
 ### Thesaurus datum type
 
@@ -152,20 +156,6 @@ Mogelijke waarden zijn;
 | creatie |   creation |  Datum waarop de dataset of dataset serie is gecreëerd. |
 | publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
 | revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. |
-
-## resource locator 
-
-Het element resource locator bevat de valide URL voor on-line toegang tot de service.
-
-
-Dit element is conditioneel. Als er een link naar de service beschikbaar is, is de resource locator een verplicht element. Voor bijvoorbeeld services waar een restrictieve toegang voor geldt kan dit element niet ingevuld worden.
-
-Dit element wordt ook in de metadata van de data opgenomen in het element URL waardoor de link naar de service wordt gelegd.
-
-
-<aside class="example" title="resource locator">
-<ol>
-http://www.dinoservices.nl/wms/dinomap/M09M0817</ol></aside>
 
 ## Juridische toegangsrestricties
 
@@ -419,16 +409,11 @@ Mogelijke waarden zijn;
 
 | Waarde | Omschrijving |
 | -- | -- |
-| [discovery](http://inspire.ec.europa.eu/
-metadata-codelist/SpatialDataServiceType/discovery) | OGC:CSW; Web Catalog service |
-| [view](http://inspire.ec.europa.eu/
-metadata-codelist/SpatialDataServiceType/view) | OGC:WMS;Web Map service of OGC:WMTS; Web Mapping Tiling Service |
-| [download](http://inspire.ec.europa.eu/
-metadata-codelist/SpatialDataServiceType/download) | OGC:WFS; Web Feature Service of OGC:WCS; Web Coverage Service of OGC:SOS; Sensor Observation Service of INSPIRE Atom; Atom Service Feed |
-| [transformation](http://inspire.ec.europa.eu/
-metadata-codelist/SpatialDataServiceType/transformation) | OGC:WCTS; Web Coordinate Transformation Service |
-| [other](http://inspire.ec.europa.eu/
-metadata-codelist/SpatialDataServiceType/other) | Alle spatial data services die geen INSPIRE netwerk service zijn |
+| [discovery](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/discovery) | OGC:CSW; Web Catalog service |
+| [view](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view) | OGC:WMS;Web Map service of OGC:WMTS; Web Mapping Tiling Service |
+| [download](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download) | OGC:WFS; Web Feature Service of OGC:WCS; Web Coverage Service of OGC:SOS; Sensor Observation Service of INSPIRE Atom; Atom Service Feed |
+| [transformation](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/transformation) | OGC:WCTS; Web Coordinate Transformation Service |
+| [other](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/other) | Alle spatial data services die geen INSPIRE netwerk service zijn |
 
 <aside class="example" title="Service type"><ol>
 view</ol></aside>
@@ -447,8 +432,7 @@ Het is ook mogelijk om naar het metedatarecord in een catalogus te verwijzen die
 
 
 <aside class="example" title="">
-<ol>
-http://88.198.70.50/geonetwork/srv/nl/iso19139.xml?id=21628</ol></aside>
+<ol>https://nationaalgeoregister.nl/geonetwork/srv/api/records/2a3b204a-e46a-413d-b5de-3246ac1c7645</ol></aside>
 
 ## Koppel type
 
@@ -628,8 +612,7 @@ QualityOfServiceCriteria/performance) | Het beschrijft hoe snel een aanvraag naa
 QualityOfServiceCriteria/capacity) | Het beschrijft het maximale aantal gelijktijdige verzoeken die met de aangegeven prestatie kunnen worden afgerond. |
  
 <aside class="example" title="Criteria beschrijving">
-<ol>[availability](http://inspire.ec.europa.eu/metadata-codelist/
-QualityOfServiceCriteria/availability)</ol></aside>
+<ol>[availability](http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability)</ol></aside>
 
 ### Criteria waarde
 
