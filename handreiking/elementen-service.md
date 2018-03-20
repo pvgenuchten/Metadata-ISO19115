@@ -2,144 +2,156 @@
 
 Dit hoofdstuk beschrijft enkele verplichte elementen van het Nederlands profiel iets uitgebreider dan in de specificatie.
 
-## Titel van de bron
+## Titel van de service
 
-De resource title is de naam van de service, ook wel titel van de service genoemd. Het is niet de technische naam van de service.
+De resource title is de naam van de service, ook wel titel van de service genoemd. Het is niet de technische naam van de service. Het doel van dit element is de service voldoende te identificeren voor de gebruiker. Een meer uitgebreide omschrijving van de service kan gegeven worden in een ander veld, namelijk resource abstract. Wanneer er verschillende versies van een service in de meta-informatie opgenomen moeten worden, is het aan te raden om de verschillende versienummers op een gelijke wijze in de service naam te verwerken. Aanbevolen schrijfwijze voor dit element is:
 
-
-Het doel van dit element is de service voldoende te identificeren voor de gebruiker. Een meer uitgebreide omschrijving van de service kan gegeven worden in een ander veld, namelijk resource abstract. Wanneer er verschillende versies van een service in de meta-informatie opgenomen moeten worden, is het aan te raden om de verschillende versienummers op een gelijke wijze in de service naam te verwerken. Aanbevolen schrijfwijze voor dit element is:
-
-
-(projectkenmerk) onderwerp (locatiekenmerk) (jaar) (versie)
+(projectkenmerk) onderwerp (locatiekenmerk) (jaar) (versie) (protocol)
 Hierbij zijn de onderdelen tussen haakjes niet verplicht, de andere wel.
 
 
-Voorbeeld;
-Nieuwe kaart van Nederland
-WMS bos
-
-
-Capability element;
-/WMT_MS_Capabilities/Title
+<aside class="example" title="Titel van de service">
+<ol>
+<li>INSPIRE View service voor gebieden met natuurrisico's (WMS)</li>
+<li>Pilod SPARQL endpoint Almere</li>
+<li>DANK - Biomassa-Bos-tak- en tophout WFS</li></ol></aside>
 
 !{WMS}(images/WMS.jpg)
+
+## Datum van de bron
+
+Het metadata element datum van de bron geeft de creatie-, publicatie-, of wijzigingdatum van de service. 
+Het formaat van de datum is JJJJ-MM-DD (met streepjes).
+
+Op z’n minst één van de elementen Datum creatie, Datum publicatie of Datum revisie is verplicht. 
+Er kan maximaal één creatie datum worden opgenomen. Voor INSPIRE geldt ook een maximum van één revisie datum.
+
+Voorbeelden:
+
+<aside class="example" title="Datum van de bron">
+<ol><li>2008-11-20 </li>
+<li>2008-11-04 </li></ol></aside>
+
+
+### Datum type van de bron
+
+Het element datum type van de bron bevat het type gebeurtenis waar de datum betrekking op heeft. 
+
+Mogelijke waarden zijn;
+
+| Naam |  Waarde |  Beschrijving |
+| --- | --- | --- |
+| creatie |   creation |  Datum waarop de dataset of dataset serie is gecreëerd. |
+| publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
+| revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. | 
+
+<aside class="example" title="Datum type van de bron">
+<ol><li>publication</li>
+<li>creation</li></ol></aside>
 
 ## Samenvatting
 
 De resource abstract is de samenvatting van de inhoud van de service.
 In dit element kan een meer uitgebreide beschrijving van de service gegeven worden. Een service kan samengesteld zijn uit verschillende datasets. Hierdoor kan de samenvatting afwijken van de samenvatting van een dataset.
 
+<aside class="example" title="Samenvatting">
+<ol>Deze webservice toont de jaargemiddelde cijfers van het Nationaal Meetnet Radioactiviteit van het RIVM zoals in het kader van het EURATOM verdrag verzameld. De data is op diverse meetlocaties verspreid over Nederland gemeten.</ol></aside>
 
-Voorbeeld;
-De Nieuwe Kaart van Nederland is een totaaloverzicht van nieuwe ruimtelijke ontwikkelingen
+<aside class="example" title="Hiërarchieniveau naam">
+<ol>Webservice</ol></aside>
 
-Capability element;
-/WMT_MS_Capabilities/Abstract
+## Verantwoordelijke organisatie bron
+
+Verantwoordelijke organisatie bron is het metadata element waarin de de identificatie van de verantwoordelijke organisatie wordt aangegeven. Van de organisatie wordt de volledige organisatie naam vastgelegd behorende bij een bepaalde rol.
 
 
-## Hiërarchieniveau
+De naam van de organisatie wordt altijd voluit geschreven en in volgorde van hiërarchie. De afkorting kan toegevoegd worden aan de organisatienaam. Voor de correcte overheidsnamen zie: http://www.overheid.nl/overheidsorganisaties.
 
-Het element resource type geeft aan waarop de metadata betrekking heeft. Voor dataservices is dat service, bij metadata voor data kan dat dataset of serie zijn. Deze waarde kan als default gehanteerd worden.
 
-Resource type kan de volgende waarde bevatten;
+<aside class="example" title="organisatie bron">
+<ol>
+<li>Nederlandse organisatie voor toegepast-natuurwetenschappelijk onderzoek (TNO)</li>
+<li>Rijkswaterstaat Data en ICT Dienst (RWS DID) </li>
+<li>Planbureau voor de Leefomgeving (PBL)</li></ol></aside>
 
-| Naam	| Engelse naam	| Beschrijving |
+### Verantwoordelijke organisatie bron: e-mail
+
+Dit element bevat het e-mail adres van de verantwoordelijke organisatie van de service. Dit kan een persoonlijk e-mailadres zijn, maar ook een algemeen e-mailadres of een e-mailadres van een loket.
+
+<aside class="example" title="E-mail">
+<ol>
+<li>dinoloket@tno.nl</li>
+<li>geoloket@pbl.nl</li></ol></aside>
+
+### Verantwoordelijke organisatie bron: rol
+
+De rol van de verantwoordelijke organisatie bron beschrijft op welke manier een bepaalde organisatie betrokken is bij een service. Er kunnen meerdere organisaties met verschillende rollen bij een dataset betrokken zijn. Een organisatie kan ook meerdere rollen hebben.
+
+De volgende waardes zijn mogelijk;
+
+|Naam|  Waarde| Beschrijving
+|---|---|---|
+|verstrekker |  resourceProvider| Organisatie die de data verstrekt.
+|beheerder  |custodian  |Partij die verantwoordelijkheid heeft geaccepteerd en zorg draagt voor het beheer van de data.
+|eigenaar   |owner  |Partij die eigenaar is van de data.
+|gebruiker  |user |Partij die de data gebruikt.
+|distributeur|  distributor |Partij die de data verstrekt.
+|maker  |originator |Partij die de data heeft gecreëerd.
+|contactpunt|   pointOfContact  |Partij waarmee contact kan worden opgenomen voor het vergaren van kennis of verstrekking van de data.
+|inwinner|  principalInvestigator|  Sleutelpartij verantwoordelijk voor verzamelen van data en de uitvoering van onderzoek.
+|bewerker|  processor |Partij die de data heeft bewerkt, zodanig dat de data is gewijzigd.
+|uitgever|  publisher |Partij die de data publiceert.
+|auteur | author  |Partij die auteur is van de data.
+
+## Trefwoord
+
+Het element keyword value bevat in het algemeen gebruikte woorden of geformaliseerde zinnen om een service te beschrijven. Dit kunnen trefwoorden uit een thesaurus zijn maar ook zelf gedefinieerde trefwoorden. Er kunnen meerdere trefwoorden worden gebruikt, maar het is geen uitputtende lijst.
+
+Voor INSPIRE services dient er op z’n minst één keyword de categorie of subcategorie te bevatten uit deel D.4 van de commissie regulation 1205/2008, zie bijlage 1. Daarnaast kunnen er andere keywords met bijvoorbeeld het thema worden opgenomen. In http://www.eionet.europa.eu/gemet/inspire_themes zijn de thema’s van INSPIRE opgenomen.[1]
+
+
+Voor WMS kan de waarde infoMapAccessService worden toegepast. Voor WFS dient er op z’n minst infoFeatureAccessService aangegeven te worden. Dit kan default worden ingevuld
+
+
+<aside class="example" title="DCP">
+<ol>infoMapAccessService</ol></aside>
+
+### Thesaurus
+
+Een thesaurus is een lijst met trefwoorden die ontleend zijn aan het dagelijks taalgebruik van professionals. In de thesaurus wordt de betekenis van trefwoorden vastgelegd door relaties te benoemen met synonieme begrippen, bredere, specifiekere en verwante begrippen en door een uitleg bij de trefwoorden. Voor INSPIRE wordt gebruik gemaakt van de GEMET thesaurus. Daarin worden de INSPIRE thema’s opgenomen. Zie  http://www.eionet.europa.eu/gemet/inspire_themes 
+
+
+Thesaurus een conditioneel element. Het thesaurus element is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s. Het bevat de naam van de thesaurus waar het trefwoord uit afkomstig is.
+
+
+<aside class="example" title="DCP">
+<ol>GEMET Thesaurus version 1.0</ol></aside>
+
+![Thesaurus termen](images/Thesaurustermen.jpg)
+
+### Thesaurus datum
+
+Het bevat de creatie-, publicatie-, of wijzigingsdatum, van de thesaurus waar het trefwoord uit afkomstig is. Het formaat van de datum is JJJJ-MM-DD (met streepjes).
+
+Dit is een conditioneel element. Het is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s.
+
+
+<aside class="example" title="DCP">
+<ol>2009-05-15</ol></aside>
+
+### Thesaurus datum type
+
+Het thesaurus datum type element bevat het type gebeurtenis waar de datum betrekking op heeft.
+
+Dit is een conditioneel element. Het is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s.
+
+Mogelijke waarden zijn;
+
+| Naam |  Engelse naam |  Beschrijving |
 | --- | --- | --- |
-| service	| service	| Informatie heeft betrekking op de service |
-
-
-
-
-## Hiërarchieniveau naam
-
-Het element hiërarchieniveau naam bevat de naam van het hiërarchieniveau waarvoor de metadata is beschreven.
-
-Dit element is conditioneel. Het is verplicht als Hiërarchieniveau niet gelijk is aan dataset. Indien het hierarchyniveau dataset is dient dit veld niet ingevuld te worden.
-Toepassing van metadata op dataset series maak het gebruikers van de metadata mogelijk om op een hoger niveau dan individuele datasets data te zoeken. Metadata van dataset series is geschikt voor het zoeken op globale karakteristieken van beschikbare data, maar niet voor diepgaand onderzoek naar de kwaliteit van specifieke datasets. Hiervoor is metadata van datasets noodzakelijk. De figuur hieronder geeft een schematische weergave van de relatie tussen de metadata van dataset series en datasets zelf weer. De hiërarchische relatie tussen een dataset en dataset serie is altijd van verticale aard.
-
-![Hiërarchie](images/Hierarchie.jpg)
-
-
-De kernset van het Nederlands metadata profiel voor geografie geldt niet alleen voor geografische datasets, maar ook voor dataset series. Volgens ISO 19115 is een dataset serie een verzameling geografische data die gelijke karakteristieken hebben ten aanzien van het thema, de resolutie en/of methodologie. Veelal geven dataproducenten aan of er sprake is van een dataset serie.
-
-Een voorbeeld van een dataset serie is:
-
-AHN Nederland
-
-## Karakterset van de bron
-
-Dit metadata element geeft de gebruikte karakterset aan. Dit zal bijna altijd ‘utf8’ zijn. De karakterset die gecodeerd is volgens de ISO/IEC 10646 standaard, zie tabel hieronder bij beschrijving, voldoet voor niet INSPIRE datasets. Utf8 en utf16 voldoen aan deze standaard.
-
-Voor INSPIRE verplicht als voor de uitwisseling van de bron geen GML wordt gebruikt en de gebruikte karakterset geen utf8 is. Voor niet INSPIRE datasets is het verplicht als de waarde niet voldoet aan de ISO/IEC 10646 standaard.
-
-in deze gevallen een van onderstaande waardes kiezen.
-
-
- 
-
-Naam	Engelse naam	Beschrijving
-ucs2	ucs2	16-bit fixed size Universal Character Set, based on ISO/IEC 10646.
-Ucs4	ucs4	32-bit fixed size Universal Character Set, based on ISO/IEC 10646.
-Utf7	utf7	7-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
-Utf8	utf8	8-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
-Utf16	utf16	16-bit variable size UCS Transfer Format, based on ISO/IEC 10646.
-8859part1	8859part1	ISO/IEC 8859-1, Information technology – 8-bit single-byte coded graphic character sets – Part 1: Latin alphabet No. 1.
-8859part2	8859part2	ISO/IEC 8859-2, Information technology – 8-bit single-byte coded graphic character sets – Part 2: Latin alphabet No. 2.
-8859part3	8859part3	ISO/IEC 8859-3, Information technology – 8-bit single-byte coded graphic character sets – Part 3: Latin alphabet No. 3.
-8859part4	8859part4	ISO/IEC 8859-4, Information technology – 8-bit single-byte coded graphic character sets – Part 4: Latin alphabet No. 4.
-8859part5	8859part5	ISO/IEC 8859-5, Information technology – 8-bit single-byte coded graphic character sets – Part 5: Latin/Cyrillic alphabet.
-8859part6	8859part6	ISO/IEC 8859-6, Information technology – 8-bit single-byte coded graphic character sets – Part 6: Latin/Arabic alphabet.
-8859part7	8859part7	ISO/IEC 8859-7, Information technology – 8-bit single-byte coded graphic character sets – Part 7: Latin/Greek alphabet.
-8859part8	8859part8	ISO/IEC 8859-8, Information technology – 8-bit single-byte coded graphic character sets – Part 8: Latin/Hebrew alphabet.
-8859part9	8859part9	ISO/IEC 8859-9, Information technology – 8-bit single-byte coded graphic character sets – Part 9: Latin alphabet No. 5.
-8859part10	8859part10	ISO/IEC 8859-10, Information technology – 8-bit single-byte coded graphic character sets –Part 10: Latin alphabet No. 6.
-8859part11	8859part11	ISO/IEC 8859-11, Information technology – 8-bit single-byte coded graphic character sets –Part 11: Latin/Thai alphabet.
-(gereserveerd voor toekomstig gebruik)	(reserved for future use)	a future ISO/IEC 8-bit single-byte coded graphic character set (e.g. possibly 8859-12).
-8859part13	8859part13	ISO/IEC 8859-13, Information technology – 8-bit single-byte coded graphic character sets –Part 13: Latin alphabet No. 7.
-8859part14	8859part14	-ISO/IEC 8859-14, Information technology – 8-bit single-byte coded graphic character sets – Part 14: Latin alphabet No. 8 (Celtic).
-8859part15	8859part15	ISO/IEC 8859-15, Information technology – 8-bit single-byte coded graphic character sets –Part 15: Latin alphabet No. 9.
-8859part16	8859part16	ISO/IEC 8859-16, Information technology – 8-bit single-byte coded graphic character sets –Part 16: Latin alphabet No. 10.
-Jis	jis	Japanese code set used for electronic transmission.
-shiftJIS	shiftJIS	Japanese code set used on MS-DOS based machines.
-eucJP	eucJP	Japanese code set used on UNIX based machines.
-usAscii	usAscii	United states ASCII code set (ISO 646 US).
-Ebcdic	ebcdic	Ibm mainframe code set.
-eucKR	eucKR	Korean code set.
-Big5	big5	Traditional Chinese code set used in Taiwan, Hong Kong of China and other areas.
-GB2312	GB2312	Simplified Chinese code set.
-
-## Distributie
-
-### Naam distributie formaat
-
-Dit element bevat de naam van het distributie formaat van de dataset. Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is.  De presiese informatie over hoe de naamgeving van het applicatie schema is, is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
-
-
-Voorbeeld:
-
-Hydrography GML application schema
-
-### Versie distributie formaat
-
-Dit element bevat de versie van het distributie formaat van de dataset.
-
-Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is.  Deze informatie is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
-
-
-Voorbeeld:
-
-version 3.0; GML, version 3.2.1
-
-### Specificatie distributie formaat
-
-Dit element bevat de specificatie van het distributie formaat van de dataset.
-
-Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is.  De presiese informatie is te vinden in de INSPIRE dataspecificaties in de paragraaf genaamd Encoding.
-
-
-Voorbeeld:
-
-D2.8.I.8 Data Specification on Hydrography – Guidelines
+| creatie |   creation |  Datum waarop de dataset of dataset serie is gecreëerd. |
+| publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
+| revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. |
 
 ## resource locator 
 
@@ -151,19 +163,275 @@ Dit element is conditioneel. Als er een link naar de service beschikbaar is, is 
 Dit element wordt ook in de metadata van de data opgenomen in het element URL waardoor de link naar de service wordt gelegd.
 
 
-Voorbeeld;
-http://www.dinoservices.nl/wms/dinomap/M09M0817
+<aside class="example" title="resource locator">
+<ol>
+http://www.dinoservices.nl/wms/dinomap/M09M0817</ol></aside>
 
-## Connect Point Linkage
+## Juridische toegangsrestricties
 
-Het element Connect Point Linkage beschrijft het netwerkadres van de service instance.
+Juridische toegansrestricties is het metadata element dat de toegangseisen bevat die er zorg voor dragen dat privacy of 
+intellectueel eigendom gewaarborgd zijn en elke andere speciale beperkingen voor het verkrijgen of gebruiken van de data.
+
+Het is verplicht zowel juridische toegangsrestricties als voorwaarden voor toegang en gebruik op te nemen.
+
+Mogelijke waarden zijn;
+
+| Naam  | waarde |  Beschrijving |
+| --- | --- | --- |
+| copyright | copyright | Exclusief recht voor publicatie, productie, of verkoop van rechten op een literair, theater, muzikaal of artistiek werk, of op het gebruik van een commerciële druk of label, toegekend bij wet voor een specifieke periode of tijd aan een auteur, componist, artiest of distributeur.
+| patent  | patent  | Overheid heeft een exclusief recht toegekend om een uitvinding te maken, verkopen, gebruiken of in licentie uit te geven.
+| patent in wording | patent Pending |  Geproduceerde of verkochte informatie wachtend op een patent.
+| merknaam |  trademark | Een naam, symbool of ander object om een product te identificeren, wat officieel geregistreerd is en gebruik wettelijk is voorbehouden aan de eigenaar of fabrikant.
+| licentie |  license | Formele toestemming of iets te doen.
+| intellectueel eigendom |  intellectual Property Rights  | Recht op een financieel voordeel van en controle hebben op de distributie van een niet tastbaar eigendom wat het resultaat is van creativiteit.
+| niet toegankelijk | restricted  | Verbod op distributie en gebruik.
+| anders |  other Restrictions |  Restrictie niet opgenomen in lijst
+
+Voor INSPIRE datasets, bevat dit element de waarde "otherRestrictions". 
+Voor organisaties die zich conformeren aan afspraken in het GI-beraad, bevat dit element ook de waarde "otherRestrictions".
+
+Toelichting
+De Nederlandse overheid wil overheidsinformatie zoveel mogelijk gratis en zonder gebruiksvoorwaarden beschikbaar stellen. Dat geldt ook voor geo-informatie. Het ministerie van Infrastructuur en Milieu hanteert Creative Commons ZERO als de voorkeurslicentie (om aan te geven dat een werk zonder restricties gebruikt kan worden) voor data van haar ministerie.
+
+In Nederland is afgesproken om voor geo-informatie gebruik te maken van de gebruiksvoorwaarden van Creative Commons , tenzij dat niet mogelijk is. Dit “Creative Commons, tenzij” beleid is in 2014 vastgesteld door het GI-beraad.
+
+In sommige gevallen is het toch noodzakelijk om gebruiksvoorwaarden te handhaven die niet in Creative Commons zijn opgenomen, bijvoorbeeld door wetgeving. In die gevallen biedt Geo Gedeeld uitkomst. Geo Gedeeld is een hulpmiddel om gebruiksvoorwaarden voor geo-informatie op een eenvoudige, heldere en gestandaardiseerde manier kenbaar te maken. Het is ontstaan uit de behoefte van de overheid om de bestaande gebruiksvoorwaarden voor geo-informatie te stroomlijnen. Zie ook algemeen gebruiksvoorwaarden
+
+In het geval van een INSPIRE dataset dient twee maal het element MD_LegalConstraints gebruikt te worden.
+
+<aside class="example" title="Juridische toegangsrestricties">
+<ol>otherRestrictions</ol></aside>
+
+### Overige beperkingen 
+
+Dit element bevat de andere restricties, indien bij toegangs- en/of gebruiks restricties of veiligheidsresricties 
+voor de waarde 'anders' gekozen is.
+
+Dit element is dan ook verplicht bij restricties waar de waarde 'anders' is gekozen.
+
+Mogelijke waarden;
+
+| Waarde |  Beschrijving |
+| --- | --- |
+|[Open data (publiek)](http://creativecommons.org/publicdomain/mark/*/deed.nl)|   Geen beperkingen
+|[Open data (CCO)](http://creativecommons.org/publicdomain/zero/*/deed.nl)|   Geen beperkingen
+|[Open data (CC-BY)](http://creativecommons.org/licenses/by/*/deed.nl)|   Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-sa)](http://creativecommons.org/licenses/by-sa/*/deed.nl)|   Gelijk Delen, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nc)](http://creativecommons.org/licenses/by-nc/*/deed.nl)|   Niet Commercieel, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nc-sa)](http://creativecommons.org/licenses/by-nc-sa/*/deed.nl)|   Niet Commercieel, Gelijk Delen, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nd)](http://creativecommons.org/licenses/by-nd/*/deed.nl)|   Geen Afgeleide Werken, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden (CC-by-nc-nd)](http://creativecommons.org/licenses/by-nc-nd/*/deed.nl)|   Niet Commercieel, Geen Afgeleide Werken, Naamsvermelding verplicht, organisatienaam
+|[Gebruiksvoorwaarden Geogedeeld](Verwijzing naar een geldige URL van de licentie)|   Geo Gedeeld licentie
 
 
-Dit element heeft hetzelfde doel als Resource Locator. Doordat ISO 19115 en ISO 19119 niet op dit punt met elkaar zijn afgestemd zijn hier twee verschillende metadata elementen (met dezelfde doelstelling) en verschillende encoding (ISO 19139 en CSW ISO Metadata AP) ontstaan.
+Voor INSPIRE dient tevens beschreven te worden of er restricties gelden op toegang en gebruik.
+
+Mogelijke waarden;
+
+| Waarde |  Beschrijving |
+| --- | --- |
+|[conditionsUnknown](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/conditionsUnknown)  | Condities zijn onbekend
+|[noConditionsApply](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply) |    Er zijn geen condities voor toegang en gebruik
+
+Voor INSPIRE dient tevens beschreven te worden of er restricties gelden op publieke toegang
+
+Mogelijke waarden;
+
+| Waarde |  Beschrijving |
+| --- | --- |
+| [Geen beperkingen voor publieke toegang](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations)|  Geen Limitaties | 
+| [INSPIRE_Directive_Article13_1a](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a)|   Publieke toegang beperkt ivm afbreuk van het vertrouwelijke karakter van handelingen van overheidsinstanties, indien deze vertrouwelijkheid bij wet is voorzien |
+| [INSPIRE_Directive_Article13_1b](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1b)| INSPIRE_Directive_Article13_1b  Publieke toegang beperkt ivm afbreuk van internationale betrekkingen, openbare veiligheid of nationale defensie |
+| [INSPIRE_Directive_Article13_1c](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1c)| INSPIRE_Directive_Article13_1c  Publieke toegang beperkt ivm afbreuk van de rechtsgang, de mogelijkheid voor een persoon een eerlijk proces te krijgen of de mogelijkheid voor een overheid om een onderzoek van strafrechtelijke of disciplinaire aard in te stellen |
+| [INSPIRE_Directive_Article13_1b](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1d)| INSPIRE_Directive_Article13_1d  Publieke toegang beperkt ivm afbreuk van de vertrouwelijkheid van commerciële of industriële informatie, wanneer deze vertrouwelijkheid in de nationale of de communautaire wetgeving geboden wordt om een gewettigd economisch belang te beschermen, met inbegrip van het algemeen belang dat met statistische en fiscale geheimhouding is gediend
+| [INSPIRE_Directive_Article13_1e](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e)| INSPIRE_Directive_Article13_1e  Publieke toegang beperkt ivm afbreuk van intellectuele-eigendomsrechten |
+| [INSPIRE_Directive_Article13_1f](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1f)| INSPIRE_Directive_Article13_1f  Publieke toegang beperkt ivm afbreuk van de vertrouwelijkheid van persoonsgegevens en/of -dossiers met betrekking tot een natuurlijk persoon wanneer die persoon niet heeft ingestemd met bekendmaking van de informatie aan het publiek, wanneer in deze vertrouwelijkheid is voorzien in het nationaal of het Gemeenschapsrecht
+| [INSPIRE_Directive_Article13_1g](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1g)| INSPIRE_Directive_Article13_1g  Publieke toegang beperkt ivm afbreuk van de belangen of de bescherming van diegene die de verzochte informatie op vrijwillige basis heeft verstrekt zonder daartoe wettelijk verplicht te zijn of te kunnen worden, tenzij die persoon ermee heeft ingestemd dat de betrokken informatie wordt vrijgegeven
+| [INSPIRE_Directive_Article13_1h](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1h)| INSPIRE_Directive_Article13_1h  Publieke toegang beperkt ivm afbreuk van de bescherming van het milieu waarop die informatie betrekking heeft, zoals de habitat van zeldzame soorten |
+
+<aside class="example" title="XML notatie open data licentie"><pre><code>
+&lt;gmd:resourceConstraints>
+  &lt;gmd:MD_LegalConstraints>
+    &lt;gmd:useLimitation>
+      &lt;gco:CharacterString>Geen gebruiksbeperking&lt;/gco:CharacterString>
+    &lt;/gmd:useLimitation>
+    &lt;gmd:accessConstraints>
+      &lt;gmd:MD_RestrictionCode 
+        codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode"
+        codeListValue="otherRestrictions"/>
+    &lt;/gmd:accessConstraints>
+    &lt;gmd:otherConstraints>
+       &lt;gco:CharacterString> Geen beperkingen &lt;/gco:CharacterString>
+    &lt;/gmd:otherConstraints>
+    &lt;gmd:otherConstraints>
+       &lt;gco:CharacterString>
+         http://creativecommons.org/publicdomain/mark/1.0/deed.nl
+       &lt;/gco:CharacterString>
+    &lt;/gmd:otherConstraints>
+  &lt;/gmd:MD_LegalConstraints>
+&lt;/gmd:resourceConstraints>
+</code></pre></aside>
+
+## Gebruiksbeperkingen
+
+Gebruiksbeperkingen bevat toepassingen waarvoor de dataset niet geschikt is, maar kan ook prijsinformatie voor het gebruik van de dataset bevatten.
+
+De volgende voorbeelden zijn praktijkvoorbeelden, deze disclaimers kunnen beter opgenomen worden bij overige beperkingen.
+
+<aside class="warning" title="Onjuiste voorbeelden gebruiksbeperkingen">
+<ol>
+<li>Zie http://www.rijkswaterstaat.nl/apps/geoservices/legal/NWB_disclaimer.html</li>
+<li>geen - none</li>
+</ol></aside>
+
+<aside class="example" title="Correcte voorbeelden gebruiksbeperkingen"> 
+<ol>
+<li>Niet te gebruiken voor navigatie </li>
+<li>Voor gebruik van deze dataset wordt een vergoeding van 100 euro gevraagd</li>
+</ol></aside>
+
+## Ruimtelijk referentiesysteem
+
+Het element bevat de Alfanumerieke waarde van de door de service ondersteunde referentiesystemen. EPSG geeft deze code’s uit. Voor het Rijksdriehoek stelset wordt de code 28992 gehanteerd. Referentiesystemen worden met een URI die ook de code bevat opgenomen.
+
+Dit element is conditioneel, het is voor INSPIRE interoperabele services verplicht om de coördinaat referentie systemen die de service ondersteunt op te nemen.
+
+<aside class="example" title="Ruimtelijk referentiesysteem"> 
+<ol>[epsg:28992](http://www.opengis.net/def/crs/EPSG/0/28992)</ol></aside>
+
+## Geografische locatie
+
+Dit element is conditioneel. Het is verplicht als er data aan de service is gekoppeld 
+(service is dan tight of mixed coupled service).
+
+De geographic location, ofwel geografische locatie kan op drie manier worden beschreven: 
+
+1. door een bounding polygon, 
+2. door een bounding box of 
+3. door een beschrijving.
 
 
-Voorbeeld;
-http://www.dinoservices.nl/wms/dinomap/M09M0817
+De bounding box is de kleinste extent die mogelijk is waarmee de map goed weergegeven wordt. De coördinaten dienen te worden weergegeven volgens referentiesysteem WGS 84.
+
+### Minimum x/y, maximum x/y-coördinaten
+
+Deze elementen bevatten de meest westelijke, zuidelijk, oostelijk en noordelijke coördinaten uit de dekking van de dataset weergegeven in longitude en lattitude in decimale graden (noord en oost als positieve waarden). De coördinaten dienen te worden weergegeven volgens referentiesysteem WGS84. Als de coordinaten niet (in WGS 84) bekend zijn kan de volgende tool ze opzoeken en/of omrekenen naar WGS 84
+
+<aside class="example" title="Geografische locatie coordinaten">
+<ol>2.50, 50.0, 3.0, 51.0</ol></aside> 
+
+### Geografische identifier
+
+Het is mogelijk de locatie van een service te beschrijven aan de hand van een referentie naar de URI van het betreffende gebied.
+
+<aside class="example" title="Geografische locatie beschrijving">
+<ol>[Berg_en_Dal](http://standaarden.overheid.nl/owms/terms/Berg_en_Dal)</ol></aside> 
+
+## Distributie
+
+### URL
+
+Dit element bevat een valide URL voor online toegang tot de service.
+
+Voor een service bevat het element een accessPoint URL.
+
+Voor bijvoorbeeld services waar een restrictieve toegang voor geldt kan dit element ook de URL naar de betaalservice, of de URL naar een applicatie die direct toegang geeft tot de service bevatten.
+
+De URL wordt zodanig aangeboden, dat deze altijd direct een resultaat geeft, zonder dat deze bevraagd wordt. De url mag geen HTTP 0, 400 of 5XX melding opleveren, neem daarom voor OGC services een volledige capabilities url op.
+
+Dit element is conditioneel. Het is verplicht indien de service publiek of met restricties toegankelijk is en onder de verantwoordelijkheid van de beherende organisatie valt.
+
+<aside class="example" title="URL">
+<ol><li>http://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities&service=WMS</li>
+<li>http://services.rce.geovoorziening.nl/www/download/nl.xml</li></ol></aside>
+
+### Protocol
+
+Het metadata element bevat het protocol voor het afhandelen van de URL. Het element protocol geeft aan wat voor URL het betreft. 
+
+Het element protocol, is van belang voor het automatisch kunnen downloaden van de dataset, en/of het benaderen van de service die deze dataset representeert. Het maakt gebruik van een codelijst die het Nederlandse metadata profiel op ISO19119 wordt vastgelegd, maar het element is een ISO19115 element. Door gebruik te maken van deze codelijst is de invulling van het element software onafhankelijk.
+
+Dit element is conditioneel. Het is verplicht als er een URL is opgegeven. 
+
+Voor protocol van een accessPoint kunnen de volgende waarden worden gebruikt; 
+
+| Waarde  | Beschrijving | 
+| --- | --- | --- |
+|[OGC:CSW](http://www.opengeospatial.org/standards/cat) | Web Catalog service |
+|[OGC:WMS](http://www.opengeospatial.org/standards/wms) | Web Map service |
+|[OGC:WMTS](http://www.opengeospatial.org/standards/wmts) | Web Map Tile Service |
+|[OGC:WFS](http://www.opengeospatial.org/standards/wfs) | Web Feature Service |
+|[OGC:WCS](http://www.opengeospatial.org/standards/wcs) | Web Coverage Service |
+|[OGC:SOS](http://www.opengeospatial.org/standards/sos) | Sensor Observation Service |
+|INSPIRE Atom | Atom Service Feed |
+|[OGC:WCTS](http://www.opengeospatial.org/standards/) | Web Coordinate Transformation Service |
+|[OGC:WPS](http://www.opengeospatial.org/standards/wps) | Web Processing Service |
+|OGC:WFS-G | Gazetteer service |
+|[OGC:SPS](http://www.opengeospatial.org/standards/sps) | Sensor Planning Service |
+|[OGC:SAS](http://www.ogcnetwork.net/SAS) | Sensor Alert Service |
+|OGC:WNS | Web Notification Service |
+|[OGC:ODS](http://www.opengeospatial.org/standards/ols#ODS) | OpenLS Directory Service |
+|[OGC:OGS](http://www.opengeospatial.org/standards/ols#OGS) | OpenLS Gateway Service |
+|[OGC:OUS](http://www.opengeospatial.org/standards/ols#OUS) | OpenLS Utility Service |
+|[OGC:OPS](http://www.opengeospatial.org/standards/ols#OPS) | OpenLS Presentation Service |
+|[OGC:ORS](http://www.opengeospatial.org/standards/ols#ORS) | OpenLS Route Service |
+|[OGC:SensorThings](http://www.opengeospatial.org/standards/sensorthings) | SensorThings API |
+|[W3C:SPARQL](https://www.w3.org/TR/rdf-sparql-query/) | SPARQL Query Language for RDF |
+|[OASIS:OData](https://www.oasis-open.org/committees/odata) | Open data protocol |
+|[OAS](https://github.com/OAI/OpenAPI-Specification) | Open API Specification |
+|landingpage | Een webpagina die toegang geeft tot de dataset of overige informatie bevat |
+|application | Een (web) applicatie die rechtstreeks toegang geeft tot de dataset |
+|dataset | Referentie naar een locale dataset locatie |
+|UKST | Unknown Service Type |
+
+<aside class="example" title="Protocol">
+<ol>[OGC:WMS](http://www.opengeospatial.org/standards/wms)</ol></aside>
+
+### Omschrijving van het type bron ontsluiting
+
+Dit element beschrijft het type van de URL. In het geval van service is dit 
+een accessPoint. Een accessPoint URL levert informatie over de service inclusief 
+zijn endPoints. Dat kan bijvoorbeeld een capabilities of WSDL document zijn of 
+een webpagina of applicatie waar data te downloden is. 
+
+Omschrijving is optioneel.
+
+Mogelijk waarde is;
+
+| Waarde |  Beschrijving |
+| --- | --- |
+| [accessPoint](http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint) |  Een internetadres dat een gedetailleerde beschrijving van een dienst met betrekking tot ruimtelijke gegevens bevat, met inbegrip van een lijst van eindpunten waarmee hij kan worden uitgevoerd
+
+
+<aside class="example" title="Omschrijving van het type bron ontsluiting"><pre><code>
+&lt;gmx:Anchor
+  xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">
+  accessPoint&lt;/gmx:Anchor>
+</code></pre></aside>
+
+## Service type
+
+Dit element bevat het type van de service.
+
+De implementing rules van INSPIRE verplichten het gebruik van de waardes uit Annex B.3. Deze zijn in codelijst SV_ServiceType opgenomen. Voor INSPIRE spatial data services dient de waarde "other" gekozen te worden.
+
+Mogelijke waarden zijn;
+
+| Waarde | Omschrijving |
+| -- | -- |
+| [discovery](http://inspire.ec.europa.eu/
+metadata-codelist/SpatialDataServiceType/discovery) | OGC:CSW; Web Catalog service |
+| [view](http://inspire.ec.europa.eu/
+metadata-codelist/SpatialDataServiceType/view) | OGC:WMS;Web Map service of OGC:WMTS; Web Mapping Tiling Service |
+| [download](http://inspire.ec.europa.eu/
+metadata-codelist/SpatialDataServiceType/download) | OGC:WFS; Web Feature Service of OGC:WCS; Web Coverage Service of OGC:SOS; Sensor Observation Service of INSPIRE Atom; Atom Service Feed |
+| [transformation](http://inspire.ec.europa.eu/
+metadata-codelist/SpatialDataServiceType/transformation) | OGC:WCTS; Web Coordinate Transformation Service |
+| [other](http://inspire.ec.europa.eu/
+metadata-codelist/SpatialDataServiceType/other) | Alle spatial data services die geen INSPIRE netwerk service zijn |
+
+<aside class="example" title="Service type"><ol>
+view</ol></aside>
 
 ## Coupled resource
 
@@ -178,577 +446,280 @@ Ontsluit een service meerdere datasets dan komen er meerdere metadataURL’s voo
 Het is ook mogelijk om naar het metedatarecord in een catalogus te verwijzen die de metadata van de dataset ontsluit.
 
 
-Voorbeeld;
-http://88.198.70.50/geonetwork/srv/nl/iso19139.xml?id=21628
+<aside class="example" title="">
+<ol>
+http://88.198.70.50/geonetwork/srv/nl/iso19139.xml?id=21628</ol></aside>
 
+## Koppel type
 
-## Scoped Name
-
-De ScopedName is de naam van de layer in de WMS of de featureTypeName van de WFS. De ScopedName is verplicht voor WMS, WFS en WCS.
-
-
-In ISO AP 1.0 is de klasse SV_CoupledResource uitgebreid met een sub element (zie sectie 7.2.2.2 in de CSW ISO AP profiel document).
-
-
-Scopedname.jpg
-
-
-Deze uitbreiding is ook in ISO 19119 gerelateerde XML schemas opgenomen. Daarmee is het mogelijk de precieze link tussen een operatie (geïdentificeerd door zijn naam), een dataset instance (geïdentificeerd door zijn resource identifier) en optioneel, ScopedName (layer name (WMS) of featureTypeName (WFS)) te beschrijven
-
-
-In versie 1.2 van dit profiel is dit element optioneel geworden.
-
-
-Voorbeeld;
-bos
-
-
-Capabilities element:
-/WMT_MS_Capabilities/Capability/Layer/Layer/bos
-
-## Coupling Type
-
-het element CouplingType definieert het type “koppeling” tussen een service instance en een dataset. Voor een WMS of WFS geldt de waarde 'tight'. Deze waarde kan dan ook als default gehanteerd worden.
-
+het element definieert het type “koppeling” tussen een service instance en een dataset. Voor een WMS of WFS geldt de waarde 'tight'. Deze waarde kan dan ook als default gehanteerd worden.
 
 De mogelijke waarden zijn:
-Naam	Beschrijving
-loose	Een service instance die niet gekoppeld is met een specifieke dataset of dataset serie. Looselycoupled services zouden een associatie kunnen hebben met een datatype door de serviceType definitie. Metadata voor data wordt niet geleverd in de service metadata.
-mixed	Een service instance die gekoppeld is met een specifieke dataset of dataset serie. Service metadata dienen zowel de service als geografische dataset te beschrijven (door middel van ISO 19115). Daarnaast kan deze service instance ook gebruikt worden met externe data (data die niet wordt beschreven door de operatesOn klasse).
-tight	Een service instance die gekoppeld is met een specifieke dataset of dataset serie. Service metadata dienen zowel de service als geografische dataset te beschrijven (door middel van ISO 19115).
 
-## Spatial data service type
+|Naam | Beschrijving |
+| --- | --- |
+|loose  |Een service instance die niet gekoppeld is met een specifieke dataset of dataset serie. Looselycoupled services zouden een associatie kunnen hebben met een datatype door de serviceType definitie. Metadata voor data wordt niet geleverd in de service metadata.
+| mixed |Een service instance die gekoppeld is met een specifieke dataset of dataset serie. Service metadata dienen zowel de service als geografische dataset te beschrijven (door middel van ISO 19115). Daarnaast kan deze service instance ook gebruikt worden met externe data (data die niet wordt beschreven door de operatesOn klasse).
+| tight |Een service instance die gekoppeld is met een specifieke dataset of dataset serie. Service metadata dienen zowel de service als geografische dataset te beschrijven (door middel van ISO 19115).
 
-Het element spatial data service type bevat het type van de service.
+## Connect Point Linkage
 
+Het element Connect Point Linkage beschrijft het netwerkadres van de service instance.
 
-De implementing rules van INSPIRE verplichten het gebruik van de waardes uit Annex B.3. Deze informatie zal gebruikt worden voor de service type attribuut van de klasse SV_ServiceIdentification.
+Dit element heeft hetzelfde doel als Resource Locator. Doordat ISO 19115 en ISO 19119 niet op dit punt met elkaar zijn afgestemd zijn hier twee verschillende metadata elementen (met dezelfde doelstelling) en verschillende encoding (ISO 19139 en CSW ISO Metadata AP) ontstaan.
 
+<aside class="example" title="Connect Point Linkage">
+<ol>http://www.dinoservices.nl/wms/dinomap/M09M0817</ol></aside>
 
-Het data type uit deze klasse is echter GenericName. Dus de waardes uit B3 kunnen niet gebruikt worden omdat dat een codelijst is. Ook is er niet een rechtstreekse mapping tussen de INSPIRE service types en de waardes van het servicetype atribuut van de klasse SV_ServiceIdentification. Op lange termijn zal er een register beschikbaar komen die de ISO191119 waardes koppelt aan de verschillende INSPIRE service types.
-Binnen Nederland geldt voor dit metadata element een restrictiever domein dan in ISO 19119:2005, namelijk een codelijst. Doel hiervan is een uniforme naamgeving voor het serviceType, zodat alle serviceTypes gevonden kunnen worden. In deze codelijst SV_ServiceTypeCode staan alle mogelijke services types met een gepubliceerde standaard specificatie weergegeven.
+## Operaties
 
+Per mogelijke operatie van de service kunnen diverse aspecten vastgelegd worden. 
 
-Mogelijke waarden voor service type zijn;
-Servicetypeservices.jpg 
+Operaties beschrijven is verplicht als de service een INSPIRE geharmoniseerde service is en het accessPoint de operaties en parameters niet beschrijft.
 
-Voorbeeld;
-OGC:WMS
-
-
-Capabilities element;
-/WMT_MS_Capabilities/Name
-
-### Service Type Version
-
-Service Type Version is de versie van de specificatie van de service. Niet een implementatie versie van de software die geïmplementeerd. Als scheidingsteken tussen de cijfers dient een punt gebruikt te worden. Door het opnemen van het versienummer is bekend welke operaties er mogelijk zijn en hoeven deze niet apart beschreven te worden.
-
-
-In versie 1.2 van dit profiel is dit element niet meer opgenomen.
-
-
-Voorbeeld;
-1.1.1
-
-
-Capabilities element;
-/WMT_MS_Capabilities/@version
-
-## Operation Name
+### Operatie naam
 
 Het element operation name geeft de naam van de operatie weer. Aangezien het serviceType en serviceTypeVersion verplicht zijn, kunnen de bijbehorende verplichte operaties (OperationName) en parameters (SV_Parameter) worden afgeleid. Deze attribuutwaarden kunnen als default door de applicatie worden toegevoegd. Daarnaast kunnen optionele waarden handmatig worden toegevoegd.
 
+<aside class="example" title="Operatie naam">
+<ol>getMap</ol></aside>
 
-Voorbeeld;
-getMap
-
-
-Capabilities element;
-/WMT_MS_Capabilities/Capability/Request/*
-
-## DCP
+### DCP
 
 Dit element bevat het Distributed Computing Platforms waarop de operatie is geïmplementeerd. INSPIRE gaat van de default waarde WebServices uit. Deze waarde is opgenomen in de codelijst DCPlist . De huidige attribuutwaarden worden verwijderd en ongeldig verklaard.
 
-
-
-Mogelijke waarden zijn;
-WebServices
-
-Capabilities element;
-/WMT_MS_Capabilities/Capability/Request/*/DCPType/HTTP/*
-
-
-
-## Trefwoord
-
-Het element keyword value bevat in het algemeen gebruikte woorden of geformaliseerde zinnen om een service te beschrijven. Dit kunnen trefwoorden uit een thesaurus zijn maar ook zelf gedefinieerde trefwoorden. Er kunnen meerdere trefwoorden worden gebruikt, maar het is geen uitputtende lijst.
-
-Voor INSPIRE services dient er op z’n minst één keyword de categorie of subcategorie te bevatten uit deel D.4 van de commissie regulation 1205/2008, zie bijlage 1. Daarnaast kunnen er andere keywords met bijvoorbeeld het thema worden opgenomen. In http://www.eionet.europa.eu/gemet/inspire_themes zijn de thema’s van INSPIRE opgenomen.[1]
-
-
-Voor WMS kan de waarde infoMapAccessService worden toegepast. Voor WFS dient er op z’n minst infoFeatureAccessService aangegeven te worden. Dit kan default worden ingevuld
-
-
-Voorbeeld;
-infoMapAccessService
-
-
-Capabilities element;
-/WFS_Capabilites/ServiceIdentification/*/Keyword/*
-
-### Thesaurus
-
-Een thesaurus is een lijst met trefwoorden die ontleend zijn aan het dagelijks taalgebruik van professionals. In de thesaurus wordt de betekenis van trefwoorden vastgelegd door relaties te benoemen met synonieme begrippen, bredere, specifiekere en verwante begrippen en door een uitleg bij de trefwoorden. Voor INSPIRE wordt gebruik gemaakt van de GEMET thesaurus. Daarin worden de INSPIRE thema’s opgenomen. Zie  http://www.eionet.europa.eu/gemet/inspire_themes 
-
-
-Thesaurus een conditioneel element. Het thesaurus element is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s. Het bevat de naam van de thesaurus waar het trefwoord uit afkomstig is.
-
-
-Voorbeeld:
-“GEMET Thesaurus version 1.0”
-
-![Thesaurus termen](images/Thesaurustermen.jpg)
-
-### Thesaurus datum
-
-Het bevat de creatie-, publicatie-, of wijzigingsdatum, van de thesaurus waar het trefwoord uit afkomstig is. Het formaat van de datum is JJJJ-MM-DD (met streepjes).
-
-Dit is een conditioneel element. Het is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s.
-
-
-Voorbeeld:
-2009-05-15
-
-### Thesaurus datum type
-
-Het thesaurus datum type element bevat het type gebeurtenis waar de datum betrekking op heeft.
-
-
-Dit is een conditioneel element. Het is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s.
-
 Mogelijke waarden zijn;
 
+| Waarde |
+| --- |
+| XML |
+| CORBA |
+| JAVA  |
+| COM |
+| SQL |
+| WebServices |
 
-| Naam |	Engelse naam |	Beschrijving |
-| --- | --- | --- |
-| creatie | 	creation |	Datum waarop de dataset of dataset serie is gecreëerd. |
-| publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
-| revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. |
+<aside class="example" title="DCP">
+<ol>WebServices</ol></aside>
 
+## Parameter
 
-Voorbeeld;
-publication
+De parameters van de operatie
 
-## Geographic location
+### Parameter naam
 
-Dit element is conditioneel. Het is verplicht als er data aan de service is gekoppeld. (service is dan tight of mixed coupled service).
+Dit element beschrijft de naam van de parameter
 
-De geographic location, ofwel geografische locatie kan op drie manier worden beschreven: 
-(1) door een bounding polygon, 
-(2) door een bounding box of 
-(3) door een beschrijving.
+<aside class="example" title="Parameter naam">
+<ol>bbox</ol></aside>
 
+#### Parameter optionaliteit
 
-De bounding box is de kleinste extent die mogelijk is waarmee de map goed weergegeven wordt. De coördinaten dienen te worden weergegeven volgens referentiesysteem WGS 84.
+<aside class="example" title="Parameter optionaliteit">
+<ol>required</ol></aside>
 
-### Minimum x/y, maximum x/y-coördinaten
+#### Parameter herhaalbaarheid
 
-Deze elementen bevatten de meest westelijke, zuidelijk, oostelijk en noordelijke coördinaten uit de dekking van de dataset weergegeven in longitude en lattitude in decimale graden (noord en oost als positieve waarden). De coördinaten dienen te worden weergegeven volgens referentiesysteem WGS84. Als de coordinaten niet (in WGS 84) bekend zijn kan de volgende tool ze opzoeken en/of omrekenen naar WGS 84
+Dit element bevat de herhaalbaarheid van de parameter zoals gebruikt door de service
 
-Voorbeeld;
-2.50 
-
-## Temporele Referentie
-
-De Temporal Reference heeft betrekking op de periode waar de service betrekking op heeft of de datum van voltooing, publicatie of datum laatste wijziging.Op zijn minst één temporele referentie is verplicht. Om op ISO 19115 aan te sluiten moet ’in ieder geval één van de volgende elementen worden vastgelegd; Creatie-, publicatie-, of revisiedatum van de service. Aanbevolen wordt om de publicatie datum op te nemen.
-
-
-
-Temporal extent
-Periode waarop de data betrekking heeft. Dit kan een tijdsinterval zijn maar ook een datum. De overall tijdsperiode gedekt door de inhoud van de service kan een samenstelling zijn van een of meer waarden. Het formaat van de datum is JJJJ-MM- DD (met streepjes) of JJJJ-MM-DDTUU:MM:SS (met streepjes T van time en dubbele punt).
+<aside class="example" title="Parameter herhaalbaarheid">
+<ol>false</ol></aside>
 
 
-Voorbeeld;
-From 1977-03-10T11:45:30 to 2005-01-15T09:10:00
+## Niveau kwaliteitsbeschrijving
+
+Het niveau kwaliteitsbeschrijving beschrijft het niveau waarop de kwaliteitsinformatie betrekking heeft. 
+
+Niveau kwaliteitsbeschrijving zal deze waarde bevatten; 
+
+| Waarde | Beschrijving |
+|---|---|
+| service |  Informatie heeft betrekking op de serie.|
+
+## Niveau kwaliteitsbeschrijving naam
+
+Dit element bevat de naam van het niveau waarop de kwaliteitsinformatie betrekking heeft.
+
+<aside class="example" title="Niveau kwaliteitsbeschrijving naam">
+<ol>service</ol></aside>
 
 
-Hieronder volgen de verschillende vormen van datum.
+## Conformiteit met een specificatie
 
-
-Date of publication
-Datum waarop de service gepubliceerd is. Het formaat van de datum is JJJJ-MM-DD (met streepjes) of JJJJ-MM-DDTUU:MM:SS (met streepjes T van time en dubbele punt).
-
-
-Voorbeeld;
-2007-09-15 or 2007-11-15T11:15:00
-
-
-Date of last revision
-Datum waarop de service gewijzigd is. In ISO19115 kan men meerdere wijzigingsdata opnemen. De INSPIRE datum is de recentste. Het formaat van de datum is JJJJ-MM-DD (met streepjes) of JJJJ-MM-DDTUU:MM:SS (met streepjes T van time en dubbele punt).
-
-
-Voorbeeld;
-2007-09-15 or 2007-11-15T11:15:00
-
-
-Date of creation
-Datum waarop de service voltooid is. Het formaat van de datum is JJJJ-MM-DD (met streepjes) of JJJJ-MM-DDTUU:MM:SS (met streepjes T van time en dubbele punt).
-
-
-Voorbeeld;
-2007-09-15 or 2007-11-15T11:15:00
-
-
-## spatial resolution 
-
-het element spatial resolution geeft de mate van detail of resolutie aan. Dit element is conditioneel. Als de service een restrictie is op de ruimtelijke resolutie van de service dan is dit element verplicht. Bijvoorbeeld een classificatieproces werkt niet goed op een lage resolutie image of een coördinaat transformatie is niet nauwkeuriger dan 1m resolutie. Het kan in twee elementen worden vastgelegd. Men gebruikt of de equivalentScale of de distance. De elementen kunnen twee keer voorkomen, hiermee wordt een interval aangegeven.
-
-
-equivalentScale
-Het element bevat de mate van detail aangeduid als schaalaanduiding van een vergelijkbare hardcopy kaart 
-Voorbeeld; 
-50000
-
-
-Distance
-Het element bevat de resolutie. De afstand wordt in meters opgenomen.
-
-
-In versie 1.2 van dit profiel is dit element niet meer opgenomen.
-
-
-Voorbeeld;
-3
-
-## Conformiteitindicatie met de specificatie
-
-Met de 'conformiteitindicatie met de specificatie' kan worden weergegeven of de service wel of niet conform de INSPIRE specificatie.  Dit element is conditioneel in dit profiel. Het is alleen verplicht als de service een INSPIRE bron is.
-
-Voorbeeld:
-TRUE
-
-### Verklaring
-
-De verklaring bevat de betekenis van de conformiteit. Aangegeven kan worden op welke punten de dataset wel of niet conform een informatiemodel of dataspecificatie is.
-
-
-Dit element is conditioneel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatiemodel. 
-
-Voorbeeld:
-De hier gehanteerde domeinen wijken af van de domeinen uit de dataspecificaties van INSPIRE
+Dt element bevat de specificatie of richtlijnen waar de service conform aan dient te zijn. Of deze conformiteit gerealiseerd is, dan wel een verklaring met aandachtspunten.
 
 ### Specificatie
 
-Het element specificatie bevat de titel van de specificatie of richtlijnen of informatiemodel waar de dataset conform aan dient te zijn.
+Het element specificatie bevat de titel van de specificatie of richtlijnen waar de service conform aan dient te zijn.
 
+Dit element is conditioneel in dit profiel. Het is alleen verplicht als de service een INSPIRE bron is. Voor INSPIRE services wordt zowel de conformiteit met een verordening aangegeven als met een technische richtlijn.
 
-Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
+Voor INSPIRE netwerk services zijn dit;
 
+- De verordening van netwerkservices, gebruik eventueel een anchor met de volgende URI http://data.europa.eu/eli/reg/2009/976
+- De technische specificatie, zoals Technical Guidance for the implementation of INSPIRE View Services
 
-Voorbeeld:
-IMRO2008
-INSPIRE D2.8.I.5 Data Specification on Addresses
+Voor INSPIRE spatial data services zijn dit;
+
+- De verordening van interoperabiliteit van data en services, gebruik eventueel een anchor met de volgende URI http://data.europa.eu/eli/reg/2010/1089
+- De technische specificatie
+- De conformiteit met de categorie van de service
+
+Mogelijke waardes voor 'categorie van de service' zijn;
+
+| Waarde | Beschrijving |
+| --- | --- |
+| [invocable](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable) | Aanroepbare datadienst |
+| [interoperable](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable) | Interoperabele datadienst |
+| [harmonised](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised) | Geharmoniseerde datadienst |
+
+<aside class="example" title="Specificatie">
+<ol>Technical Guidance for the implementation of INSPIRE View Services</ol></aside>
 
 ### Specificatie datum
 
 Het metadata element specficatie datum bevat de datum van de specificatie of richtlijnen of informatiemodel waar de dataset conform aan dient te zijn. Het formaat van de datum is JJJJ-MM-DD (met streepjes). In specificatie datum type wordt aangegeven of het om de creatie-, publicatie- of herzieningsdatum gaat.
 
-
 Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
 
-
-Voorbeeld:
-2009-05-15
+<aside class="example" title="Specificatie datum">
+<ol>2009-05-15</ol></aside>
 
 ### Specificatie datum type
 
 De specificatie datum type bevat het type gebeurtenis waar de datum betrekking op heeft.
 
-
 Dit element is conditioneel in dit profiel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatie model.
 
-## Topologische samenhang
+### Conformiteitsindicatie
 
-Dit element is conditioneel in dit profiel. Het is verplicht voor INSPIRE datasets als voor netwerken de aansluiting van hartlijnen niet is verzekerd. Het bevat de tolerantie waarmee de topologische samenhang is vastgelegd
+Dit element bevat de uitslag of de betreffende conformiteit gerealiseerd is.
 
+<aside class="example" title="Conformiteitindicatie met de specificatie">
+<ol>TRUE</ol></aside>
 
-Voorbeeld:
+### Verklaring
 
-3
+De verklaring bevat de betekenis van de aangegeven conformiteit. Aangegeven kan worden op welke punten de service wel of niet conform een specificatie is. In de context van services zijn voor INSPIRE.
 
-![Network](images/Network2.jpg)
+Dit element is conditioneel. Het is alleen verplicht als de dataset een INSPIRE bron is of als de informatie is gemodelleerd volgens een specifiek informatiemodel.
 
-### Type waarde
-
-Het bevat de meeteenheid waarmee de topologische samenhang is vastgelegd.
-
-
-
-Dit element is conditioneel in dit profiel. Het is verplicht voor INSPIRE datasets als voor netwerken de aansluiting van hartlijnen niet is verzekerd.
+<aside class="example" title="Verklaring conformiteit">
+<ol>De hier gehanteerde domeinen wijken af van de domeinen uit de dataspecificaties van INSPIRE</ol></aside>
 
 
-Voorbeeld:
+## Conceptuele consistentie
 
-cm
+Dit element is conditioneel in dit profiel. Het is verplicht als de service een INSPIRE interoperabele services is (aangezien in dat geval niet de algemene INSPIRE quality of service vereisten gelden). Het element bevat de minimale kwaliteit van de service die word bepaald door de verantwoordelijke partij voor die service met een verwachtte geldigheid gedurende een langere periode. 
 
-## Juridische toegangsrestricties
+### Criteria beschrijving
 
-Juridische toegansrestricties is het metadata element dat de toegangseisen bevat die er zorg voor dragen dat privacy of intellectueel eigendom gewaarborgd zijn en elke andere speciale beperkingen voor het verkrijgen van de metadata of data.
+Dit element bevat de beschrijving van de meetcriteria.
 
+Mogelijke waarden voor INSPIRE zijn;
 
-Het is verplicht op zijn minst één van de drie elementen juridische toegangsrestricties, overige beperkingen, veiligheidsrestricties op te nemen. De Nederlandse overheid wil overheidsinformatie zoveel mogelijk gratis en zonder gebruiksvoorwaarden beschikbaar stellen. Dat kan met behulp van de Publiek Domein Mark of met de Creative Commons Zero (CC0) Verklaring. Met beide gebruiksvoorwaarden zijn de gegevens door iedereen voor ieder doeleind te gebruiken. Om dit toe te passen kiest men hier voor de waarde "anders".  De licentie wordt in het element 2.4.34_Overige_beperkingen opgenomen. In 2.6.3 Gebruiksvoorwaarden  is uitgewerkt hoe gebruiksvoorwaarden en public domein mark toe te passen
-Mogelijke waarden zijn;
-
-| Naam  	Engelse naam	Beschrijving
-| copyright 	copyright	Exclusief recht voor publicatie, productie, of verkoop van rechten op een literair, theater, muzikaal of artistiek werk, of op het gebruik van een commerciële druk of label, toegekend bij wet voor een specifieke periode of tijd aan een auteur, componist, artiest of distributeur.
-| patent	patent	Overheid heeft een exclusief recht toegekend om een uitvinding te maken, verkopen, gebruiken of in licentie uit te geven.
-| patent in wording 	patentPending	Geproduceerde of verkochte informatie wachtend op een patent.
-| merknaam 	trademark	Een naam, symbool of ander object om een product te identificeren, wat officieel geregistreerd is en gebruik wettelijk is voorbehouden aan de eigenaar of fabrikant.
-| licentie	license	Formele toestemming of iets te doen.
-| intellectueel eigendom 	intellectualPropertyRights	Recht op een financieel voordeel van en controle hebben op de distributie van een niet tastbaar eigendom wat het resultaat is van creativiteit.
-| niet toegankelijk 	restricted	Verbod op distributie en gebruik.
-| anders 	otherRestrictions	Restrictie niet opgenomen in lijst
-
-### Overige beperkingen 
-
-Dit element bevat andere restricties (dan toegangsrestricties en veiligheidsresricties) en vereisten voor toegang en gebruik van de dataset.
-
-Het is verplicht op zijn minst één van de drie elementen juridische toegangsrestricties, overige beperkingen, veiligheidsrestricties op te nemen.
-
-
-De volgende invulinstructies worden gehanteerd om de gebruiksvoorwaarden van public domain, CC0, CC-BY en Geo Gedeeld op te nemen in de metadata:
-
-
-• (Juridische) Toegangsrestricties: 
-De waarde “Anders” invullen waardoor overige beperkingen verplicht wordt. Ook bij geen toegangrestricties!
-
-• Overige beperkingen: Dit veld is te gebruiken om de licentie van Public domain, Creative Commons Publieke Domein Verklaring (CC0), Creative Commons naamsvermelding (CC-BY) of Geo Gedeeld in te vullen. Dit element kan men meerdere keren in de metadata opnemen. Voor het opnemen van onderstaande beperkingen is het element “overige beperkingen” twee maal nodig.
-
-o Bij geen gebruiksbeperkingen het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Geen beperkingen 
-Overige beperkingen: http://creativecommons.org/publicdomain/mark/1.0/deed.nl
-
-o Bij Publieke Domein Verklaring (CC0) het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Geen beperkingen 
-Overige beperkingen: http://creativecommons.org/publicdomain/zero/1.0/deed.nl
-
-o Bij Creative commons naamsvermelding(CC-BY) het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Naamsvermelding verplicht, organisatienaam 
-Overige beperkingen: http://creativecommons.org/licenses/by/3.0/nl/
-
-o Bij gebruiksbeperkingen vastgelegd met geogedeeld het volgende invullen in twee verschillende elementen:
-
-Overige beperkingen: Geo Gedeeld licentie 
-Overige beperkingen: Verwijzing naar de URL van de licentie http://
-
-```xml
-<gmd:resourceConstraints>
-  <gmd:MD_LegalConstraints>
-    <gmd:useLimitation>
-      <gco:CharacterString>Geen gebruiksbeperking</gco:CharacterString>
-    </gmd:useLimitation>
-    <gmd:accessConstraints>
-      <gmd:MD_RestrictionCode 
-        codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_RestrictionCode"
-        codeListValue="otherRestrictions"/>
-    </gmd:accessConstraints>
-    <gmd:otherConstraints>
-       <gco:CharacterString> Geen beperkingen </gco:CharacterString>
-    </gmd:otherConstraints>
-    <gmd:otherConstraints>
-       <gco:CharacterString>
-         http://creativecommons.org/publicdomain/mark/1.0/deed.nl
-       </gco:CharacterString>
-    </gmd:otherConstraints>
-  </gmd:MD_LegalConstraints>
-</gmd:resourceConstraints>
-```
-
-## Veiligheidsrestricties
-
-Dit element bevat de soort restrictie op de dataset.
-
-
-Het is verplicht op zijn minst één van de drie elementen juridische toegangsrestricties, overige beperkingen, veiligheidsrestricties op te nemen. Als er geen beperkingen zijn dient men dat bij overige beperkingen aan te geven. In 2.6.3 Gebruiksvoorwaarden is uitgewerkt hoe gebruiksvoorwaarden en public domein mark toe te passen. De licentie wordt in het element overige beperkingen opgenomen. 
-
-Mogelijke waarden zijn;
-Naam	Engelse naam	Beschrijving
-vrij toegankelijk 	unclassified	Beschikbaar voor algemene ontsluiting.
-niet toegankelijk 
-
-restricted	Niet geschikt voor algemene ontsluiting.
-vertrouwelijk 	confidential	Beschikbaar voor personen die vertrouwd kan omgaan met de
-informatie.
-geheim 	secret	Dient geheim en verborgen te worden gehouden voor iedereen
-behalve een geselecteerde groep personen.
-zeer geheim	topSecret	Hoogste geheimhouding vereist.
+| Waarde | Beschrijving |
+| --- | --- |
+| [availability](http://inspire.ec.europa.eu/metadata-codelist/
+QualityOfServiceCriteria/availability) | Het beschrijft het percentage tijd dat de dienst beschikbaar is. |
+| [performance](http://inspire.ec.europa.eu/metadata-codelist/
+QualityOfServiceCriteria/performance) | Het beschrijft hoe snel een aanvraag naar de ruimtelijke datadienst kan worden afgerond. |
+| [capacity](http://inspire.ec.europa.eu/metadata-codelist/
+QualityOfServiceCriteria/capacity) | Het beschrijft het maximale aantal gelijktijdige verzoeken die met de aangegeven prestatie kunnen worden afgerond. |
  
+<aside class="example" title="Criteria beschrijving">
+<ol>[availability](http://inspire.ec.europa.eu/metadata-codelist/
+QualityOfServiceCriteria/availability)</ol></aside>
 
-## Gebruiksbeperkingen
+### Criteria waarde
 
-Gebruiksbeperkingen bevat toepassingen waarvoor de dataset niet geschikt is, maar kan ook prijsinformatie voor het gebruik van de dataset bevatten.
+Dit element bevat de meetwaarde van de criteria.
 
+<aside class="example" title="Criteria type waarde">
+<ol>80</ol></aside>
 
-De volgende voorbeelden zijn praktijkvoorbeelden, deze disclaimers kunnen beter opgenomen worden bij overige beperkingen.
+### Criteria type waarde
 
+Het bevat de meeteenheid waarmee de criteria is vastgelegd.
 
-Verkeerde voorbeelden: 
-1. Ten behoeve van naamsvermelding van de Nieuwe Kaart van Nederland onder de Creative Common Licentie zijn twee opties mogelijk.1. Opname in ongewijzigde vorm indien (een gedeelte van) de Nieuwe Kaart van Nederland in ongewijzigde vorm wordt overgenomen, dan wordt de kaart in feite gekopieerd. De volgende naamsvermelding en bijbehorende licentie (voor toekomstige her-gebruikers) is dan van toepassing:Bron: De Nieuwe Kaart van Nederland, Nirov, Den Haag / Creative Commons - Naamsvermelding 2.5 Nederland2. Opname in bewerkte / afgeleide vormVoor de Nieuwe Kaart is dan alleennaamsvermelding van toepassing. In feite is nu een eigen kaart gemaakt (op basis van de Nieuwe Kaart van Nederland) waarvan zelf bepaald wordt onder welke licentie deze wordt uitgegeven. Met onderstaande naamsvermelding wordt het gebruik van de Nieuwe Kaart afgedekt:Bron: De Nieuwe Kaart van Nederland, Nirov, Den HaagMeer informatie: www.creativecommons.org
-2. http://dinolks01.nitg.tno.nl/dinoLks/about/legal/terms.jsp
-3. Zie http://www.rijkswaterstaat.nl/apps/geoservices/legal/NWB_disclaimer.html
-4. geen - none
-
-Correcte voorbeelden: 
-- Niet te gebruiken voor navigatie 
-- Voor gebruik van deze dataset wordt een vergoeding van 100 euro gevraagd
-
-## Verantwoordelijke organisatie bron
-
-Verantwoordelijke organisatie bron is het metadata element waarin de de identificatie van de verantwoordelijke organisatie wordt aangegeven. Van de organisatie wordt de volledige organisatie naam vastgelegd behorende bij een bepaalde rol.
-
-
-De naam van de organisatie wordt altijd voluit geschreven en in volgorde van hiërarchie. De afkorting kan toegevoegd worden aan de organisatienaam. Voor de correcte overheidsnamen zie: http://www.overheid.nl/overheidsorganisaties.
-
-
-Voorbeelden:
-1. Nederlands Instituut voor Ruimtelijke Ordening en Volkshuisvesting (Nirov)
-2. Nederlandse organisatie voor toegepast-natuurwetenschappelijk onderzoek (TNO)
-3. Rijkswaterstaat Data en ICT Dienst (RWS DID) 
-4. Planbureau voor de Leefomgeving (PBL)
-
-### Verantwoordelijke organisatie bron: e-mail
-
-Dit element bevat het e-mail adres van de verantwoordelijke organisatie van de bron. Dit kan een persoonlijk e-mailadres zijn , maar ook een algemeen e-mailadres of een e-mailadres van een loket.
-
-
-Voorbeelden:
-1. info@nieuwekaart.nl
-2. dinoloket@tno.nl
-3. geoloket@pbl.nl
-
-### Verantwoordelijke organisatie bron: rol
-
-De rol van de verantwoordelijke organisatie bron beschrijft op welke manier een bepaalde organisatie betrokken is bij een dataset. Er kunnen meerdere organisaties met verschillende rollen bij een dataset betrokken zijn. Een organisatie kan ook meerdere rollen hebben.
-
-
-De volgende waardes zijn mogelijk;
-
-Naam	Engelse naam	Beschrijving
-verstrekker 	resourceProvider	Organisatie die de data verstrekt.
-beheerder 	custodian	Partij die verantwoordelijkheid heeft geaccepteerd en zorg draagt
-voor het beheer van de data.
-eigenaar 	owner	Partij die eigenaar is van de data.
-gebruiker	user	Partij die de data gebruikt.
-distributeur 	distributor	Partij die de data verstrekt.
-maker 	originator	Partij die de data heeft gecreëerd.
-contactpunt 	pointOfContact	Partij waarmee contact kan worden opgenomen voor het vergaren
-van kennis of verstrekking van de data.
-inwinner	principalInvestigator	Sleutelpartij verantwoordelijk voor verzamelen van data en de
-uitvoering van onderzoek.
-bewerker	processor	Partij die de data heeft bewerkt, zodanig dat de data is gewijzigd.
-uitgever	publisher	Partij die de data publiceert.
-auteur 	author	Partij die auteur is van de data.
-
+<aside class="example" title="Criteria type waarde">
+<ol>urn:ogc:def:uom:OGC::percent</ol></aside>
 
 ## Metadata unieke identifier
 
-Metadata unieke identifier bevat de unieke identificatie voor de metadata file.
+Metadata unieke identifier bevat de unieke identificatie voor de metadata file. Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de [Universal Unique Identifier](http://en.wikipedia.org/wiki/UUID). 
 
-
-Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de Universal Unique Identifier. http://en.wikipedia.org/wiki/UUID
-
-
-Voorbeeld:
-550e8400-e29b-41d4-a716-446655440000
-
-## Parent unieke identifier
-
-Wanneer er een dataset met hogere hiërarchie is, wordt gebruikt gemaakt van parent unieke identifier. Dat is het geval met dataset series. Lees meer hieover bij hiërarchieniveau. Het bevat de unieke ID van de metadata waarvan deze metadata een subset is.
-
-
-Het metatdata element parent unieke identifier is conditioneel in de kernset. Het is verplicht als er een dataset met hogere hiërarchie is.
-
-
-Voorbeeld:
-550e8400-e29b-41d4-a716-446655440000
-
-
-## Verantwoordelijke organisatie metadata
-
-Dit element bevat de naam van de organisatie die verantwoordelijk is voor de metadata.
-
-
-Gebruik de volledig uitgeschreven naam van de verantwoordelijke organisatie. De afkorting kan toegevoegd worden aan de organisatienaam. Voor de correcte overheidsnamen zie: http://www.overheid.nl/overheidsorganisaties.
-
-
-Voorbeeld:
-Nederlandse organisatie voor toegepast-natuurwetenschappelijk onderzoek (TNO)
-
-### Verantwoordelijke organisatie metadata: e-mail
-
-Dit element bevat het e-mail adres van de organisatie verantwoordelijk voor de metadata. Dit kan een persoonlijk e-mailadres zijn, maar ook een algemeen e-mailadres of een e-mailadres van een loket.
-
-Voorbeelden:
-
-1. heusden@nieuwekaart.nl
-2. dinoloket@tno.nl
-3. geoloket@pbl.nl
-
-### Verantwoordelijke organisatie metadata: rol
-
-Dit element bevat de rol van de organisatie verantwoordelijk voor de metadata. Er kunnen meerdere organisaties met verschillende rollen bij een dataset betrokken zijn. Een organisatie kan ook meerdere rollen hebben. Voor de rol van de organisatie wordt een codelijst gehanteerd, maar pointOfContact kan als default worden gehanteerd. 
-
-
+<aside class="example" title="Metadata unieke identifier">
+<ol>550e8400-e29b-41d4-a716-446655440000</ol></aside>
 
 ## Metadata datum
 
 De datum waarop de metadata is gemaakt. 
 INSPIRE verplicht de creatie datum, in het profiel versie 1.1 was het ook mogelijk om de publicatie of wijzigingsdatum te kiezen. Het formaat van de datum is JJJJ-MM-DD (met streepjes).
 
-
-Voorbeeld:
-2008-02-25
+<aside class="example" title="Metadata datum">
+<ol>2008-02-25</ol></aside>
 
 ## Taal van de metadata
 
 In dit element wordt vastgelegd in welke taal de metadata is beschreven. Gebruik hiervoor alleen de drie-letter codes van 639-2/B (bibliographic codes), zoals gedefinieerd op http://www.loc.gov/standards/iso639-2/.
 
+Voor Nederland is over het algemeen de default waarde: dut.
 
-Voor Nederland is over het algemeen is de default waarde: dut.
+## Hiërarchieniveau
 
+Het element resource type geeft aan waarop de metadata betrekking heeft. Voor dataservices is dat service, bij metadata voor data kan dat dataset of serie zijn. Deze waarde kan als default gehanteerd worden.
 
-De codes voor de 23 officiële EU talen zijn:
+Resource type kan de volgende waarde bevatten;
+
+| Naam  | Engelse naam  | Beschrijving |
+| --- | --- | --- |
+| service | service | Informatie heeft betrekking op de service |
+
+## Hiërarchieniveau naam
+
+Het element hiërarchieniveau naam bevat de naam van het hiërarchieniveau waarvoor de metadata is beschreven.
+
+Dit element is voor services verplicht. 
+
+## Verantwoordelijke organisatie metadata
+
+Dit element bevat de naam van de organisatie die verantwoordelijk is voor de metadata.
+
+Gebruik de volledig uitgeschreven naam van de verantwoordelijke organisatie. De afkorting kan toegevoegd worden aan de organisatienaam. Voor de correcte overheidsnamen zie: http://www.overheid.nl/overheidsorganisaties.
+
+### Verantwoordelijke organisatie metadata: e-mail
+
+Dit element bevat het e-mail adres van de organisatie verantwoordelijk voor de metadata. Dit kan een persoonlijk e-mailadres zijn, maar ook een algemeen e-mailadres of een e-mailadres van een loket.
+
+### Verantwoordelijke organisatie metadata: rol
+
+Dit element bevat de rol van de organisatie verantwoordelijk voor de metadata. Er kunnen meerdere organisaties met verschillende rollen bij een dataset betrokken zijn. Een organisatie kan ook meerdere rollen hebben. Voor de rol van de organisatie wordt een codelijst gehanteerd, maar pointOfContact kan als default worden gehanteerd. 
 
 ## De link naar de metadata van de dataset en dataset series vanuit de service
 
-MD_DataIdentification
-Deze klasse is conditioneel. De conditie luidt als volgt: Indien een service gerelateerd is aan data, dient deze data beschreven te worden met klasse MD_DataIdentification. De klasse MD_DataIdentification dient conform de Nederlandse metadatastandaard voor geografie te worden opgevoerd.
-
+Deze klasse is conditioneel. Indien een service gerelateerd is aan data, dient deze data beschreven te worden met klasse MD_DataIdentification. De klasse MD_DataIdentification dient conform de Nederlandse metadatastandaard voor geografie te worden opgevoerd.
 
 Indien de dataset al beschreven is volgens de Nederlandse metadatastandaard voor geografie, dient de metadata betreffende MD_DataIdentification via de longname MD_Identification.citation.identifier.code te worden aangeroepen. 
 
 ## Metadata standaard naam
 
-Dit metadata element is nodig om uitbreidingen met profielen te duiden. Dit element bevat de naam van de standaard.
+Dit metadata element is nodig om uitbreidingen met profielen te duiden. 
+Dit element bevat de naam van de standaard.
 
-
-Voorbeeld:
-ISO 19115
+<aside class="example" title="Metadata standaard naam">
+<ol>[ISO 19119](https://www.iso.org/standard/39890.html)</ol></aside> 
 
 ## Metadata standaard versie
 
-Metadata standaard versie is nodig om uitbreidingen op standaarden aan te geven. Dit element bevat de versie (profiel) van de metadatastandaard die wordt gebruikt.
+Metadata standaard versie is nodig om uitbreidingen op standaarden aan te geven. 
+Dit element bevat de versie (profiel) van de metadatastandaard die wordt gebruikt.
 
+<aside class="example" title="Metadata standaard versie">
+<ol>[Nederlands metadata profiel op ISO 19119 voor services 2.0](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/)</ol></aside>  
 
-Voorbeeld:
-Nederlandse metadata profiel op ISO 19115 voor geografie 2.0
+# Opdracht metadata voor service
 
-## Opdracht metadata voor dataset
-
-Wat is het verschil tussen resource locator en connect point linkage?
-Hoe vaak komt het element scoped name voor?
-Welke elementen dient men handmatig in te vullen, welke kunnen default worden ingevuld?
+- Wat is het verschil tussen resource locator en connect point linkage?
+- Hoe vaak komt het element scoped name voor?
+- Welke elementen dient men handmatig in te vullen, welke kunnen default worden ingevuld?

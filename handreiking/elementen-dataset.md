@@ -17,6 +17,37 @@ Hierbij zijn de onderdelen tussen haakjes niet verplicht, de andere wel.
 </ol>
 </aside>
 
+## Datum van de bron
+
+Het metadata element datum van de bron geeft de creatie-, publicatie-, of wijzigingdatum van de dataset. 
+Het formaat van de datum is JJJJ-MM-DD (met streepjes).
+
+Op z’n minst één van de elementen Datum creatie, Datum publicatie of Datum revisie is verplicht. 
+Er kan maximaal één creatie datum worden opgenomen. Voor INSPIRE geldt ook een maximum van één revisie datum.
+
+Voorbeelden:
+
+<aside class="example" title="Datum van de bron">
+<ol><li>2008-11-20 </li>
+<li>2008-11-04 </li></ol></aside>
+
+
+### Datum type van de bron
+
+Het element datum type van de bron bevat het type gebeurtenis waar de datum betrekking op heeft. 
+
+Mogelijke waarden zijn;
+
+| Naam |  Waarde |  Beschrijving |
+| --- | --- | --- |
+| creatie |   creation |  Datum waarop de dataset of dataset serie is gecreëerd. |
+| publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
+| revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. | 
+
+<aside class="example" title="Datum type van de bron">
+<ol><li>publication</li>
+<li>creation</li></ol></aside>
+
 ## Samenvatting
 
 Met de samenvatting wordt aangegeven de samenvatting van de inhoud van de dataset.
@@ -422,13 +453,23 @@ Datasets en dataset series die zijn aangemerkt als INSPIRE bron, beschrijven in 
 
 ## Thesaurus
 
-Een thesaurus is een lijst met trefwoorden die ontleend zijn aan het dagelijks taalgebruik van professionals. In de thesaurus wordt de betekenis van trefwoorden vastgelegd door relaties te benoemen met synonieme begrippen, bredere, specifiekere en verwante begrippen en door een uitleg bij de trefwoorden. Voor INSPIRE wordt gebruik gemaakt van de GEMET thesaurus. Daarin worden de INSPIRE thema’s opgenomen. Zie  http://www.eionet.europa.eu/gemet/inspire_themes 
+Een thesaurus is een lijst met trefwoorden die ontleend zijn aan het dagelijks taalgebruik van professionals. In de thesaurus wordt de betekenis van trefwoorden vastgelegd door relaties te benoemen met synonieme begrippen, bredere, specifiekere en verwante begrippen en door een uitleg bij de trefwoorden. Het opnemen van trefwoorden uit thesauri verbetert de vindbaarheid.
 
+Voor INSPIRE wordt gebruik gemaakt van de GEMET thesaurus. Daarin worden oa de INSPIRE thema’s opgenomen. Zie  http://www.eionet.europa.eu/gemet/inspire_themes. 
 
 Thesaurus een conditioneel element. Het thesaurus element is verplicht als een trefwoord uit een thesaurus afkomstig is zoals in ieder geval voor de INSPIRE thema’s. Het bevat de naam van de thesaurus waar het trefwoord uit afkomstig is.
 
 <aside class="example" title="Thesuarus">
-<ol>GEMET - INSPIRE themes, version 1.0</ol></aside>
+<ol>
+  <li>[Eurovoc](http://eurovoc.europa.eu)</li>
+  <li>
+[overheid:UniformeProductnaam (UPL)](http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.uniformeproductnaam)</li>
+  <li>Interprovinciale thesaurus</li>
+  <li>[Aquolex](http://www.aquolex.nl)</li>
+  <li>[Objectenhandboek BGT | IMGeo](http://imgeo.geostandaarden.nl/)</li>
+  <li>[GEMET - INSPIRE themes, version 1.0](http://www.eionet.europa.eu/gemet/en/themes/)</li>
+  <li>[INSPIRE feature concept dictionary](http://inspire.ec.europa.eu/featureconcept)</li>
+</ol></aside>
 
 ![Thesaurus termen](images/Thesaurustermen.jpg)
 
@@ -480,37 +521,6 @@ In versie 1.3 van dit profiel is dit element optioneel geworden.
 <aside class="example" title="Temporele dekking">
 <ol><li>2000-01-01 - 2030-12-31</li>
 <li>2012-08-02T:22:08:12</li></ol></aside>
-
-## Datum van de bron
-
-Het metadata element datum van de bron geeft de creatie-, publicatie-, of wijzigingdatum van de dataset. 
-Het formaat van de datum is JJJJ-MM-DD (met streepjes).
-
-Op z’n minst één van de elementen Datum creatie, Datum publicatie of Datum revisie is verplicht. 
-Er kan maximaal één creatie datum worden opgenomen. Voor INSPIRE geldt ook een maximum van één revisie datum geldt.
-
-Voorbeelden:
-
-<aside class="example" title="Datum van de bron">
-<ol><li>2008-11-20 </li>
-<li>2008-11-04 </li></ol></aside>
-
-
-### Datum type van de bron
-
-Het element datum type van de bron bevat het type gebeurtenis waar de datum betrekking op heeft. 
-
-Mogelijke waarden zijn;
-
-| Naam |	Waarde |	Beschrijving |
-| --- | --- | --- |
-| creatie | 	creation |	Datum waarop de dataset of dataset serie is gecreëerd. |
-| publicatie | publication | Publicatie datum waarop de dataset of dataset serie is gepubliceerd. |
-| revisie | revision | Datum waarop de dataset of dataset serie is gecontroleerd, verbeterd of is gewijzigd. | 
-
-<aside class="example" title="Datum type van de bron">
-<ol><li>publication</li>
-<li>creation</li></ol></aside>
 
 ## Niveau kwaliteitsbeschrijving
 
@@ -615,7 +625,7 @@ Voor de ruimtelijke extent wordt ETRS89 gebruikt. Hiermee wordt het mogelijk gem
 <aside class="example" title="Referentiesysteem"><ol>
 28992</ol><pre><code>
 &lt;gmx:Anchor
-  xlink:href="http://www.opengis.net/def/crs/EPSG/0/28992">RD
+  xlink:href="http://www.opengis.net/def/crs/EPSG/0/28992">epsg:28992
 &lt;/gmx:Anchor></code></pre></aside>
 
 ## Temporeel referentiesysteem
@@ -914,7 +924,7 @@ INSPIRE verplicht de creatie datum, in het profiel versie 1.1 was het ook mogeli
 
 In dit element wordt vastgelegd in welke taal de metadata is beschreven. Gebruik hiervoor alleen de drie-letter codes van 639-2/B (bibliographic codes), zoals gedefinieerd op http://www.loc.gov/standards/iso639-2/.
 
-Voor Nederland is over het algemeen is de default waarde: dut.
+Voor Nederland is over het algemeen de default waarde: dut.
 
 ## Metadata standaard naam
 
@@ -922,14 +932,14 @@ Dit metadata element is nodig om uitbreidingen met profielen te duiden. Dit elem
 
 
 <aside class="example" title="Metadata standaard naam">
-<ol>ISO 19115</ol></aside>
+<ol>[ISO 19115](https://www.iso.org/standard/44361.html)</ol></aside>
 
 ## Metadata standaard versie
 
 Metadata standaard versie is nodig om uitbreidingen op standaarden aan te geven. Dit element bevat de versie (profiel) van de metadatastandaard die wordt gebruikt.
 
 <aside class="example" title="Metadata standaard versie">
-<ol>Nederlandse metadata profiel op ISO 19115 voor geografie 2.0</ol></aside>
+<ol>[Nederlandse metadata profiel op ISO 19115 voor geografie 2.0](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/)</ol></aside>
 
 # Opdracht metadata voor dataset
 
@@ -945,7 +955,7 @@ Het NWB-Wegen uit voorbeeld drie wordt 4 keer per jaar geactualiseerd, wat zou e
 - Is de temporele dekking van het bestand GCN concentratie Stikstofdioxide (NO2) 2020 uit voorbeeld 4 het jaar waarin deze berekening is uitgevoerd of het jaar waarvoor men deze voorspelling doet?
 - Hoe zouden de toegangsrestricties en gebruiksbeperkingen van voorbeeld 1 De nieuwe kaart het beste vastgelegd kunnen worden? Bij gebruiksbeperkingen is het volgende opgenomen:
 “Ten behoeve van naamsvermelding van de Nieuwe Kaart van Nederland onder de Creative Common Licentie zijn twee opties mogelijk.1. Opname in ongewijzigde vormIndien (een gedeelte van) de Nieuwe Kaart van Nederland in ongewijzigde vorm wordt overgenomen, dan wordt de kaart in feite gekopieerd. De volgende naamsvermelding en bijbehorende licentie (voor toekomstige her-gebruikers) is dan van toepassing:Bron: De Nieuwe Kaart van Nederland, Nirov, Den Haag / Creative Commons - Naamsvermelding 2.5 Nederland2. Opname in bewerkte / afgeleide vormVoor de Nieuwe Kaart is dan alleennaamsvermelding van toepassing. In feite is nu een eigen kaart gemaakt (op basis van de Nieuwe Kaart van Nederland) waarvan zelf bepaald wordt onder welke licentie deze wordt uitgegeven. Met onderstaande naamsvermelding wordt het gebruik van de Nieuwe Kaart afgedekt:Bron: De Nieuwe Kaart van Nederland, Nirov, Den HaagMeer informatie: www.creativecommons.org”
-- Hoe zou de rol van de verantwoordelijke organisatie voor voorbeeld 3 het NWB het best vastgelegd kunnen worden? De samenvatting geeft aan
+- Hoe zou de rol van de verantwoordelijke organisatie voor voorbeeld 3 het NWB het best vastgelegd kunnen worden? De samenvatting geeft aan:
 
 ```Het NWB-Wegen is een digitaal geografisch bestand van nagenoeg alle wegen in Nederland. Opgenomen zijn alle wegen die worden beheerd door wegbeheerders als het Rijk, provincies, gemeenten en waterschappen```
 
