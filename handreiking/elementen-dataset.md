@@ -879,7 +879,7 @@ De volgende waardes zijn mogelijk;
 
 ## Metadata unieke identifier
 
-Metadata unieke identifier bevat de unieke identificatie voor de metadata file. Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de [Universal Unique Identifier](http://en.wikipedia.org/wiki/UUID). 
+Metadata unieke identifier bevat de unieke identificatie voor de metadata file. Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de [Universal Unique Identifier](http://en.wikipedia.org/wiki/UUID). De identifier bevat geen hoofdletters of accolades. 
 
 
 <aside class="example" title="Metadata unieke identifier">

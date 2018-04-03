@@ -604,12 +604,9 @@ Mogelijke waarden voor INSPIRE zijn;
 
 | Waarde | Beschrijving |
 | --- | --- |
-| [availability](http://inspire.ec.europa.eu/metadata-codelist/
-QualityOfServiceCriteria/availability) | Het beschrijft het percentage tijd dat de dienst beschikbaar is. |
-| [performance](http://inspire.ec.europa.eu/metadata-codelist/
-QualityOfServiceCriteria/performance) | Het beschrijft hoe snel een aanvraag naar de ruimtelijke datadienst kan worden afgerond. |
-| [capacity](http://inspire.ec.europa.eu/metadata-codelist/
-QualityOfServiceCriteria/capacity) | Het beschrijft het maximale aantal gelijktijdige verzoeken die met de aangegeven prestatie kunnen worden afgerond. |
+| [availability](http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability) | Het beschrijft het percentage tijd dat de dienst beschikbaar is. |
+| [performance](http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/performance) | Het beschrijft hoe snel een aanvraag naar de ruimtelijke datadienst kan worden afgerond. |
+| [capacity](http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/capacity) | Het beschrijft het maximale aantal gelijktijdige verzoeken die met de aangegeven prestatie kunnen worden afgerond. |
  
 <aside class="example" title="Criteria beschrijving">
 <ol>[availability](http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability)</ol></aside>
@@ -630,7 +627,7 @@ Het bevat de meeteenheid waarmee de criteria is vastgelegd.
 
 ## Metadata unieke identifier
 
-Metadata unieke identifier bevat de unieke identificatie voor de metadata file. Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de [Universal Unique Identifier](http://en.wikipedia.org/wiki/UUID). 
+Metadata unieke identifier bevat de unieke identificatie voor de metadata file. Geadviseerd wordt om gebruik te maken van een betekenisloze identifier die wereldwijd uniek is zoals de [Universal Unique Identifier](http://en.wikipedia.org/wiki/UUID). De identifier bevat geen hoofdletters of accolades.
 
 <aside class="example" title="Metadata unieke identifier">
 <ol>550e8400-e29b-41d4-a716-446655440000</ol></aside>
