@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"
-	             xmlns:gco="http://www.isotc211.org/2005/gco"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:gmx="http://www.isotc211.org/2005/gmx"
-                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:gml="http://www.opengis.net/gml"
-                 xsi:schemaLocation="
-                 	http://www.isotc211.org/2005/gmd 
-                 	http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd 
-                 	http://www.isotc211.org/2005/gmx 
-                 	http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd">
-  <gmd:fileIdentifier>
+<gmd:MD_Metadata
+   xmlns:gml="http://www.opengis.net/gml"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:gmd="http://www.isotc211.org/2005/gmd"
+   xmlns:gmx="http://www.isotc211.org/2005/gmx"
+   xmlns:gts="http://www.isotc211.org/2005/gts"
+   xmlns:gco="http://www.isotc211.org/2005/gco"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd
+   http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd">
+   <gmd:fileIdentifier>
       <gco:CharacterString>6f84efeb-fc1d-4565-a721-80735ea57dbd</gco:CharacterString>
   </gmd:fileIdentifier>
   <gmd:language>
@@ -105,9 +103,9 @@
                <gmd:identifier>
                   <gmd:MD_Identifier>
                      <gmd:code>
-                        <gmx:Anchor 
-                        	xlink:href="https://cultureelerfgoed.nl/monumenten">
-                        		Rijksmonumenten</gmx:Anchor>
+                        <gmx:Anchor
+                          xlink:href="https://cultureelerfgoed.nl/monumenten">
+                            Rijksmonumenten</gmx:Anchor>
                      </gmd:code>
                   </gmd:MD_Identifier>
                </gmd:identifier>
@@ -115,10 +113,10 @@
          </gmd:citation>
          <gmd:abstract>
             <gco:CharacterString>
-            	In de dataset 'Rijksmonumenten' zijn gegevens opgenomen van alle monumenten in Nederland die door het Rijk zijn aangewezen als beschermd monument. Deze rijksmonumenten zijn van nationale betekenis. 
+              In de dataset 'Rijksmonumenten' zijn gegevens opgenomen van alle monumenten in Nederland die door het Rijk zijn aangewezen als beschermd monument. Deze rijksmonumenten zijn van nationale betekenis.
 
-				De gegevens in de dataset zijn ontleend aan het Rijksmonumentenregister zoals beheerd door de Rijksdienst voor het Cultureel Erfgoed. Een monument dat is ingeschreven in dit register heeft de beschermde status. Als de aanwijzingsprocedure van een monument nog niet is afgerond dan heeft het een voorbeschermde status.
-			</gco:CharacterString>
+              De gegevens in de dataset zijn ontleend aan het Rijksmonumentenregister zoals beheerd door de Rijksdienst voor het Cultureel Erfgoed. Een monument dat is ingeschreven in dit register heeft de beschermde status. Als de aanwijzingsprocedure van een monument nog niet is afgerond dan heeft het een voorbeschermde status.
+            </gco:CharacterString>
          </gmd:abstract>
          <gmd:status>
             <gmd:MD_ProgressCode codeListValue="onGoing"
@@ -175,7 +173,7 @@
             <gmd:MD_BrowseGraphic>
                <gmd:fileName>
                   <gmx:Anchor xlink:href="http://services.rce.geovoorziening.nl/www/PreviewRijksmonumentenKlein200x150.png">
-                  	PreviewRijksmonumentenKlein200x150.png</gmx:Anchor>
+                    PreviewRijksmonumentenKlein200x150.png</gmx:Anchor>
                </gmd:fileName>
             </gmd:MD_BrowseGraphic>
          </gmd:graphicOverview>
@@ -237,9 +235,9 @@
                   <gmd:CI_Citation>
                      <gmd:title>
                         <gmx:Anchor
-						  xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/">
-						    GEMET - INSPIRE themes, version 1.0
-						</gmx:Anchor>
+              xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/">
+                GEMET - INSPIRE themes, version 1.0
+            </gmx:Anchor>
                      </gmd:title>
                      <gmd:date>
                         <gmd:CI_Date>
@@ -264,45 +262,39 @@
             </gmd:MD_Constraints>
          </gmd:resourceConstraints>
          <gmd:resourceConstraints>
-		  <gmd:MD_LegalConstraints>
-		    <gmd:accessConstraints>
-		      <gmd:MD_RestrictionCode 
-		        codeListValue="otherRestrictions" 
-		        codeList="http://www.isotc211.org/2005/resources/
-		          Codelist/gmxCodelists.xml#MD_RestrictionCode"/>
-		    </gmd:accessConstraints>   
-		    <gmd:otherConstraints>
-		      <gmx:anchor
-		        xlink:href="https://creativecommons.org/publicdomain/mark/*/deed.nl">
-		          Geen beperkingen
-		      </gmx:anchor>
-		    </gmd:otherConstraints>
-		    <gmd:otherConstraints>
-		      <gmx:anchor
-		        xlink:href="http://inspire.ec.europa.eu/metadata-codelist
-		          /ConditionsApplyingToAccessAndUse/noConditionsApply">
-		          Geen beperkingen
-		      </gmx:anchor>
-		    </gmd:otherConstraints>
-		  </gmd:MD_LegalConstraints>
-		</gmd:resourceConstraints>
-		<gmd:resourceConstraints>
-		  <gmd:MD_LegalConstraints>
-		    <gmd:accessConstraints>
-		      <gmd:MD_RestrictionCode 
-		        codeListValue="otherRestrictions" 
-		        codeList="http://www.isotc211.org/2005/resources/
-		          Codelist/gmxCodelists.xml#MD_RestrictionCode"/>
-		    </gmd:accessConstraints>
-		    <gmd:otherConstraints>
-		      <gmx:anchor
-		        xlink:href="http://inspire.ec.europa.eu/metadata-codelist/
-		          LimitationsOnPublicAccess/noLimitations">
-		          Geen beperkingen
-		      </gmx:anchor>
-		    </gmd:otherConstraints>
-		  </gmd:MD_LegalConstraints>
-		</gmd:resourceConstraints>
+      <gmd:MD_LegalConstraints>
+        <gmd:accessConstraints>
+          <gmd:MD_RestrictionCode
+            codeListValue="otherRestrictions"
+            codeList="http://www.isotc211.org/2005/resources/
+              Codelist/gmxCodelists.xml#MD_RestrictionCode"/>
+        </gmd:accessConstraints>
+        <gmd:otherConstraints>
+           <gmx:Anchor xlink:href="https://creativecommons.org/publicdomain/mark/*/deed.nl">
+              Geen beperkingen
+          </gmx:Anchor>
+        </gmd:otherConstraints>
+        <gmd:otherConstraints>
+           <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply">Geen beperkingen</gmx:Anchor>
+        </gmd:otherConstraints>
+      </gmd:MD_LegalConstraints>
+    </gmd:resourceConstraints>
+    <gmd:resourceConstraints>
+      <gmd:MD_LegalConstraints>
+        <gmd:accessConstraints>
+          <gmd:MD_RestrictionCode
+            codeListValue="otherRestrictions"
+            codeList="http://www.isotc211.org/2005/resources/
+              Codelist/gmxCodelists.xml#MD_RestrictionCode"/>
+        </gmd:accessConstraints>
+        <gmd:otherConstraints>
+          <gmx:Anchor
+            xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">
+              Geen beperkingen
+          </gmx:Anchor>
+        </gmd:otherConstraints>
+      </gmd:MD_LegalConstraints>
+    </gmd:resourceConstraints>
          <gmd:spatialRepresentationType>
             <gmd:MD_SpatialRepresentationTypeCode codeListValue="vector"
                                                   codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_SpatialRepresentationTypeCode"/>
@@ -378,19 +370,19 @@
             <gmd:MD_Format>
                <gmd:name>
                   <gmx:Anchor
-				  xlink:href="http://inspire.ec.europa.eu/schemas/ps/4.0/ProtectedSites.xsd">
-				    Protected sites GML application schema
-				</gmx:Anchor>
+          xlink:href="http://inspire.ec.europa.eu/schemas/ps/4.0/ProtectedSites.xsd">
+            Protected sites GML application schema
+        </gmx:Anchor>
                </gmd:name>
                <gmd:version>
                   <gco:CharacterString>versie 4.0; GML, versie 3.2.1</gco:CharacterString>
                </gmd:version>
                <gmd:specification>
-               	<gmx:Anchor
-				 xlink:href="http://inspire.ec.europa.eu/id/document/tg/ps">
-				   Data specificatie protected sites
-				</gmx:Anchor>
-				</gmd:specification>
+                <gmx:Anchor
+                 xlink:href="http://inspire.ec.europa.eu/id/document/tg/ps">
+                   Data specificatie protected sites
+                </gmx:Anchor>
+        </gmd:specification>
             </gmd:MD_Format>
          </gmd:distributionFormat>
          <gmd:transferOptions>
@@ -402,18 +394,17 @@
                      </gmd:linkage>
                      <gmd:protocol>
                         <gmx:Anchor
-						  xlink:href="http://www.opengeospatial.org/standards/wms">
-						  OGC:WMS</gmx:Anchor>
+                          xlink:href="http://www.opengeospatial.org/standards/wms">
+                          OGC:WMS</gmx:Anchor>
                      </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>NationalListedMonuments</gco:CharacterString>
                      </gmd:name>
                      <gmd:description>
-	                     <gmx:Anchor
-						  xlink:href="http://inspire.ec.europa.eu/metadata-codelist/
-						    OnLineDescriptionCode/accessPoint">
-						  accessPoint</gmx:Anchor>
-					</gmd:description>
+                       <gmx:Anchor
+              xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">
+              accessPoint</gmx:Anchor>
+          </gmd:description>
                   </gmd:CI_OnlineResource>
                </gmd:onLine>
                <gmd:onLine>
@@ -423,18 +414,17 @@
                      </gmd:linkage>
                      <gmd:protocol>
                         <gmx:Anchor
-						  xlink:href="http://www.opengeospatial.org/standards/wfs">
-						  OGC:WFS</gmx:Anchor>
+              xlink:href="http://www.opengeospatial.org/standards/wfs">
+              OGC:WFS</gmx:Anchor>
                      </gmd:protocol>
                      <gmd:name>
                         <gco:CharacterString>NationalListedMonuments</gco:CharacterString>
                      </gmd:name>
                      <gmd:description>
-	                     <gmx:Anchor
-						  xlink:href="http://inspire.ec.europa.eu/metadata-codelist/
-						    OnLineDescriptionCode/accessPoint">
-						  accessPoint</gmx:Anchor>
-					</gmd:description>
+                       <gmx:Anchor
+              xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">
+              accessPoint</gmx:Anchor>
+          </gmd:description>
                   </gmd:CI_OnlineResource>
                </gmd:onLine>
                <gmd:onLine>
@@ -449,11 +439,11 @@
                         <gco:CharacterString>Atom feed NationalListedMonuments</gco:CharacterString>
                      </gmd:name>
                      <gmd:description>
-	                     <gmx:Anchor
-						  xlink:href="http://inspire.ec.europa.eu/metadata-codelist/
-						    OnLineDescriptionCode/accessPoint">
-						  accessPoint</gmx:Anchor>
-					</gmd:description>
+                       <gmx:Anchor
+              xlink:href="http://inspire.ec.europa.eu/metadata-codelist/
+                OnLineDescriptionCode/accessPoint">
+              accessPoint</gmx:Anchor>
+          </gmd:description>
                   </gmd:CI_OnlineResource>
                </gmd:onLine>
             </gmd:MD_DigitalTransferOptions>
@@ -466,7 +456,7 @@
             <gmd:DQ_Scope>
                <gmd:level>
                   <gmd:MD_ScopeCode codeListValue="dataset"
-                                    codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"/>
+                    codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"/>
                </gmd:level>
             </gmd:DQ_Scope>
          </gmd:scope>
@@ -486,7 +476,7 @@
                                  </gmd:date>
                                  <gmd:dateType>
                                     <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"
-                                                         codeListValue="publication"/>
+                                      codeListValue="publication"/>
                                  </gmd:dateType>
                               </gmd:CI_Date>
                            </gmd:date>
@@ -521,14 +511,16 @@
                                  </gmd:date>
                                  <gmd:dateType>
                                     <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"
-                                                         codeListValue="publication"/>
+                                      codeListValue="publication"/>
                                  </gmd:dateType>
                               </gmd:CI_Date>
                            </gmd:date>
                         </gmd:CI_Citation>
                      </gmd:specification>
                      <gmd:explanation>
-                        <gco:CharacterString>De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig nog niet mee overeen.</gco:CharacterString>
+                        <gco:CharacterString>
+                          De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig nog niet mee overeen.
+                        </gco:CharacterString>
                      </gmd:explanation>
                      <gmd:pass>
                         <gco:Boolean>false</gco:Boolean>
@@ -541,8 +533,15 @@
             <gmd:DQ_CompletenessOmission>
                <gmd:result>
                   <gmd:DQ_QuantitativeResult>
+                     <!-- correcte valueunit nog uitzoeken -->
+                     <gmd:valueUnit xlink:href="http://www.opengis.net/def/"/>
                      <gmd:value>
-                        <gco:Record>Van zo'n 600 van de ongeveer 64.000 rijksmonumenten is geen plaatsbepaling opgenomen. Voor uitsluitsel over de gegevens van rijksmonumenten kan contact worden opgenomen met de InfoDesk van de Rijksdienst voor het Cultureel Erfgoed.</gco:Record>
+                        <gco:Record xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">
+                           Van zo'n 600 van de ongeveer
+                           64.000 rijksmonumenten is geen plaatsbepaling opgenomen. Voor uitsluitsel over de gegevens
+                           van rijksmonumenten kan contact worden opgenomen met de InfoDesk van de Rijksdienst voor het
+                           Cultureel Erfgoed.
+                         </gco:Record>
                      </gmd:value>
                   </gmd:DQ_QuantitativeResult>
                </gmd:result>
@@ -552,8 +551,16 @@
             <gmd:DQ_AbsoluteExternalPositionalAccuracy>
                <gmd:result>
                   <gmd:DQ_QuantitativeResult>
+                     <!-- correcte valueunit nog uitzoeken -->
+                     <gmd:valueUnit xlink:href="http://www.opengis.net/def/"/>
                      <gmd:value>
-                        <gco:Record>De locaties van de rijksmonumenten zijn in veel gevallen nog slechts een globale plaatsbepaling die later nader gepreciseerd wordt. De afwijking ten opzichte van de werkelijke locatie kan oplopen tot enkele honderden meters. Voor uitsluitsel over de locatie van rijksmonumenten kan contact worden opgenomen met de InfoDesk van de Rijksdienst voor het Cultureel Erfgoed.</gco:Record>
+                        <gco:Record xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">
+                           De locaties van de rijksmonumenten
+                           zijn in veel gevallen nog slechts een globale plaatsbepaling die later nader gepreciseerd wordt.
+                           De afwijking ten opzichte van de werkelijke locatie kan oplopen tot enkele honderden meters.
+                           Voor uitsluitsel over de locatie van rijksmonumenten kan contact worden opgenomen met de
+                           InfoDesk van de Rijksdienst voor het Cultureel Erfgoed.
+                         </gco:Record>
                      </gmd:value>
                   </gmd:DQ_QuantitativeResult>
                </gmd:result>
@@ -562,7 +569,9 @@
          <gmd:lineage>
             <gmd:LI_Lineage>
                <gmd:statement>
-                  <gco:CharacterString>Het Rijksmonumentenregister is fysiek opgenomen in de Objecten Databank (ODB). Maandelijks wordt uit deze ODB een extract gegenereerd. Uit dit extract worden vervolgens de digitale kaartlagen gegenereerd die gebruikt kunnen worden in Geografische Informatie Systemen.</gco:CharacterString>
+                  <gco:CharacterString>
+                    Het Rijksmonumentenregister is fysiek opgenomen in de Objecten Databank (ODB). Maandelijks wordt uit deze ODB een extract gegenereerd. Uit dit extract worden vervolgens de digitale kaartlagen gegenereerd die gebruikt kunnen worden in Geografische Informatie Systemen.
+                  </gco:CharacterString>
                </gmd:statement>
             </gmd:LI_Lineage>
          </gmd:lineage>
