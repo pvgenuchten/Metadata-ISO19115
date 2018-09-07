@@ -185,31 +185,11 @@
                <gmd:keyword>
                   <gco:CharacterString>monument</gco:CharacterString>
                </gmd:keyword>
-               <gmd:keyword>
-                  <gco:CharacterString>kunstgeschiedenis</gco:CharacterString>
-               </gmd:keyword>
-               <gmd:keyword>
-                  <gco:CharacterString>architectuurgeschiedenis</gco:CharacterString>
-               </gmd:keyword>
-               <gmd:keyword>
-                  <gco:CharacterString>bouwkunde</gco:CharacterString>
-               </gmd:keyword>
-               <gmd:keyword>
-                  <gco:CharacterString>archeologie</gco:CharacterString>
-               </gmd:keyword>
-               <gmd:keyword>
-                  <gco:CharacterString>cultuurhistorie</gco:CharacterString>
-               </gmd:keyword>
-               <gmd:keyword>
-                  <gco:CharacterString>cultureel erfgoed</gco:CharacterString>
-               </gmd:keyword>
-               <gmd:keyword>
-                  <gco:CharacterString>RCE</gco:CharacterString>
-               </gmd:keyword>
                <gmd:thesaurusName>
                   <gmd:CI_Citation>
                      <gmd:title>
-                        <gco:CharacterString>Erfgoedthesaurus (http://data.cultureelerfgoed.nl)</gco:CharacterString>
+                        <gmx:Anchor xlink:href="http://data.cultureelerfgoed.nl">
+			  Erfgoedthesaurus</gmx:Anchor>
                      </gmd:title>
                      <gmd:date>
                         <gmd:CI_Date>
@@ -229,15 +209,16 @@
          <gmd:descriptiveKeywords>
             <gmd:MD_Keywords>
                <gmd:keyword>
-                  <gco:CharacterString>Beschermde gebieden</gco:CharacterString>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/ps">
+	            Beschermde gebieden</gmx:Anchor>
                </gmd:keyword>
                <gmd:thesaurusName>
                   <gmd:CI_Citation>
                      <gmd:title>
                         <gmx:Anchor
-						  xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/">
-						    GEMET - INSPIRE themes, version 1.0
-						</gmx:Anchor>
+			  xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/">
+			  GEMET - INSPIRE themes, version 1.0
+			</gmx:Anchor>
                      </gmd:title>
                      <gmd:date>
                         <gmd:CI_Date>
