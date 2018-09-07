@@ -530,40 +530,6 @@
                </gmd:result>
             </gmd:DQ_DomainConsistency>
          </gmd:report>
-         <gmd:report>
-            <gmd:DQ_CompletenessOmission>
-               <gmd:result>
-                  <gmd:DQ_QuantitativeResult>
-                     <!-- correcte valueunit nog uitzoeken -->
-                     <gmd:valueUnit xlink:href="http://www.opengis.net/def/"/> 
-                     <gmd:value>
-                        <gco:Record xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Van zo'n 600 van de ongeveer 
-                           64.000 rijksmonumenten is geen plaatsbepaling opgenomen. Voor uitsluitsel over de gegevens 
-                           van rijksmonumenten kan contact worden opgenomen met de InfoDesk van de Rijksdienst voor het 
-                           Cultureel Erfgoed.</gco:Record>
-                     </gmd:value>
-                  </gmd:DQ_QuantitativeResult>
-               </gmd:result>
-            </gmd:DQ_CompletenessOmission>
-         </gmd:report>
-         <gmd:report>
-            <gmd:DQ_AbsoluteExternalPositionalAccuracy>
-               <gmd:result> 
-                  <gmd:DQ_QuantitativeResult>
-                     <!-- correcte valueunit nog uitzoeken -->
-                     <gmd:valueUnit xlink:href="http://www.opengis.net/def/"/> 
-                     <gmd:value> 
-                        <gco:Record xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">De locaties van de rijksmonumenten 
-                           zijn in veel gevallen nog slechts een globale plaatsbepaling die later nader gepreciseerd wordt. 
-                           De afwijking ten opzichte van de werkelijke locatie kan oplopen tot enkele honderden meters. 
-                           Voor uitsluitsel over de locatie van rijksmonumenten kan contact worden opgenomen met de
-                           InfoDesk van de Rijksdienst voor het Cultureel Erfgoed.</gco:Record>
-                     </gmd:value> 
-                  </gmd:DQ_QuantitativeResult> 
-               </gmd:result>
-            </gmd:DQ_AbsoluteExternalPositionalAccuracy>
-         </gmd:report>
-       
          <gmd:lineage>
             <gmd:LI_Lineage>
                <gmd:statement>
